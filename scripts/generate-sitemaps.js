@@ -79,11 +79,11 @@ const sitemapFiles = [];
 
 for (let i = 0; i < chunks.length; i++) {
   const chunk = chunks[i];
-  const filename = `sitemap-${String(i + 1).padStart(3, '0')}.xml`;
+  const filename = `sitemap-${i + 1}.xml`;
 
-  // Drip: sitemap 1 = today, sitemap 2 = yesterday, etc.
+  // Drip: sitemap 1 = today, sitemap 2 = tomorrow, sitemap 3 = day after, etc.
   const dripDate = new Date(today);
-  dripDate.setDate(dripDate.getDate() - i);
+  dripDate.setDate(dripDate.getDate() + i);
   const lastmod = dripDate.toISOString().split('T')[0];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -95,10 +95,22 @@ ${chunk.map(u => `<url><loc>${u.loc}</loc><lastmod>${lastmod}</lastmod><changefr
   sitemapFiles.push({ filename, lastmod, urls: chunk.length });
 }
 
-// Generate sitemap index
+// Generate sitemap index with drip - add 1 sitemap per day
+// Read existing index to see how many are already published
+const DRIP_STATE_FILE = join(DATA_DIR, 'sitemap-drip-state.json');
+let dripCount = 1;
+try {
+  const state = JSON.parse(readFileSync(DRIP_STATE_FILE, 'utf-8'));
+  dripCount = Math.min(state.count + 1, sitemapFiles.length);
+} catch {
+  dripCount = 1; // First run
+}
+writeFileSync(DRIP_STATE_FILE, JSON.stringify({ count: dripCount, lastRun: new Date().toISOString() }));
+
+const visibleSitemaps = sitemapFiles.slice(0, dripCount);
 const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${sitemapFiles.map(s => `<sitemap><loc>https://topbuy.ro/${s.filename}</loc><lastmod>${s.lastmod}</lastmod></sitemap>`).join('\n')}
+${visibleSitemaps.map(s => `<sitemap><loc>https://topbuy.ro/${s.filename}</loc><lastmod>${s.lastmod}</lastmod></sitemap>`).join('\n')}
 </sitemapindex>`;
 
 writeFileSync(join(OUT_DIR, 'sitemap.xml'), indexXml);

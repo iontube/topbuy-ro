@@ -57,7 +57,7 @@
           "originalNames": [
             "Mobile Phones"
           ],
-          "slug": "mobile-phones",
+          "slug": "telefoane-mobile",
           "count": 1224
         },
         {
@@ -66,7 +66,7 @@
           "originalNames": [
             "Electronics > Communications > Telephony > Mobile & Smart Phone Accessories > Mobile Phone Cases"
           ],
-          "slug": "mobile-phone-cases",
+          "slug": "huse-telefon",
           "count": 972
         },
         {
@@ -954,7 +954,7 @@
           "originalNames": [
             "Smart Home"
           ],
-          "slug": "smart-home",
+          "slug": "casa-inteligenta",
           "count": 670
         },
         {
@@ -6381,7 +6381,7 @@
           "originalNames": [
             "Glasses"
           ],
-          "slug": "glasses",
+          "slug": "ochelari",
           "count": 5319
         },
         {
@@ -6390,7 +6390,7 @@
           "originalNames": [
             "Apparel & Accessories > Jewelry > Rings"
           ],
-          "slug": "rings",
+          "slug": "inele",
           "count": 5284
         },
         {
@@ -6408,7 +6408,7 @@
           "originalNames": [
             "Sunglasses"
           ],
-          "slug": "sunglasses",
+          "slug": "ochelari-de-soare",
           "count": 4073
         },
         {
@@ -6435,7 +6435,7 @@
           "originalNames": [
             "Apparel & Accessories > Jewelry > Earrings"
           ],
-          "slug": "earrings",
+          "slug": "cercei",
           "count": 2215
         },
         {
@@ -6463,7 +6463,7 @@
           "originalNames": [
             "Apparel & Accessories > Jewelry > Necklaces"
           ],
-          "slug": "necklaces",
+          "slug": "coliere",
           "count": 1527
         },
         {
@@ -6472,7 +6472,7 @@
           "originalNames": [
             "Apparel & Accessories > Jewelry > Bracelets"
           ],
-          "slug": "bracelets",
+          "slug": "bratari",
           "count": 1486
         },
         {
@@ -14751,7 +14751,7 @@
           "originalNames": [
             "Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Food"
           ],
-          "slug": "dog-food",
+          "slug": "hrana-caini",
           "count": 1008
         },
         {
@@ -14769,7 +14769,7 @@
           "originalNames": [
             "Animals & Pet Supplies > Pet Supplies > Cat Supplies > Cat Food"
           ],
-          "slug": "cat-food",
+          "slug": "hrana-pisici",
           "count": 937
         },
         {
