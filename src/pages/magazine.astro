@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+const dataDir = join(process.cwd(), 'public', 'data');
+const stores = JSON.parse(readFileSync(join(dataDir, 'stores.json'), 'utf-8'));
+const year = new Date().getFullYear();
+
+const title = `Magazine online verificate - ${stores.length} magazine | TopBuy.ro`;
+const desc = `Vezi toate cele ${stores.length} magazine online de pe TopBuy.ro. Magazine verificate din Romania cu produse actualizate zilnic.`;
+
+// Group by category
+const byCategory: Record<string, any[]> = {};
+for (const s of stores) {
+  const cat = s.category || 'Altele';
+  if (!byCategory[cat]) byCategory[cat] = [];
+  byCategory[cat].push(s);
+}
+const categories = Object.entries(byCategory).sort((a, b) => b[1].length - a[1].length);
+---
+
+<Base title={title} description={desc} canonical="https://topbuy.ro/magazine/">
+
+  <div class="wrap">
+    <nav class="bc">
+      <a href="/">Acasa</a> <span class="bc__sep">›</span> <span>Magazine</span>
+    </nav>
+
+    <h1 class="page-h1">Magazine online</h1>
+    <div class="cblock" style="margin-bottom:24px;">
+      <div class="txt">
+        <p>Pe TopBuy.ro gasesti produse de la {stores.length} magazine online din Romania. Fiecare magazin e verificat si produsele se actualizeaza zilnic. Cand gasesti un produs, esti trimis direct pe site-ul magazinului.</p>
+      </div>
+    </div>
+
+    <div class="store-grid">
+      {stores.map((s: any) => (
+        <a href={`/magazine/${s.slug}/`} class="store-card">
+          <div class="store-card__top">
+            {s.logo ? (
+              <img src={s.logo} alt={s.name} class="store-card__logo" loading="lazy" />
+            ) : (
+              <div class="store-card__logo-placeholder">{s.name.charAt(0).toUpperCase()}</div>
+            )}
+            <div>
+              <div class="store-card__name">{s.name}</div>
+              {s.category && <span class="store-card__cat">{s.category}</span>}
+            </div>
+          </div>
+          <div class="store-card__stats">
+            <span>{s.productCount.toLocaleString('ro')} produse</span>
+          </div>
+          <span class="store-card__cta">Vezi produse &rarr;</span>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Magazine online - TopBuy.ro",
+    "description": desc,
+    "url": "https://topbuy.ro/magazine/",
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": stores.length,
+      "itemListElement": stores.slice(0, 20).map((s: any, i: number) => ({
+        "@type": "ListItem",
+        "position": i + 1,
+        "name": s.name,
+        "url": s.url
+      }))
+    }
+  })} />
+</Base>
+
+<style>
+  .store-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:12px;margin-top:20px}
+  .store-card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--gray-200);border-radius:var(--r);padding:18px;text-decoration:none;transition:border-color var(--ease);gap:12px}
+  .store-card:hover{border-color:var(--blue);text-decoration:none}
+  .store-card__top{display:flex;align-items:center;gap:12px}
+  .store-card__logo{width:44px;height:44px;border-radius:var(--r-sm);object-fit:contain;background:var(--gray-50);flex-shrink:0}
+  .store-card__logo-placeholder{width:44px;height:44px;border-radius:var(--r-sm);background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:800;flex-shrink:0}
+  .store-card__name{font-size:.92rem;font-weight:600;color:var(--gray-900)}
+  .store-card__cat{font-size:.72rem;color:var(--gray-400);display:block;margin-top:2px}
+  .store-card__stats{font-size:.78rem;color:var(--gray-500)}
+  .store-card__cta{font-size:.8rem;font-weight:600;color:var(--blue);margin-top:auto}
+  @media(max-width:480px){.store-card{padding:14px}}
+</style>

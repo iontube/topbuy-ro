@@ -1,0 +1,5440 @@
+{
+  "pescuit-la-rapitor-naluci-artificiale": [
+    "shard-0030.json",
+    "shard-0031.json",
+    "shard-0032.json",
+    "shard-0033.json",
+    "shard-0034.json",
+    "shard-0035.json",
+    "shard-0036.json",
+    "shard-0037.json",
+    "shard-0038.json",
+    "shard-0039.json",
+    "shard-0040.json",
+    "shard-0041.json",
+    "shard-0042.json",
+    "shard-0043.json",
+    "shard-0044.json",
+    "shard-0045.json",
+    "shard-0046.json",
+    "shard-0047.json",
+    "shard-0048.json",
+    "shard-0049.json",
+    "shard-0050.json",
+    "shard-0051.json",
+    "shard-0052.json",
+    "shard-0053.json",
+    "shard-0054.json",
+    "shard-0055.json",
+    "shard-0056.json",
+    "shard-0057.json",
+    "shard-0058.json",
+    "shard-0059.json"
+  ],
+  "imbracaminte": [
+    "shard-0083.json",
+    "shard-0084.json",
+    "shard-0085.json",
+    "shard-0086.json",
+    "shard-0087.json",
+    "shard-0088.json",
+    "shard-0089.json",
+    "shard-0090.json",
+    "shard-0091.json",
+    "shard-0092.json",
+    "shard-0093.json",
+    "shard-0094.json",
+    "shard-0095.json",
+    "shard-0096.json",
+    "shard-0097.json",
+    "shard-0098.json",
+    "shard-0099.json",
+    "shard-0100.json",
+    "shard-0101.json",
+    "shard-0102.json",
+    "shard-0103.json",
+    "shard-0104.json",
+    "shard-0105.json"
+  ],
+  "anvelope-de-vara": [
+    "shard-0127.json",
+    "shard-0128.json",
+    "shard-0129.json",
+    "shard-0130.json",
+    "shard-0131.json",
+    "shard-0132.json",
+    "shard-0133.json",
+    "shard-0134.json",
+    "shard-0135.json",
+    "shard-0136.json",
+    "shard-0137.json",
+    "shard-0138.json",
+    "shard-0139.json",
+    "shard-0140.json",
+    "shard-0141.json",
+    "shard-0142.json",
+    "shard-0143.json",
+    "shard-0144.json",
+    "shard-0145.json",
+    "shard-0146.json",
+    "shard-0147.json"
+  ],
+  "huse-telefoane": [
+    "shard-0167.json",
+    "shard-0168.json",
+    "shard-0169.json",
+    "shard-0170.json",
+    "shard-0171.json",
+    "shard-0172.json",
+    "shard-0173.json",
+    "shard-0174.json",
+    "shard-0175.json",
+    "shard-0176.json",
+    "shard-0177.json",
+    "shard-0178.json",
+    "shard-0179.json",
+    "shard-0180.json",
+    "shard-0181.json",
+    "shard-0182.json",
+    "shard-0183.json",
+    "shard-0184.json",
+    "shard-0185.json"
+  ],
+  "camera-copilului": [
+    "shard-0204.json",
+    "shard-0205.json",
+    "shard-0206.json",
+    "shard-0207.json",
+    "shard-0208.json",
+    "shard-0209.json",
+    "shard-0210.json",
+    "shard-0211.json",
+    "shard-0212.json",
+    "shard-0213.json",
+    "shard-0214.json",
+    "shard-0215.json",
+    "shard-0216.json",
+    "shard-0217.json",
+    "shard-0218.json",
+    "shard-0219.json",
+    "shard-0220.json",
+    "shard-0221.json"
+  ],
+  "incarcator-laptop": [
+    "shard-0239.json",
+    "shard-0240.json",
+    "shard-0241.json",
+    "shard-0242.json",
+    "shard-0243.json",
+    "shard-0244.json",
+    "shard-0245.json",
+    "shard-0246.json",
+    "shard-0247.json",
+    "shard-0248.json",
+    "shard-0249.json",
+    "shard-0250.json",
+    "shard-0251.json",
+    "shard-0252.json",
+    "shard-0253.json",
+    "shard-0254.json",
+    "shard-0255.json"
+  ],
+  "pachete-de-difuzoare-dedicate": [
+    "shard-0268.json",
+    "shard-0269.json",
+    "shard-0270.json",
+    "shard-0271.json",
+    "shard-0272.json",
+    "shard-0273.json",
+    "shard-0274.json",
+    "shard-0275.json",
+    "shard-0276.json",
+    "shard-0277.json",
+    "shard-0278.json",
+    "shard-0279.json"
+  ],
+  "accesorii": [
+    "shard-0292.json",
+    "shard-0293.json",
+    "shard-0294.json",
+    "shard-0295.json",
+    "shard-0296.json",
+    "shard-0297.json",
+    "shard-0298.json",
+    "shard-0299.json",
+    "shard-0300.json",
+    "shard-0301.json",
+    "shard-0302.json",
+    "shard-0303.json"
+  ],
+  "pescuit-la-rapitor": [
+    "shard-0315.json",
+    "shard-0316.json",
+    "shard-0317.json",
+    "shard-0318.json",
+    "shard-0319.json",
+    "shard-0320.json",
+    "shard-0321.json",
+    "shard-0322.json",
+    "shard-0323.json",
+    "shard-0324.json",
+    "shard-0325.json"
+  ],
+  "incaltaminte": [
+    "shard-0337.json",
+    "shard-0338.json",
+    "shard-0339.json",
+    "shard-0340.json",
+    "shard-0341.json",
+    "shard-0342.json",
+    "shard-0343.json",
+    "shard-0344.json",
+    "shard-0345.json",
+    "shard-0346.json",
+    "shard-0347.json"
+  ],
+  "anvelope-de-iarna": [
+    "shard-0359.json",
+    "shard-0360.json",
+    "shard-0361.json",
+    "shard-0362.json",
+    "shard-0363.json",
+    "shard-0364.json",
+    "shard-0365.json",
+    "shard-0366.json",
+    "shard-0367.json",
+    "shard-0368.json",
+    "shard-0369.json"
+  ],
+  "piese-de-schimb": [
+    "shard-0377.json",
+    "shard-0378.json",
+    "shard-0379.json",
+    "shard-0380.json",
+    "shard-0381.json",
+    "shard-0382.json",
+    "shard-0383.json"
+  ],
+  "pescuit-la-stationar": [
+    "shard-0391.json",
+    "shard-0392.json",
+    "shard-0393.json",
+    "shard-0394.json",
+    "shard-0395.json",
+    "shard-0396.json",
+    "shard-0397.json"
+  ],
+  "igiena-si-ingrijire": [
+    "shard-0405.json",
+    "shard-0406.json",
+    "shard-0407.json",
+    "shard-0408.json",
+    "shard-0409.json",
+    "shard-0410.json",
+    "shard-0411.json"
+  ],
+  "alimentatie": [
+    "shard-0418.json",
+    "shard-0419.json",
+    "shard-0420.json",
+    "shard-0421.json",
+    "shard-0422.json",
+    "shard-0423.json"
+  ],
+  "navigatii": [
+    "shard-0430.json",
+    "shard-0431.json",
+    "shard-0432.json",
+    "shard-0433.json",
+    "shard-0434.json",
+    "shard-0435.json"
+  ],
+  "folii-protectie-telefoane": [
+    "shard-0442.json",
+    "shard-0443.json",
+    "shard-0444.json",
+    "shard-0445.json",
+    "shard-0446.json",
+    "shard-0447.json"
+  ],
+  "anvelope-all-season": [
+    "shard-0454.json",
+    "shard-0455.json",
+    "shard-0456.json",
+    "shard-0457.json",
+    "shard-0458.json",
+    "shard-0459.json"
+  ],
+  "imbracaminte-incaltaminte-accesorii-imbracaminte": [
+    "shard-0466.json",
+    "shard-0467.json",
+    "shard-0468.json",
+    "shard-0469.json",
+    "shard-0470.json"
+  ],
+  "imbracaminte-incaltaminte-accesorii-imbracaminte-incaltaminte-accesorii-vanatoar": [
+    "shard-0471.json"
+  ],
+  "la-plimbare": [
+    "shard-0477.json",
+    "shard-0478.json",
+    "shard-0479.json",
+    "shard-0480.json",
+    "shard-0481.json"
+  ],
+  "anvelope-moto": [
+    "shard-0487.json",
+    "shard-0488.json",
+    "shard-0489.json",
+    "shard-0490.json",
+    "shard-0491.json"
+  ],
+  "baieti": [
+    "shard-0497.json",
+    "shard-0498.json",
+    "shard-0499.json",
+    "shard-0500.json",
+    "shard-0501.json"
+  ],
+  "fete": [
+    "shard-0507.json",
+    "shard-0508.json",
+    "shard-0509.json",
+    "shard-0510.json",
+    "shard-0511.json"
+  ],
+  "pescuit-la-crap": [
+    "shard-0517.json",
+    "shard-0518.json",
+    "shard-0519.json",
+    "shard-0520.json",
+    "shard-0521.json"
+  ],
+  "pescuit-la-crap-fire-crap": [
+    "shard-0527.json",
+    "shard-0528.json",
+    "shard-0529.json",
+    "shard-0530.json",
+    "shard-0531.json"
+  ],
+  "pescuit-la-crap-accesorii-monturi-crap": [
+    "shard-0536.json",
+    "shard-0537.json",
+    "shard-0538.json",
+    "shard-0539.json"
+  ],
+  "nade-si-momeli-momeli-de-carlig": [
+    "shard-0544.json",
+    "shard-0545.json",
+    "shard-0546.json",
+    "shard-0547.json"
+  ],
+  "echipamente": [
+    "shard-0552.json",
+    "shard-0553.json",
+    "shard-0554.json",
+    "shard-0555.json"
+  ],
+  "carucioare-copii": [
+    "shard-0560.json",
+    "shard-0561.json",
+    "shard-0562.json",
+    "shard-0563.json"
+  ],
+  "tastaturi-laptop": [
+    "shard-0568.json",
+    "shard-0569.json",
+    "shard-0570.json",
+    "shard-0571.json"
+  ],
+  "anvelope-camioane": [
+    "shard-0576.json",
+    "shard-0577.json",
+    "shard-0578.json",
+    "shard-0579.json"
+  ],
+  "pescuit-la-rapitor-fire-rapitori": [
+    "shard-0584.json",
+    "shard-0585.json",
+    "shard-0586.json",
+    "shard-0587.json"
+  ],
+  "pescuit-la-feeder": [
+    "shard-0592.json",
+    "shard-0593.json",
+    "shard-0594.json",
+    "shard-0595.json"
+  ],
+  "nade-si-momeli": [
+    "shard-0599.json",
+    "shard-0600.json",
+    "shard-0601.json"
+  ],
+  "suspensie-cadru": [
+    "shard-0605.json",
+    "shard-0606.json",
+    "shard-0607.json"
+  ],
+  "baterii-si-acumulatori-laptop": [
+    "shard-0611.json",
+    "shard-0612.json",
+    "shard-0613.json"
+  ],
+  "jucarii-de-exterior": [
+    "shard-0617.json",
+    "shard-0618.json",
+    "shard-0619.json"
+  ],
+  "pescuit-la-somn": [
+    "shard-0623.json",
+    "shard-0624.json",
+    "shard-0625.json"
+  ],
+  "pescuit-la-feeder-plumbi": [
+    "shard-0626.json",
+    "shard-0627.json",
+    "shard-0628.json"
+  ],
+  "pescuit-la-feeder-plumbi-momitoare-feeder": [
+    "shard-0629.json",
+    "shard-0630.json",
+    "shard-0631.json"
+  ],
+  "paturi-tapitate": [
+    "shard-0635.json",
+    "shard-0636.json",
+    "shard-0637.json"
+  ],
+  "cabluri-de-date": [
+    "shard-0641.json",
+    "shard-0642.json",
+    "shard-0643.json"
+  ],
+  "accesorii-dama": [
+    "shard-0647.json",
+    "shard-0648.json",
+    "shard-0649.json"
+  ],
+  "cabluri": [
+    "shard-0653.json",
+    "shard-0654.json",
+    "shard-0655.json"
+  ],
+  "bagajerie": [
+    "shard-0659.json",
+    "shard-0660.json",
+    "shard-0661.json"
+  ],
+  "living-si-dormitor": [
+    "shard-0665.json",
+    "shard-0666.json",
+    "shard-0667.json"
+  ],
+  "monitoare-led": [
+    "shard-0671.json",
+    "shard-0672.json",
+    "shard-0673.json"
+  ],
+  "tonere": [
+    "shard-0676.json",
+    "shard-0677.json"
+  ],
+  "scaune-auto-copii": [
+    "shard-0680.json",
+    "shard-0681.json"
+  ],
+  "anvelope-camera": [
+    "shard-0684.json",
+    "shard-0685.json"
+  ],
+  "motor": [
+    "shard-0688.json",
+    "shard-0689.json"
+  ],
+  "mouse-pc": [
+    "shard-0690.json",
+    "shard-0691.json"
+  ],
+  "mouse-pc-gaming": [
+    "shard-0692.json",
+    "shard-0693.json"
+  ],
+  "scule": [
+    "shard-0696.json",
+    "shard-0697.json"
+  ],
+  "sisteme-de-irigare": [
+    "shard-0700.json",
+    "shard-0701.json"
+  ],
+  "incarcatoare": [
+    "shard-0704.json",
+    "shard-0705.json"
+  ],
+  "pescuit-la-stationar-fire-stationar": [
+    "shard-0708.json",
+    "shard-0709.json"
+  ],
+  "casti-bluetooth-wireless-airpods-si-audio": [
+    "shard-0712.json",
+    "shard-0713.json"
+  ],
+  "bucatarie-si-bar": [
+    "shard-0716.json",
+    "shard-0717.json"
+  ],
+  "electrica-lumini": [
+    "shard-0720.json",
+    "shard-0721.json"
+  ],
+  "imbracaminte-incaltaminte-accesorii-accesorii": [
+    "shard-0724.json",
+    "shard-0725.json"
+  ],
+  "jucarii": [
+    "shard-0728.json",
+    "shard-0729.json"
+  ],
+  "componente-lansete-si-mulinete": [
+    "shard-0732.json",
+    "shard-0733.json"
+  ],
+  "electronice": [
+    "shard-0736.json",
+    "shard-0737.json"
+  ],
+  "rochii": [
+    "shard-0740.json",
+    "shard-0741.json"
+  ],
+  "pompe-apa": [
+    "shard-0744.json",
+    "shard-0745.json"
+  ],
+  "utilaje-constructii": [
+    "shard-0748.json",
+    "shard-0749.json"
+  ],
+  "laptopuri-si-notebook": [
+    "shard-0752.json",
+    "shard-0753.json"
+  ],
+  "nade-si-momeli-aditivi": [
+    "shard-0754.json",
+    "shard-0755.json"
+  ],
+  "nade-si-momeli-aditivi-arome-dip-uri-colanti-nada": [
+    "shard-0756.json",
+    "shard-0757.json"
+  ],
+  "figurine": [
+    "shard-0760.json",
+    "shard-0761.json"
+  ],
+  "piese-biciclete-si-accesorii": [
+    "shard-0764.json",
+    "shard-0765.json"
+  ],
+  "carcase": [
+    "shard-0768.json",
+    "shard-0769.json"
+  ],
+  "lifestyle": [
+    "shard-0772.json",
+    "shard-0773.json"
+  ],
+  "pescuit-la-crap-avertizoare": [
+    "shard-0774.json",
+    "shard-0775.json"
+  ],
+  "pescuit-la-crap-avertizoare-swingere-indicatori-trasatura": [
+    "shard-0776.json",
+    "shard-0777.json"
+  ],
+  "pescuit-la-crap-monturi": [
+    "shard-0778.json",
+    "shard-0779.json"
+  ],
+  "pescuit-la-crap-monturi-carlige-legate-crap": [
+    "shard-0780.json",
+    "shard-0781.json"
+  ],
+  "mobile-phones": [
+    "shard-0784.json",
+    "shard-0785.json"
+  ],
+  "bijuterii": [
+    "shard-0788.json",
+    "shard-0789.json"
+  ],
+  "masinute": [
+    "shard-0792.json",
+    "shard-0793.json"
+  ],
+  "pescuit-la-feeder-monturi": [
+    "shard-0794.json",
+    "shard-0795.json"
+  ],
+  "pescuit-la-feeder-monturi-carlige-legate-feeder": [
+    "shard-0796.json",
+    "shard-0797.json"
+  ],
+  "auto-moto": [
+    "shard-0800.json",
+    "shard-0801.json"
+  ],
+  "pescuit-la-feeder-fire-feeder": [
+    "shard-0804.json",
+    "shard-0805.json"
+  ],
+  "camere-supraveghere-video-pentru-exterior": [
+    "shard-0808.json",
+    "shard-0809.json"
+  ],
+  "curea-smartwatch": [
+    "shard-0812.json",
+    "shard-0813.json"
+  ],
+  "pescuit-la-crap-accesorii-pentru-nadire": [
+    "shard-0816.json",
+    "shard-0817.json"
+  ],
+  "transmisie": [
+    "shard-0820.json",
+    "shard-0821.json"
+  ],
+  "camping": [
+    "shard-0824.json",
+    "shard-0825.json"
+  ],
+  "cartuse": [
+    "shard-0828.json",
+    "shard-0829.json"
+  ],
+  "bagajerie-genti-si-borsete": [
+    "shard-0832.json",
+    "shard-0833.json"
+  ],
+  "casti-microfoane": [
+    "shard-0836.json",
+    "shard-0837.json"
+  ],
+  "bagajerie-huse": [
+    "shard-0840.json",
+    "shard-0841.json"
+  ],
+  "piese-trotinete-electrice": [
+    "shard-0844.json",
+    "shard-0845.json"
+  ],
+  "calculatoare-refurbished": [
+    "shard-0848.json",
+    "shard-0849.json"
+  ],
+  "periferice": [
+    "shard-0852.json",
+    "shard-0853.json"
+  ],
+  "laptopuri": [
+    "shard-0854.json",
+    "shard-0855.json"
+  ],
+  "laptopuri-notebook": [
+    "shard-0856.json",
+    "shard-0857.json"
+  ],
+  "tastaturi-pc": [
+    "shard-0860.json",
+    "shard-0861.json"
+  ],
+  "accesorii-monitoare": [
+    "shard-0863.json"
+  ],
+  "pescuit-la-crap-plumbi": [
+    "shard-0864.json"
+  ],
+  "pescuit-la-crap-plumbi-momitoare": [
+    "shard-0865.json"
+  ],
+  "televizoare": [
+    "shard-0867.json"
+  ],
+  "pescuit-la-rapitor-accesorii-monturi-rapitor": [
+    "shard-0869.json"
+  ],
+  "filtre": [
+    "shard-0871.json"
+  ],
+  "accesorii-telefoane-mobile": [
+    "shard-0873.json"
+  ],
+  "pescuit-la-crap-mincioguri-crap": [
+    "shard-0875.json"
+  ],
+  "alte-accesorii": [
+    "shard-0877.json"
+  ],
+  "bucatarie": [
+    "shard-0879.json"
+  ],
+  "agricultura-si-gradinarit": [
+    "shard-0881.json"
+  ],
+  "masini-de-spalat-rufe": [
+    "shard-0883.json"
+  ],
+  "switch-uri": [
+    "shard-0885.json"
+  ],
+  "vanatoare-si-tir-sportiv": [
+    "shard-0887.json"
+  ],
+  "suporturi-si-rod-pod-uri": [
+    "shard-0889.json"
+  ],
+  "telefoane": [
+    "shard-0891.json"
+  ],
+  "frana": [
+    "shard-0893.json"
+  ],
+  "jocuri-educative": [
+    "shard-0895.json"
+  ],
+  "pescuit-la-feeder-accesorii-monturi-feeder": [
+    "shard-0897.json"
+  ],
+  "cartuse-tonere": [
+    "shard-0899.json"
+  ],
+  "huse-tablete": [
+    "shard-0901.json"
+  ],
+  "camping-instrumente-pentru-taiat": [
+    "shard-0903.json"
+  ],
+  "utile-in-bucatarie": [
+    "shard-0905.json"
+  ],
+  "diverse-retea": [
+    "shard-0907.json"
+  ],
+  "pescuit-la-musca": [
+    "shard-0909.json"
+  ],
+  "placi-de-baza": [
+    "shard-0911.json"
+  ],
+  "solid-state-drive-ssd": [
+    "shard-0913.json"
+  ],
+  "articole-hranire-bebelusi": [
+    "shard-0915.json"
+  ],
+  "ventilatoare": [
+    "shard-0917.json"
+  ],
+  "puzzle": [
+    "shard-0919.json"
+  ],
+  "scule-si-unelte": [
+    "shard-0921.json"
+  ],
+  "imbracaminte-incaltaminte-accesorii-incaltaminte": [
+    "shard-0923.json"
+  ],
+  "tablete": [
+    "shard-0925.json"
+  ],
+  "suporturi-tv": [
+    "shard-0927.json"
+  ],
+  "plite-incorporabile": [
+    "shard-0929.json"
+  ],
+  "stick-usb": [
+    "shard-0931.json"
+  ],
+  "femei-ghete": [
+    "shard-0933.json"
+  ],
+  "vanatoare-si-airsoft": [
+    "shard-0935.json"
+  ],
+  "femei": [
+    "shard-0937.json"
+  ],
+  "smartwatch": [
+    "shard-0939.json"
+  ],
+  "pescuit-la-stationar-vergi-undite": [
+    "shard-0941.json"
+  ],
+  "suporturi-si-rod-pod-uri-accesorii-suporturi": [
+    "shard-0942.json"
+  ],
+  "suporturi-si-rod-pod-uri-accesorii-suporturi-rod-pod": [
+    "shard-0943.json"
+  ],
+  "coolere-cpu": [
+    "shard-0945.json"
+  ],
+  "trusa-chei-unelte": [
+    "shard-0947.json"
+  ],
+  "reduceri-finale": [
+    "shard-0949.json"
+  ],
+  "cuptoare-incorporabile": [
+    "shard-0951.json"
+  ],
+  "ventilatie-climatizare": [
+    "shard-0953.json"
+  ],
+  "memorii": [
+    "shard-0955.json"
+  ],
+  "papusi": [
+    "shard-0957.json"
+  ],
+  "drumetii-de-o-zi": [
+    "shard-0959.json"
+  ],
+  "prelungitoare-prize": [
+    "shard-0961.json"
+  ],
+  "fitness-cardio": [
+    "shard-0963.json"
+  ],
+  "routere-wireless": [
+    "shard-0965.json"
+  ],
+  "unelte-de-gradina": [
+    "shard-0967.json"
+  ],
+  "componente-lansete-si-mulinete-varfuri-lansete": [
+    "shard-0968.json"
+  ],
+  "componente-lansete-si-mulinete-varfuri-lansete-vergi": [
+    "shard-0969.json"
+  ],
+  "ups": [
+    "shard-0971.json"
+  ],
+  "casa": [
+    "shard-0973.json"
+  ],
+  "jocuri-de-constructii": [
+    "shard-0975.json"
+  ],
+  "acumulatori-externi": [
+    "shard-0977.json"
+  ],
+  "produse-noi": [
+    "shard-0979.json"
+  ],
+  "iluminat": [
+    "shard-0981.json"
+  ],
+  "carti-pentru-copii": [
+    "shard-0983.json"
+  ],
+  "cabluri-hdmi": [
+    "shard-0985.json"
+  ],
+  "femei-genti-si-posete": [
+    "shard-0987.json"
+  ],
+  "pescuit-la-rapitor-plumbi-rapitor": [
+    "shard-0989.json"
+  ],
+  "combine-frigorifice": [
+    "shard-0991.json"
+  ],
+  "pescuit-la-crap-saltele": [
+    "shard-0992.json"
+  ],
+  "pescuit-la-crap-saltele-juvelnice-saci-de-pastrare": [
+    "shard-0993.json"
+  ],
+  "surse-de-alimentare-pc": [
+    "shard-0995.json"
+  ],
+  "car-audio": [
+    "shard-0997.json"
+  ],
+  "vase-pentru-bucatarie": [
+    "shard-0999.json"
+  ],
+  "ingrijire-personala": [
+    "shard-1001.json"
+  ],
+  "barbati-pantofi-sport": [
+    "shard-1003.json"
+  ],
+  "carduri-memorie": [
+    "shard-1005.json"
+  ],
+  "suport-auto-pentru-telefon-universal-sau-popsocket": [
+    "shard-1007.json"
+  ],
+  "jucarii-de-plus": [
+    "shard-1009.json"
+  ],
+  "mouse-pad": [
+    "shard-1011.json"
+  ],
+  "maxim-39-lei": [
+    "shard-1013.json"
+  ],
+  "pescuit-la-feeder-accesorii-scaune-feeder": [
+    "shard-1015.json"
+  ],
+  "pescuit-la-stationar-monturi": [
+    "shard-1016.json"
+  ],
+  "pescuit-la-stationar-monturi-carlige-legate-stationar": [
+    "shard-1017.json"
+  ],
+  "aparate-profesionale-bucatarie": [
+    "shard-1019.json"
+  ],
+  "pescuit-la-rapitor-accesorii-diverse-rapitor": [
+    "shard-1021.json"
+  ],
+  "boxe-portabile-cu-bluetooth": [
+    "shard-1023.json"
+  ],
+  "accesorii-si-componente-aspiratoare": [
+    "shard-1025.json"
+  ],
+  "utilaje-uz-casnic": [
+    "shard-1027.json"
+  ],
+  "mouse": [
+    "shard-1029.json"
+  ],
+  "hub-usb": [
+    "shard-1031.json"
+  ],
+  "accesorii-transport": [
+    "shard-1033.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-dulapuri-de-bucatarie": [
+    "shard-1035.json"
+  ],
+  "cabluri-audio-video": [
+    "shard-1037.json"
+  ],
+  "iluminat-interior": [
+    "shard-1039.json"
+  ],
+  "transport-depozitare": [
+    "shard-1041.json"
+  ],
+  "pescuit-la-stationar-lansete-bolognese": [
+    "shard-1043.json"
+  ],
+  "fierbatoare-apa": [
+    "shard-1045.json"
+  ],
+  "aragazuri": [
+    "shard-1047.json"
+  ],
+  "instalatii-hidro-si-termice": [
+    "shard-1049.json"
+  ],
+  "natatie": [
+    "shard-1051.json"
+  ],
+  "biciclete": [
+    "shard-1053.json"
+  ],
+  "branduri": [
+    "shard-1055.json"
+  ],
+  "mixere": [
+    "shard-1057.json"
+  ],
+  "scaune-auto-copii-si-inaltatoare": [
+    "shard-1059.json"
+  ],
+  "acumulatori-foto": [
+    "shard-1061.json"
+  ],
+  "multifunctionale": [
+    "shard-1063.json"
+  ],
+  "aparate-de-aer-conditionat": [
+    "shard-1065.json"
+  ],
+  "suzete": [
+    "shard-1067.json"
+  ],
+  "produse-resigilate": [
+    "shard-1069.json"
+  ],
+  "monitoare-led-lcd": [
+    "shard-1071.json"
+  ],
+  "baie": [
+    "shard-1073.json"
+  ],
+  "jucarii-bebelusi": [
+    "shard-1075.json"
+  ],
+  "pompe": [
+    "shard-1077.json"
+  ],
+  "oferte-exclusiv-online": [
+    "shard-1079.json"
+  ],
+  "uleiuri-intretinere": [
+    "shard-1081.json"
+  ],
+  "pescuit-la-stationar-accesorii-diverse-stationar": [
+    "shard-1083.json"
+  ],
+  "jucarii-de-rol": [
+    "shard-1085.json"
+  ],
+  "drujbe": [
+    "shard-1087.json"
+  ],
+  "friteuze": [
+    "shard-1089.json"
+  ],
+  "recipiente-pentru-calatorie": [
+    "shard-1091.json"
+  ],
+  "placi-video": [
+    "shard-1093.json"
+  ],
+  "hote-de-bucatarie-clasice-incorporabile-sau-decorative": [
+    "shard-1095.json"
+  ],
+  "scutece-si-servetele": [
+    "shard-1097.json"
+  ],
+  "camping-corturi-si-accesorii": [
+    "shard-1099.json"
+  ],
+  "laptopuri-refurbished": [
+    "shard-1101.json"
+  ],
+  "instrumente-de-masura": [
+    "shard-1103.json"
+  ],
+  "pescuit-la-stationar-accesorii-monturi-stationar": [
+    "shard-1105.json"
+  ],
+  "genti-si-huse-laptop": [
+    "shard-1107.json"
+  ],
+  "cafea": [
+    "shard-1109.json"
+  ],
+  "motociclete-atv": [
+    "shard-1111.json"
+  ],
+  "masina-de-gaurit-si-insurubat": [
+    "shard-1113.json"
+  ],
+  "femei-pantofi-sport": [
+    "shard-1115.json"
+  ],
+  "ciclism": [
+    "shard-1117.json"
+  ],
+  "imunitate-scazuta": [
+    "shard-1119.json"
+  ],
+  "accesorii-casa-inteligenta": [
+    "shard-1121.json"
+  ],
+  "accesorii-scule-electrice": [
+    "shard-1123.json"
+  ],
+  "barbati-ghete": [
+    "shard-1125.json"
+  ],
+  "fotbal": [
+    "shard-1127.json"
+  ],
+  "frigidere": [
+    "shard-1129.json"
+  ],
+  "atelier-service": [
+    "shard-1131.json"
+  ],
+  "camping-lanterne": [
+    "shard-1132.json"
+  ],
+  "camping-lanterne-felinare-proiectoare": [
+    "shard-1133.json"
+  ],
+  "electrice": [
+    "shard-1135.json"
+  ],
+  "aparate-si-espressoare-de-cafea-automate-si-manuale": [
+    "shard-1137.json"
+  ],
+  "mobila-living-si-sufragerii": [
+    "shard-1139.json"
+  ],
+  "carucioare": [
+    "shard-1141.json"
+  ],
+  "evacuare": [
+    "shard-1143.json"
+  ],
+  "camping-vesela-si-tacamuri": [
+    "shard-1145.json"
+  ],
+  "aspiratoare": [
+    "shard-1147.json"
+  ],
+  "procesoare": [
+    "shard-1149.json"
+  ],
+  "cosmetice-coreene": [
+    "shard-1151.json"
+  ],
+  "agro-zootehnie": [
+    "shard-1153.json"
+  ],
+  "masini-de-spalat-vase": [
+    "shard-1155.json"
+  ],
+  "mobila-si-decoratiuni-mobila-baie-dulapuri-pentru-baie": [
+    "shard-1157.json"
+  ],
+  "jocuri-video-pc-si-consola": [
+    "shard-1159.json"
+  ],
+  "pescuit-la-stationar-accesorii-elasticare": [
+    "shard-1161.json"
+  ],
+  "boilere": [
+    "shard-1163.json"
+  ],
+  "telefoane-mobile": [
+    "shard-1165.json"
+  ],
+  "barci-accesorii-motoare": [
+    "shard-1167.json"
+  ],
+  "jocuri-de-societate": [
+    "shard-1169.json"
+  ],
+  "mobilier-exterior-si-gradinarit-sere-si-casute-de-gradina-sere": [
+    "shard-1171.json"
+  ],
+  "dulapuri-si-dressinguri-dormitor": [
+    "shard-1173.json"
+  ],
+  "adaptori": [
+    "shard-1175.json"
+  ],
+  "timp-liber": [
+    "shard-1177.json"
+  ],
+  "ingrijire-ten": [
+    "shard-1179.json"
+  ],
+  "home-spa": [
+    "shard-1181.json"
+  ],
+  "tastaturi": [
+    "shard-1183.json"
+  ],
+  "mobilier-exterior-si-gradinarit-gradinarit-ghivece-si-rafturi-pentru-plante": [
+    "shard-1185.json"
+  ],
+  "piese-originale": [
+    "shard-1187.json"
+  ],
+  "aspiratoare-verticale": [
+    "shard-1189.json"
+  ],
+  "ventilatoare-de-camera-si-birou": [
+    "shard-1191.json"
+  ],
+  "cuptoare-cu-microunde": [
+    "shard-1193.json"
+  ],
+  "canapele-extensibile": [
+    "shard-1195.json"
+  ],
+  "pentru-animale-jucarii-pentru-animale-ansambluri-pentru-pisici": [
+    "shard-1197.json"
+  ],
+  "fiare-de-calcat": [
+    "shard-1199.json"
+  ],
+  "ghiozdane-rucsacuri": [
+    "shard-1201.json"
+  ],
+  "jucarii-interactive": [
+    "shard-1203.json"
+  ],
+  "mobila-de-bucatarie": [
+    "shard-1205.json"
+  ],
+  "alte-accesorii-servere": [
+    "shard-1207.json"
+  ],
+  "jucarii-de-lemn": [
+    "shard-1209.json"
+  ],
+  "fesi-plasturi-si-pansamente": [
+    "shard-1211.json"
+  ],
+  "covoare": [
+    "shard-1213.json"
+  ],
+  "lenjerie-patut-bebe": [
+    "shard-1215.json"
+  ],
+  "accesorii-piscine": [
+    "shard-1217.json"
+  ],
+  "furtunuri-tehnice": [
+    "shard-1219.json"
+  ],
+  "femei-pantofi-eleganti": [
+    "shard-1221.json"
+  ],
+  "videoproiectoare": [
+    "shard-1223.json"
+  ],
+  "trotinete-si-triciclete": [
+    "shard-1225.json"
+  ],
+  "blendere-si-tocatoare": [
+    "shard-1227.json"
+  ],
+  "mobilier-exterior-si-gradinarit-corturi-si-umbrele-foisoare": [
+    "shard-1229.json"
+  ],
+  "motocultoare": [
+    "shard-1232.json"
+  ],
+  "motocultoare-motosape-accesorii": [
+    "shard-1231.json"
+  ],
+  "scaune-gaming": [
+    "shard-1234.json"
+  ],
+  "motocoase-masini-de-tuns-iarba": [
+    "shard-1236.json"
+  ],
+  "coltare-extensibile": [
+    "shard-1238.json"
+  ],
+  "barbati": [
+    "shard-1240.json"
+  ],
+  "motoare-uz-general": [
+    "shard-1242.json"
+  ],
+  "tenis": [
+    "shard-1244.json"
+  ],
+  "gradina": [
+    "shard-1246.json"
+  ],
+  "mobilier-exterior-si-gradinarit-corturi-si-umbrele-umbrele": [
+    "shard-1248.json"
+  ],
+  "accesorii-vehicule-electrice": [
+    "shard-1250.json"
+  ],
+  "hard-disk-extern": [
+    "shard-1252.json"
+  ],
+  "uscatoare-de-par": [
+    "shard-1254.json"
+  ],
+  "mobila-si-decoratiuni-obiecte-decorative-decoratiuni-perete": [
+    "shard-1256.json"
+  ],
+  "pentru-intretinere": [
+    "shard-1258.json"
+  ],
+  "sudura": [
+    "shard-1260.json"
+  ],
+  "sistemul-digestiv": [
+    "shard-1262.json"
+  ],
+  "sisteme-de-incalzire": [
+    "shard-1264.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-dulapuri-pentru-pantofi": [
+    "shard-1266.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-carucioare-de-bucatarie": [
+    "shard-1268.json"
+  ],
+  "alte-consumabile": [
+    "shard-1270.json"
+  ],
+  "scaune-de-masa-bebe": [
+    "shard-1272.json"
+  ],
+  "femei-botine": [
+    "shard-1274.json"
+  ],
+  "motofierastraie": [
+    "shard-1276.json"
+  ],
+  "sistemul-osteo-articular-si-muscular": [
+    "shard-1278.json"
+  ],
+  "mobila-si-decoratiuni-mobila-dormitor-comode": [
+    "shard-1280.json"
+  ],
+  "folii-protectie-tablete": [
+    "shard-1282.json"
+  ],
+  "sistemul-respirator": [
+    "shard-1284.json"
+  ],
+  "paturi": [
+    "shard-1286.json"
+  ],
+  "uz-general": [
+    "shard-1288.json"
+  ],
+  "ceaiuri": [
+    "shard-1290.json"
+  ],
+  "tigai": [
+    "shard-1292.json"
+  ],
+  "huse-smartwatch": [
+    "shard-1294.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-fotolii-recliner": [
+    "shard-1296.json"
+  ],
+  "access-point": [
+    "shard-1298.json"
+  ],
+  "biberoane-si-accesorii": [
+    "shard-1300.json"
+  ],
+  "mobilier-exterior-si-gradinarit-sere-si-casute-de-gradina-case-de-gradina": [
+    "shard-1302.json"
+  ],
+  "accesorii-masini-de-cusut": [
+    "shard-1304.json"
+  ],
+  "accesorii-electrocasnice": [
+    "shard-1306.json"
+  ],
+  "triatlon-nutritie-si-ingrijire": [
+    "shard-1308.json"
+  ],
+  "accesorii-wearables": [
+    "shard-1310.json"
+  ],
+  "suporturi-si-rod-pod-uri-suporturi": [
+    "shard-1312.json"
+  ],
+  "becuri-cu-led": [
+    "shard-1314.json"
+  ],
+  "accesorii-baie": [
+    "shard-1316.json"
+  ],
+  "sandwich-maker-waffle": [
+    "shard-1318.json"
+  ],
+  "periute-de-dinti-electrice": [
+    "shard-1320.json"
+  ],
+  "accesorii-supraveghere-video": [
+    "shard-1322.json"
+  ],
+  "rucsacuri-si-ghiozdane-laptop": [
+    "shard-1324.json"
+  ],
+  "videointerfoane-si-interfoane": [
+    "shard-1326.json"
+  ],
+  "cearceafuri-patut": [
+    "shard-1328.json"
+  ],
+  "motocoase": [
+    "shard-1330.json"
+  ],
+  "femei-accesorii-dama": [
+    "shard-1332.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-fotolii": [
+    "shard-1334.json"
+  ],
+  "boxe-pc-pentru-gaming-si-muzica": [
+    "shard-1336.json"
+  ],
+  "gratare-si-cuptoare-electrice": [
+    "shard-1338.json"
+  ],
+  "espressor-de-cafea": [
+    "shard-1340.json"
+  ],
+  "lifting-antirid": [
+    "shard-1342.json"
+  ],
+  "aparate-de-incalzit": [
+    "shard-1344.json"
+  ],
+  "accesorii-camere-video-pentru-sporturi-extreme": [
+    "shard-1346.json"
+  ],
+  "diverse-multimedia": [
+    "shard-1348.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-masute-de-cafea": [
+    "shard-1350.json"
+  ],
+  "chiuvete": [
+    "shard-1352.json"
+  ],
+  "ingrijirea-tenului": [
+    "shard-1354.json"
+  ],
+  "instalatii-sanitare": [
+    "shard-1356.json"
+  ],
+  "controllere": [
+    "shard-1358.json"
+  ],
+  "aparate-de-tuns": [
+    "shard-1360.json"
+  ],
+  "ciorapi-compresivi": [
+    "shard-1362.json"
+  ],
+  "zootehnie": [
+    "shard-1364.json"
+  ],
+  "cazane-combustibil-solid": [
+    "shard-1366.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-scaune-de-bar": [
+    "shard-1368.json"
+  ],
+  "prajitoare-paine": [
+    "shard-1370.json"
+  ],
+  "sterilizatoare-si-biberoane": [
+    "shard-1372.json"
+  ],
+  "hdd-rack": [
+    "shard-1374.json"
+  ],
+  "all-in-one-pc": [
+    "shard-1376.json"
+  ],
+  "moara-cereale-si-uruiala": [
+    "shard-1378.json"
+  ],
+  "alte-accesorii-console": [
+    "shard-1380.json"
+  ],
+  "sisteme-audio": [
+    "shard-1382.json"
+  ],
+  "memorii-ram-laptop": [
+    "shard-1384.json"
+  ],
+  "piele-deshidratata-si-uscata": [
+    "shard-1386.json"
+  ],
+  "side-by-side": [
+    "shard-1388.json"
+  ],
+  "camere-video-auto": [
+    "shard-1390.json"
+  ],
+  "patut-bebe": [
+    "shard-1392.json"
+  ],
+  "bricolaj": [
+    "shard-1394.json"
+  ],
+  "insonorizant": [
+    "shard-1396.json"
+  ],
+  "genti-huse": [
+    "shard-1398.json"
+  ],
+  "somn-si-relaxare": [
+    "shard-1400.json"
+  ],
+  "extracte-si-tincturi": [
+    "shard-1402.json"
+  ],
+  "biberoane-suzete-tetine": [
+    "shard-1404.json"
+  ],
+  "camere-supraveghere-video-pentru-interior": [
+    "shard-1406.json"
+  ],
+  "radio": [
+    "shard-1408.json"
+  ],
+  "accesorii-periute-de-dinti": [
+    "shard-1410.json"
+  ],
+  "nike-dama": [
+    "shard-1412.json"
+  ],
+  "nike-dama-cs": [
+    "shard-1413.json"
+  ],
+  "iluminat-exterior": [
+    "shard-1415.json"
+  ],
+  "role-si-patine-de-gheata": [
+    "shard-1417.json"
+  ],
+  "nike-barbat": [
+    "shard-1419.json"
+  ],
+  "nike-barbat-cs": [
+    "shard-1420.json"
+  ],
+  "adaptoare-wireless": [
+    "shard-1422.json"
+  ],
+  "pentru-birou-scaune-de-birou-scaune-pentru-biroul-de-acasa": [
+    "shard-1424.json"
+  ],
+  "dispozitive-filtrare-apa": [
+    "shard-1426.json"
+  ],
+  "pescuit-la-copca-naluci-artificiale-copca": [
+    "shard-1428.json"
+  ],
+  "accesorii-aspiratoare": [
+    "shard-1430.json"
+  ],
+  "folii-protectie-smartwatch": [
+    "shard-1432.json"
+  ],
+  "lichidari-de-stoc": [
+    "shard-1434.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-plante-artificiale": [
+    "shard-1436.json"
+  ],
+  "baterii-ups": [
+    "shard-1438.json"
+  ],
+  "aspiratoare-robot": [
+    "shard-1440.json"
+  ],
+  "cantare-de-bucatarie": [
+    "shard-1442.json"
+  ],
+  "accesorii-bucatarie": [
+    "shard-1444.json"
+  ],
+  "cafetiere": [
+    "shard-1446.json"
+  ],
+  "componente-laptop": [
+    "shard-1448.json"
+  ],
+  "centrale-pe-peleti": [
+    "shard-1450.json"
+  ],
+  "placi-retea": [
+    "shard-1452.json"
+  ],
+  "cooler-stand-laptop": [
+    "shard-1454.json"
+  ],
+  "protectie-solara": [
+    "shard-1456.json"
+  ],
+  "lanterne": [
+    "shard-1458.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-biblioteci": [
+    "shard-1460.json"
+  ],
+  "pescuit-la-feeder-mincioguri-feeder": [
+    "shard-1462.json"
+  ],
+  "hdd-server": [
+    "shard-1464.json"
+  ],
+  "sisteme-desktop": [
+    "shard-1466.json"
+  ],
+  "pentru-animale-accesorii-de-interior-pentru-animale-custi-pentru-rozatoare": [
+    "shard-1468.json"
+  ],
+  "mobilier-exterior-si-gradinarit-mobilier-pentru-gradina-set-mese-si-scaune": [
+    "shard-1470.json"
+  ],
+  "piese-centrale-termoseminee-si-sobe-pe-peleti": [
+    "shard-1472.json"
+  ],
+  "ingrijire-par": [
+    "shard-1474.json"
+  ],
+  "patuturi-din-lemn": [
+    "shard-1476.json"
+  ],
+  "congelatoare": [
+    "shard-1478.json"
+  ],
+  "articole-hranire": [
+    "shard-1480.json"
+  ],
+  "mobila-si-decoratiuni-obiecte-decorative": [
+    "shard-1482.json"
+  ],
+  "polizor-unghiular": [
+    "shard-1484.json"
+  ],
+  "canute-boluri-si-tacamuri": [
+    "shard-1486.json"
+  ],
+  "pentru-copii-vehicule-pentru-copii-masinute-electrice": [
+    "shard-1488.json"
+  ],
+  "masini-de-spalat-vase-incorporabile": [
+    "shard-1490.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-comode-tv": [
+    "shard-1492.json"
+  ],
+  "instrumente-de-scris-accesorii": [
+    "shard-1494.json"
+  ],
+  "baterii-de-baie": [
+    "shard-1496.json"
+  ],
+  "unelte-de-taiat": [
+    "shard-1498.json"
+  ],
+  "pentru-birou-birouri-birouri-pentru-calculator": [
+    "shard-1500.json"
+  ],
+  "sport-si-hobby-aparate-de-antrenament-haltere-si-gantere": [
+    "shard-1502.json"
+  ],
+  "mobila-si-decoratiuni-corpuri-de-iluminat-lampi-de-podea": [
+    "shard-1504.json"
+  ],
+  "filtru-apa-potabila": [
+    "shard-1506.json"
+  ],
+  "cantare-de-baie": [
+    "shard-1508.json"
+  ],
+  "puma-copii": [
+    "shard-1510.json"
+  ],
+  "puma-copii-cs": [
+    "shard-1511.json"
+  ],
+  "masini-de-gaurit-si-insurubat": [
+    "shard-1513.json"
+  ],
+  "mese-si-scaune": [
+    "shard-1515.json"
+  ],
+  "pentru-animale-accesorii-de-interior-pentru-animale-garduri-de-protectie-pentru-": [
+    "shard-1517.json"
+  ],
+  "accesorii-masina-de-gaurit": [
+    "shard-1519.json"
+  ],
+  "cutite-accesorii": [
+    "shard-1521.json"
+  ],
+  "suplimente-pentru-copii": [
+    "shard-1523.json"
+  ],
+  "sistemul-cardiovascular": [
+    "shard-1525.json"
+  ],
+  "soundbar": [
+    "shard-1527.json"
+  ],
+  "docking-port-replicatoare": [
+    "shard-1529.json"
+  ],
+  "casti-audio-wireless": [
+    "shard-1531.json"
+  ],
+  "igiena-si-ingrijire-orala": [
+    "shard-1533.json"
+  ],
+  "nike-copii": [
+    "shard-1535.json"
+  ],
+  "nike-copii-cs": [
+    "shard-1536.json"
+  ],
+  "mobilier-exterior-si-gradinarit-mobilier-pentru-gradina-seturi-de-gradina": [
+    "shard-1538.json"
+  ],
+  "casti-alergare": [
+    "shard-1539.json"
+  ],
+  "casti-alergare-sport-wireless-si-cu-fir": [
+    "shard-1540.json"
+  ],
+  "femei-mocasini": [
+    "shard-1542.json"
+  ],
+  "piele-sensibila-si-intoleranta": [
+    "shard-1544.json"
+  ],
+  "schi-snowboard-sanie": [
+    "shard-1546.json"
+  ],
+  "puma-barbat": [
+    "shard-1548.json"
+  ],
+  "puma-barbat-cs": [
+    "shard-1549.json"
+  ],
+  "suzete-si-accesorii": [
+    "shard-1551.json"
+  ],
+  "hote": [
+    "shard-1553.json"
+  ],
+  "rezerve-periute": [
+    "shard-1555.json"
+  ],
+  "oale": [
+    "shard-1557.json"
+  ],
+  "pasta-dinti": [
+    "shard-1559.json"
+  ],
+  "puma-dama": [
+    "shard-1561.json"
+  ],
+  "puma-dama-cs": [
+    "shard-1562.json"
+  ],
+  "centrale-termice-pe-gaz-sau-gpl": [
+    "shard-1564.json"
+  ],
+  "diverse-foto": [
+    "shard-1566.json"
+  ],
+  "barbati-pantofi-eleganti": [
+    "shard-1568.json"
+  ],
+  "mobila-si-decoratiuni-corpuri-de-iluminat-lampi-de-masa": [
+    "shard-1570.json"
+  ],
+  "aparate-de-spalat-cu-presiune": [
+    "shard-1572.json"
+  ],
+  "fiare-statii-de-calcat": [
+    "shard-1574.json"
+  ],
+  "mobilier-exterior-si-gradinarit-mobilier-pentru-gradina-mese-de-gradina": [
+    "shard-1576.json"
+  ],
+  "mobila-si-decoratiuni-obiecte-decorative-tablouri": [
+    "shard-1578.json"
+  ],
+  "senzori-si-detectoare": [
+    "shard-1580.json"
+  ],
+  "seturi-dormitor": [
+    "shard-1582.json"
+  ],
+  "oferte-coltare": [
+    "shard-1584.json"
+  ],
+  "mobila-si-decoratiuni-obiecte-decorative-statuete-si-figurine": [
+    "shard-1586.json"
+  ],
+  "carucioare-sport": [
+    "shard-1588.json"
+  ],
+  "memorii-usb": [
+    "shard-1590.json"
+  ],
+  "accesorii-cafea": [
+    "shard-1592.json"
+  ],
+  "lazi-frigorifice": [
+    "shard-1594.json"
+  ],
+  "pentru-animale-transport-pentru-animale-carucioare": [
+    "shard-1596.json"
+  ],
+  "mobila-si-decoratiuni-obiecte-decorative-vaze-decorative": [
+    "shard-1598.json"
+  ],
+  "gantere-si-greutati-fitness": [
+    "shard-1600.json"
+  ],
+  "pescuit-la-crap-accesorii-diverse-crap": [
+    "shard-1602.json"
+  ],
+  "casti-pc": [
+    "shard-1604.json"
+  ],
+  "detergent-rufe": [
+    "shard-1606.json"
+  ],
+  "lenjerii-si-perne": [
+    "shard-1608.json"
+  ],
+  "accesorii-drone": [
+    "shard-1610.json"
+  ],
+  "femei-pantofi-casual": [
+    "shard-1612.json"
+  ],
+  "storcatoare-de-fructe": [
+    "shard-1614.json"
+  ],
+  "all-in-one": [
+    "shard-1616.json"
+  ],
+  "pentru-copii-mobila-copii-depozitare-jucarii": [
+    "shard-1618.json"
+  ],
+  "trotinete-electrice-adulti-copii": [
+    "shard-1620.json"
+  ],
+  "accesorii-scule": [
+    "shard-1622.json"
+  ],
+  "fotolii": [
+    "shard-1624.json"
+  ],
+  "hard-disk-uri-hdd-desktop": [
+    "shard-1626.json"
+  ],
+  "tommy-hilfiger-dama": [
+    "shard-1628.json"
+  ],
+  "tommy-hilfiger-dama-cs": [
+    "shard-1629.json"
+  ],
+  "vitrine-frigorifice": [
+    "shard-1631.json"
+  ],
+  "card-reader": [
+    "shard-1633.json"
+  ],
+  "piele-par-si-unghii": [
+    "shard-1635.json"
+  ],
+  "scaune-auto-i-size": [
+    "shard-1637.json"
+  ],
+  "camere-web": [
+    "shard-1639.json"
+  ],
+  "uscatoare": [
+    "shard-1641.json"
+  ],
+  "promotii": [
+    "shard-1643.json"
+  ],
+  "camere-de-supraveghere": [
+    "shard-1645.json"
+  ],
+  "penare": [
+    "shard-1647.json"
+  ],
+  "aparate-de-vidat-si-accesorii": [
+    "shard-1649.json"
+  ],
+  "aparate-de-ras-electrice": [
+    "shard-1651.json"
+  ],
+  "activitate-cerebrala": [
+    "shard-1653.json"
+  ],
+  "calvin-klein-dama": [
+    "shard-1655.json"
+  ],
+  "calvin-klein-dama-cs": [
+    "shard-1656.json"
+  ],
+  "aspirator-umed-uscat": [
+    "shard-1658.json"
+  ],
+  "tratamente-si-masca-de-par": [
+    "shard-1660.json"
+  ],
+  "oferte": [
+    "shard-1662.json"
+  ],
+  "pentru-copii-vehicule-pentru-copii-masinute": [
+    "shard-1664.json"
+  ],
+  "accesorii-cooler-cpu": [
+    "shard-1666.json"
+  ],
+  "network-video-recorder-nvr": [
+    "shard-1668.json"
+  ],
+  "alte-suplimente-alimentare": [
+    "shard-1670.json"
+  ],
+  "saltele-si-accesorii-infasat": [
+    "shard-1672.json"
+  ],
+  "etichete-accesorii-sisteme-etichetare": [
+    "shard-1674.json"
+  ],
+  "accesorii-si-consumabile-imprimante-3d": [
+    "shard-1676.json"
+  ],
+  "switch-uri-cu-management": [
+    "shard-1678.json"
+  ],
+  "tabureti-tapitati": [
+    "shard-1680.json"
+  ],
+  "pentru-animale-custi-de-exterior-custi-pentru-iepuri": [
+    "shard-1682.json"
+  ],
+  "pentru-birou-mobilier-si-accesorii-de-birou-dulapuri-cu-sertare": [
+    "shard-1684.json"
+  ],
+  "hote-incorporabile": [
+    "shard-1686.json"
+  ],
+  "blendere": [
+    "shard-1688.json"
+  ],
+  "mobila-si-decoratiuni-mobila-baie-dulapuri-suspendate-de-baie": [
+    "shard-1690.json"
+  ],
+  "aspiratoare-fara-sac": [
+    "shard-1692.json"
+  ],
+  "network-attached-storage": [
+    "shard-1694.json"
+  ],
+  "perne": [
+    "shard-1696.json"
+  ],
+  "barbati-pantofi-casual": [
+    "shard-1698.json"
+  ],
+  "accesorii-plimbare": [
+    "shard-1700.json"
+  ],
+  "mousepad": [
+    "shard-1702.json"
+  ],
+  "pentru-animale-accesorii-de-interior-pentru-animale-culcusuri-pentru-caini": [
+    "shard-1704.json"
+  ],
+  "plite-electrice-si-pe-gaz": [
+    "shard-1706.json"
+  ],
+  "sporturi-de-precizie": [
+    "shard-1708.json"
+  ],
+  "anticadere": [
+    "shard-1710.json"
+  ],
+  "telefoane-fixe": [
+    "shard-1712.json"
+  ],
+  "uz-casnic": [
+    "shard-1714.json"
+  ],
+  "dermatologie": [
+    "shard-1716.json"
+  ],
+  "accesorii-igiena-si-sanatate": [
+    "shard-1718.json"
+  ],
+  "femei-cizme": [
+    "shard-1720.json"
+  ],
+  "piele-grasa-si-acneica": [
+    "shard-1722.json"
+  ],
+  "tricouri-nike-barbat": [
+    "shard-1725.json"
+  ],
+  "tricouri-nike-barbat-cs": [
+    "shard-1724.json"
+  ],
+  "hartii": [
+    "shard-1727.json"
+  ],
+  "placi-de-indreptat-parul": [
+    "shard-1729.json"
+  ],
+  "ondulatoare": [
+    "shard-1731.json"
+  ],
+  "modele-de-canapele": [
+    "shard-1733.json"
+  ],
+  "geanta-scule": [
+    "shard-1735.json"
+  ],
+  "apa-de-gura": [
+    "shard-1737.json"
+  ],
+  "mobilier-exterior-si-gradinarit-leagane-banci-si-sezlonguri-leagane-de-gradina": [
+    "shard-1739.json"
+  ],
+  "stylus-pen": [
+    "shard-1741.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-cuiere": [
+    "shard-1743.json"
+  ],
+  "accesorii-pentru-casa": [
+    "shard-1745.json"
+  ],
+  "purificatoare-de-aer": [
+    "shard-1747.json"
+  ],
+  "genti": [
+    "shard-1749.json"
+  ],
+  "camping-protectie-si-refacere": [
+    "shard-1751.json"
+  ],
+  "parfumuri": [
+    "shard-1753.json"
+  ],
+  "prosopele-si-halate": [
+    "shard-1755.json"
+  ],
+  "aparate-de-masaj": [
+    "shard-1757.json"
+  ],
+  "mobilier-exterior-si-gradinarit-camping-si-gratare-corturi-de-camping": [
+    "shard-1759.json"
+  ],
+  "jogging": [
+    "shard-1761.json"
+  ],
+  "accesorii-tablete": [
+    "shard-1763.json"
+  ],
+  "mobila-si-decoratiuni-mobila-dormitor-noptiere-noptiere-cu-sertare": [
+    "shard-1765.json"
+  ],
+  "aspiratoare-cu-sac": [
+    "shard-1767.json"
+  ],
+  "balansoare-leagane": [
+    "shard-1769.json"
+  ],
+  "ssd-solid-state-drive": [
+    "shard-1771.json"
+  ],
+  "ceasuri": [
+    "shard-1773.json"
+  ],
+  "barbati-mocasini": [
+    "shard-1775.json"
+  ],
+  "boxe-portabile": [
+    "shard-1777.json"
+  ],
+  "accesorii-biciclete": [
+    "shard-1779.json"
+  ],
+  "masa-de-infasat-si-accesorii": [
+    "shard-1781.json"
+  ],
+  "cadite-bebelusi": [
+    "shard-1783.json"
+  ],
+  "igiena-intima": [
+    "shard-1785.json"
+  ],
+  "vitamine-si-minerale": [
+    "shard-1787.json"
+  ],
+  "patuturi-pliante": [
+    "shard-1789.json"
+  ],
+  "puncte-de-acces": [
+    "shard-1791.json"
+  ],
+  "capsule": [
+    "shard-1793.json"
+  ],
+  "pentru-copii-jucarii-jucarii-interactive": [
+    "shard-1795.json"
+  ],
+  "slefuitor-electric": [
+    "shard-1797.json"
+  ],
+  "sistemul-genito-urinar": [
+    "shard-1799.json"
+  ],
+  "balansoare-si-leagane": [
+    "shard-1801.json"
+  ],
+  "switch-uri-fara-management": [
+    "shard-1803.json"
+  ],
+  "combine-frigorifice-incorporabile": [
+    "shard-1805.json"
+  ],
+  "baterii-de-bucatarie": [
+    "shard-1807.json"
+  ],
+  "maturi-mopuri-si-galeti": [
+    "shard-1809.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-bancute-hol-bancute-de-depozitare": [
+    "shard-1811.json"
+  ],
+  "pentru-birou-scaune-de-birou-scaune-directoriale": [
+    "shard-1813.json"
+  ],
+  "pentru-animale-accesorii-de-interior-pentru-animale-colivii": [
+    "shard-1815.json"
+  ],
+  "telefoane-voip": [
+    "shard-1817.json"
+  ],
+  "accesorii-drujba": [
+    "shard-1819.json"
+  ],
+  "panouri-solare-cu-tuburi-vidate-presurizate": [
+    "shard-1821.json"
+  ],
+  "casti-audio-cu-fir": [
+    "shard-1823.json"
+  ],
+  "aparate-de-incalzire": [
+    "shard-1825.json"
+  ],
+  "pentru-copii-mobila-copii-mese-si-scaune-pentru-copii": [
+    "shard-1827.json"
+  ],
+  "pasta-termoconductoare": [
+    "shard-1829.json"
+  ],
+  "ten-uscat-si-foarte-uscat": [
+    "shard-1831.json"
+  ],
+  "set-canapele-si-fotolii": [
+    "shard-1833.json"
+  ],
+  "aparate-de-tuns-barba": [
+    "shard-1835.json"
+  ],
+  "selfie-stick": [
+    "shard-1837.json"
+  ],
+  "incarcatoare-smartwatch": [
+    "shard-1839.json"
+  ],
+  "lotiuni-si-creme-de-corp": [
+    "shard-1841.json"
+  ],
+  "oftalmologie": [
+    "shard-1843.json"
+  ],
+  "scule-electrice": [
+    "shard-1845.json"
+  ],
+  "mobilier-exterior-si-gradinarit-leagane-banci-si-sezlonguri-sezlonguri": [
+    "shard-1847.json"
+  ],
+  "pentru-animale-custi-de-exterior-custi-pentru-caini": [
+    "shard-1849.json"
+  ],
+  "fierastrau-circular": [
+    "shard-1851.json"
+  ],
+  "masini-de-cusut": [
+    "shard-1853.json"
+  ],
+  "mobilier": [
+    "shard-1855.json"
+  ],
+  "accesorii-masina-tuns-iarba-motocoase": [
+    "shard-1857.json"
+  ],
+  "termoseminee-pe-peleti": [
+    "shard-1859.json"
+  ],
+  "aparate-de-taiat-electrice": [
+    "shard-1861.json"
+  ],
+  "epilatoare": [
+    "shard-1863.json"
+  ],
+  "pentru-animale-custi-de-exterior-tarcuri": [
+    "shard-1865.json"
+  ],
+  "pentru-copii-vehicule-pentru-copii-motociclete-electrice": [
+    "shard-1867.json"
+  ],
+  "pentru-animale-accesorii-de-interior-pentru-animale-litiere": [
+    "shard-1869.json"
+  ],
+  "sisteme-de-alarma-si-accesorii": [
+    "shard-1871.json"
+  ],
+  "sporturi-de-iarna": [
+    "shard-1873.json"
+  ],
+  "uscatoare-de-rufe-cu-pompa-de-caldura": [
+    "shard-1874.json"
+  ],
+  "uscatoare-de-rufe-cu-pompa-de-caldura-condensare": [
+    "shard-1875.json"
+  ],
+  "scaune-de-masa": [
+    "shard-1877.json"
+  ],
+  "frigidere-incorporabile": [
+    "shard-1879.json"
+  ],
+  "mobilier-exterior-si-gradinarit-gradinarit-jardiniere": [
+    "shard-1881.json"
+  ],
+  "aparate-de-curatat-cu-abur": [
+    "shard-1883.json"
+  ],
+  "birouri-gaming": [
+    "shard-1885.json"
+  ],
+  "loc-de-joaca-copii": [
+    "shard-1887.json"
+  ],
+  "sosete": [
+    "shard-1890.json"
+  ],
+  "sosete-cs": [
+    "shard-1889.json"
+  ],
+  "ustensile-gatit": [
+    "shard-1892.json"
+  ],
+  "mobila-si-decoratiuni-mobila-baie-oglinzi-de-baie": [
+    "shard-1894.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-oglinzi-oglinzi-de-perete": [
+    "shard-1896.json"
+  ],
+  "ups-uri": [
+    "shard-1898.json"
+  ],
+  "aparate-de-tuns-si-styling-facial": [
+    "shard-1900.json"
+  ],
+  "statii-de-calcat": [
+    "shard-1902.json"
+  ],
+  "slabire-si-detoxifiere": [
+    "shard-1904.json"
+  ],
+  "mama-si-copilul": [
+    "shard-1906.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-bancute-hol-pufuri-si-tabureti": [
+    "shard-1908.json"
+  ],
+  "tavi": [
+    "shard-1910.json"
+  ],
+  "aspiratoare-de-mana": [
+    "shard-1911.json"
+  ],
+  "aspiratoare-de-mana-portabile": [
+    "shard-1912.json"
+  ],
+  "atelier": [
+    "shard-1914.json"
+  ],
+  "baterii-si-acumulatori": [
+    "shard-1916.json"
+  ],
+  "remedii-de-uz-zilnic": [
+    "shard-1918.json"
+  ],
+  "maternitate-si-lauzie": [
+    "shard-1920.json"
+  ],
+  "toate-tipurile-de-ten": [
+    "shard-1922.json"
+  ],
+  "tricouri-puma-barbat": [
+    "shard-1924.json"
+  ],
+  "tricouri-puma-barbat-cs": [
+    "shard-1925.json"
+  ],
+  "saci-de-dormit": [
+    "shard-1927.json"
+  ],
+  "surse": [
+    "shard-1929.json"
+  ],
+  "pentru-birou-scaune-de-birou-scaune-pentru-birou-cu-masaj": [
+    "shard-1931.json"
+  ],
+  "mobila-si-decoratiuni-mobila-baie-masca-pentru-chiuveta-de-baie": [
+    "shard-1933.json"
+  ],
+  "pentru-copii-vehicule-pentru-copii-trotinete": [
+    "shard-1935.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-canapele-canapele-cu-2-locuri": [
+    "shard-1937.json"
+  ],
+  "masini-de-tocat": [
+    "shard-1939.json"
+  ],
+  "lumini-ambientale": [
+    "shard-1941.json"
+  ],
+  "periute-de-dinti-clasice": [
+    "shard-1943.json"
+  ],
+  "hard-disk-uri-externe": [
+    "shard-1945.json"
+  ],
+  "pentru-animale-custi-de-exterior-cotete-pentru-pasari": [
+    "shard-1947.json"
+  ],
+  "mobila-si-decoratiuni-usi-interior-pereti-despartitori-si-paravane": [
+    "shard-1949.json"
+  ],
+  "mobilier-exterior-si-gradinarit-leagane-banci-si-sezlonguri-sezlonguri-pliabile": [
+    "shard-1951.json"
+  ],
+  "roboti-bucatarie": [
+    "shard-1953.json"
+  ],
+  "compresor-aer": [
+    "shard-1955.json"
+  ],
+  "piese-barca-gokart": [
+    "shard-1957.json"
+  ],
+  "tommy-hilfiger-barbat": [
+    "shard-1959.json"
+  ],
+  "tommy-hilfiger-barbat-cs": [
+    "shard-1960.json"
+  ],
+  "aparatoare-patut": [
+    "shard-1962.json"
+  ],
+  "coolere-procesor": [
+    "shard-1964.json"
+  ],
+  "pentru-birou-scaune-de-birou-scaune-operationale": [
+    "shard-1966.json"
+  ],
+  "sisteme-etichetare": [
+    "shard-1968.json"
+  ],
+  "cabluri-imprimante": [
+    "shard-1970.json"
+  ],
+  "irigatoare-bucale-si-accesorii-pentru-dusul-bucal": [
+    "shard-1972.json"
+  ],
+  "masina-de-tuns-iarba": [
+    "shard-1974.json"
+  ],
+  "benzi-si-produse-pentru-albirea-dintilor": [
+    "shard-1976.json"
+  ],
+  "periute-de-dinti": [
+    "shard-1978.json"
+  ],
+  "lampi-de-veghe": [
+    "shard-1980.json"
+  ],
+  "fierbatoare": [
+    "shard-1982.json"
+  ],
+  "accesorii-intrerupatoare-si-prize": [
+    "shard-1984.json"
+  ],
+  "produse-cu-protectie-solara": [
+    "shard-1986.json"
+  ],
+  "panouri-solare-plane": [
+    "shard-1988.json"
+  ],
+  "cadite-si-suporturi-cadite": [
+    "shard-1990.json"
+  ],
+  "prize-prelungitoare": [
+    "shard-1992.json"
+  ],
+  "mobilier-exterior-si-gradinarit-camping-si-gratare-mese-si-scaune-de-camping": [
+    "shard-1994.json"
+  ],
+  "piureuri-si-cereale": [
+    "shard-1996.json"
+  ],
+  "centre-de-activitati": [
+    "shard-1998.json"
+  ],
+  "lenjerii-patut-120x60": [
+    "shard-2000.json"
+  ],
+  "cabluri-adaptoare": [
+    "shard-2002.json"
+  ],
+  "mobilitate-urbana": [
+    "shard-2004.json"
+  ],
+  "pentru-copii-jucarii-balansoare": [
+    "shard-2006.json"
+  ],
+  "monitoare-refurbished": [
+    "shard-2008.json"
+  ],
+  "difuzoare-auto-dedicate": [
+    "shard-2010.json"
+  ],
+  "role": [
+    "shard-2012.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-seturi-de-masa-si-scaune-seturi-de-masa-s": [
+    "shard-2014.json"
+  ],
+  "termoseminee-pe-lemn": [
+    "shard-2016.json"
+  ],
+  "termometre": [
+    "shard-2018.json"
+  ],
+  "mobilier-exterior-si-gradinarit-bricolaj-cutii-scule": [
+    "shard-2020.json"
+  ],
+  "sport-si-hobby-transport-si-biciclete-accesorii-biciclete-auto": [
+    "shard-2022.json"
+  ],
+  "motocositoare": [
+    "shard-2024.json"
+  ],
+  "unelte-constructii": [
+    "shard-2026.json"
+  ],
+  "sigurante-si-socluri-sigurante": [
+    "shard-2028.json"
+  ],
+  "pescuit-la-stationar-indicatori": [
+    "shard-2030.json"
+  ],
+  "imprimante-laser-alb-negru": [
+    "shard-2032.json"
+  ],
+  "mobilier-copii": [
+    "shard-2034.json"
+  ],
+  "mobila-si-decoratiuni-mobila-dormitor-masute-de-toaleta": [
+    "shard-2036.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-bancute-hol": [
+    "shard-2038.json"
+  ],
+  "pompe-de-sani": [
+    "shard-2040.json"
+  ],
+  "scannere-coduri-de-bare": [
+    "shard-2042.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-console": [
+    "shard-2044.json"
+  ],
+  "articole-curatenie": [
+    "shard-2046.json"
+  ],
+  "umidificatoare": [
+    "shard-2048.json"
+  ],
+  "sepci": [
+    "shard-2050.json"
+  ],
+  "sepci-cs": [
+    "shard-2051.json"
+  ],
+  "sepci-noutati-mss": [
+    "shard-2052.json"
+  ],
+  "sport-si-hobby-aparate-de-antrenament-banci-multifunctionale": [
+    "shard-2054.json"
+  ],
+  "mobilier-exterior-si-gradinarit-gradinarit-unelte-pentru-gradinarit": [
+    "shard-2056.json"
+  ],
+  "olite": [
+    "shard-2058.json"
+  ],
+  "multimedia": [
+    "shard-2060.json"
+  ],
+  "feed-favi": [
+    "shard-2062.json"
+  ],
+  "premergatoare": [
+    "shard-2064.json"
+  ],
+  "multicooker": [
+    "shard-2066.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-cosuri-de-gunoi": [
+    "shard-2068.json"
+  ],
+  "mobila-si-decoratiuni-mobila-dormitor-dulapuri": [
+    "shard-2070.json"
+  ],
+  "aparate-pentru-desert": [
+    "shard-2072.json"
+  ],
+  "curatare-piele-uscata": [
+    "shard-2074.json"
+  ],
+  "tricouri-puma-dama": [
+    "shard-2077.json"
+  ],
+  "tricouri-puma-dama-cs": [
+    "shard-2076.json"
+  ],
+  "sisteme-si-paturici-de-infasat": [
+    "shard-2079.json"
+  ],
+  "biberoane": [
+    "shard-2081.json"
+  ],
+  "memorii-notebook": [
+    "shard-2083.json"
+  ],
+  "mobilier-exterior-si-gradinarit-corturi-si-umbrele-copertine-retractabile": [
+    "shard-2085.json"
+  ],
+  "hiperpigmentare": [
+    "shard-2087.json"
+  ],
+  "hepatoprotectoare-si-hepatoregeneratoare": [
+    "shard-2089.json"
+  ],
+  "sorturi-puma-barbat": [
+    "shard-2091.json"
+  ],
+  "sorturi-puma-barbat-sorturi-de-baie-puma-barbat": [
+    "shard-2092.json"
+  ],
+  "scutece-bebelusi": [
+    "shard-2094.json"
+  ],
+  "prajitoare-de-paine": [
+    "shard-2096.json"
+  ],
+  "pentru-animale-accesorii-de-interior-pentru-animale-culcusuri-pentru-pisici": [
+    "shard-2098.json"
+  ],
+  "camere-video": [
+    "shard-2100.json"
+  ],
+  "cratite": [
+    "shard-2102.json"
+  ],
+  "barebone": [
+    "shard-2104.json"
+  ],
+  "ingrijire-corp": [
+    "shard-2106.json"
+  ],
+  "bluze-nike-dama": [
+    "shard-2108.json"
+  ],
+  "bluze-nike-dama-cs": [
+    "shard-2109.json"
+  ],
+  "calvin-klein-barbat": [
+    "shard-2111.json"
+  ],
+  "calvin-klein-barbat-cs": [
+    "shard-2112.json"
+  ],
+  "uscatoare-rufe": [
+    "shard-2114.json"
+  ],
+  "divan": [
+    "shard-2115.json"
+  ],
+  "divan-paturi-o-persoana": [
+    "shard-2116.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-fotolii-fotolii-extensibile": [
+    "shard-2118.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-etajere": [
+    "shard-2120.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-scaune-scaune-din-catifea": [
+    "shard-2122.json"
+  ],
+  "scannere": [
+    "shard-2124.json"
+  ],
+  "fierastrau-pendular": [
+    "shard-2126.json"
+  ],
+  "perii-rotative-electrice-si-perii-clasice-de-par": [
+    "shard-2128.json"
+  ],
+  "nebulizatoare": [
+    "shard-2129.json"
+  ],
+  "nebulizatoare-inhalatoare": [
+    "shard-2130.json"
+  ],
+  "cutite-si-bricege": [
+    "shard-2132.json"
+  ],
+  "produse-ingrijire-aparate-si-proteze-dentare": [
+    "shard-2134.json"
+  ],
+  "femei-balerini": [
+    "shard-2136.json"
+  ],
+  "calorifere": [
+    "shard-2138.json"
+  ],
+  "uscatoare-par": [
+    "shard-2140.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-mese-mese-pliabile": [
+    "shard-2142.json"
+  ],
+  "mobila-si-decoratiuni-climatizare-si-sisteme-de-incalzire-seminee-electrice": [
+    "shard-2144.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-fotolii-fotolii-din-catifea": [
+    "shard-2146.json"
+  ],
+  "prize-inteligente": [
+    "shard-2148.json"
+  ],
+  "pescuit-la-stationar-mincioguri-stationar": [
+    "shard-2150.json"
+  ],
+  "aromaterapie": [
+    "shard-2152.json"
+  ],
+  "pantaloni-nike-barbat": [
+    "shard-2154.json"
+  ],
+  "pantaloni-nike-barbat-cs": [
+    "shard-2155.json"
+  ],
+  "tricouri-nike-dama": [
+    "shard-2158.json"
+  ],
+  "tricouri-nike-dama-cs": [
+    "shard-2157.json"
+  ],
+  "cosulete-bebe": [
+    "shard-2160.json"
+  ],
+  "fierastraie-cu-lant": [
+    "shard-2162.json"
+  ],
+  "extendere-wi-fi": [
+    "shard-2164.json"
+  ],
+  "rasnite": [
+    "shard-2166.json"
+  ],
+  "service-trotinete-electrice": [
+    "shard-2168.json"
+  ],
+  "aparate-de-sudura-si-invertoare-profesionale": [
+    "shard-2170.json"
+  ],
+  "ghiozdane": [
+    "shard-2173.json"
+  ],
+  "ghiozdane-cs": [
+    "shard-2172.json"
+  ],
+  "biciclete-fara-pedale": [
+    "shard-2175.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-fotolii-fotolii-cu-suport-pentru-picioare": [
+    "shard-2177.json"
+  ],
+  "detergenti-universali-si-solutii-de-curatat": [
+    "shard-2179.json"
+  ],
+  "accesorii-mixere-si-roboti": [
+    "shard-2181.json"
+  ],
+  "enzime-digestive": [
+    "shard-2183.json"
+  ],
+  "tratamente-ten-acneic": [
+    "shard-2185.json"
+  ],
+  "orteze-genunchi": [
+    "shard-2187.json"
+  ],
+  "carucioare-3-in-1": [
+    "shard-2189.json"
+  ],
+  "aparate-de-gatit-cu-aburi": [
+    "shard-2191.json"
+  ],
+  "pentru-copii-jocuri-in-aer-liber-si-sport-leagane-pentru-copii": [
+    "shard-2193.json"
+  ],
+  "mobila-si-decoratiuni-mobila-dormitor-paturi": [
+    "shard-2195.json"
+  ],
+  "mobilier-exterior-si-gradinarit-corturi-si-umbrele-corturi-evenimente": [
+    "shard-2197.json"
+  ],
+  "accesorii-ebook": [
+    "shard-2199.json"
+  ],
+  "procesoare-server": [
+    "shard-2201.json"
+  ],
+  "marine-audio": [
+    "shard-2203.json"
+  ],
+  "barbati-curele": [
+    "shard-2205.json"
+  ],
+  "femei-papuci": [
+    "shard-2207.json"
+  ],
+  "accesorii-masa": [
+    "shard-2209.json"
+  ],
+  "gel-de-dus-si-lotiuni-de-corp-copii": [
+    "shard-2211.json"
+  ],
+  "sport-si-hobby-aparate-de-antrenament-biciclete-fitness": [
+    "shard-2213.json"
+  ],
+  "pentru-copii-jocuri-in-aer-liber-si-sport-tobogane": [
+    "shard-2215.json"
+  ],
+  "accesorii-tratare-aer": [
+    "shard-2217.json"
+  ],
+  "ultrabook": [
+    "shard-2219.json"
+  ],
+  "curatare-ten-acneic": [
+    "shard-2221.json"
+  ],
+  "pantaloni-nike-dama": [
+    "shard-2223.json"
+  ],
+  "pantaloni-nike-dama-cs": [
+    "shard-2224.json"
+  ],
+  "detergent-vase": [
+    "shard-2226.json"
+  ],
+  "pentru-birou-mobilier-si-accesorii-de-birou-panouri-si-ecrane": [
+    "shard-2228.json"
+  ],
+  "rezerve-aparat-de-ras": [
+    "shard-2230.json"
+  ],
+  "tablete-grafice": [
+    "shard-2232.json"
+  ],
+  "dozatoare-apa": [
+    "shard-2234.json"
+  ],
+  "baieti-pantofi-sport": [
+    "shard-2236.json"
+  ],
+  "o-r-l": [
+    "shard-2238.json"
+  ],
+  "consumabile": [
+    "shard-2240.json"
+  ],
+  "tricouri-ea7-dama": [
+    "shard-2242.json"
+  ],
+  "tricouri-ea7-dama-cs": [
+    "shard-2243.json"
+  ],
+  "aparate-pentru-barbierit": [
+    "shard-2245.json"
+  ],
+  "tensiometre": [
+    "shard-2247.json"
+  ],
+  "mobilier-de-gradina": [
+    "shard-2249.json"
+  ],
+  "mobilier-exterior-si-gradinarit-mobilier-pentru-gradina-scaune-de-gradina": [
+    "shard-2251.json"
+  ],
+  "consumabile-sanitare": [
+    "shard-2253.json"
+  ],
+  "fetite-pantofi-sport": [
+    "shard-2255.json"
+  ],
+  "matreata": [
+    "shard-2257.json"
+  ],
+  "antioxidanti": [
+    "shard-2259.json"
+  ],
+  "lapte-praf": [
+    "shard-2261.json"
+  ],
+  "orteze-mana-si-incheietura": [
+    "shard-2263.json"
+  ],
+  "pantaloni-puma-barbat": [
+    "shard-2265.json"
+  ],
+  "pantaloni-puma-barbat-cs": [
+    "shard-2266.json"
+  ],
+  "triciclete-copii": [
+    "shard-2268.json"
+  ],
+  "jucarii-educative": [
+    "shard-2270.json"
+  ],
+  "stabilizatoare-de-tensiune": [
+    "shard-2272.json"
+  ],
+  "scaune-auto": [
+    "shard-2274.json"
+  ],
+  "lego-creator": [
+    "shard-2276.json"
+  ],
+  "creme-de-fata": [
+    "shard-2278.json"
+  ],
+  "sistemul-hormonal": [
+    "shard-2280.json"
+  ],
+  "balsam-de-rufe": [
+    "shard-2282.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-masute-de-cafea-seturi-de-masute-de-cafea": [
+    "shard-2284.json"
+  ],
+  "mobilier-exterior-si-gradinarit-mobilier-pentru-gradina-iluminat-exterior": [
+    "shard-2286.json"
+  ],
+  "aparate-de-curatat-geamuri": [
+    "shard-2288.json"
+  ],
+  "gratare-gradina": [
+    "shard-2290.json"
+  ],
+  "antivirusi": [
+    "shard-2292.json"
+  ],
+  "tratamente-ingrijire-corp": [
+    "shard-2294.json"
+  ],
+  "prebiotice-si-probiotice-copii": [
+    "shard-2296.json"
+  ],
+  "accesorii-patuturi": [
+    "shard-2298.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-mese": [
+    "shard-2300.json"
+  ],
+  "capcane-antirozatoare-si-insecte": [
+    "shard-2302.json"
+  ],
+  "accesorii-carcase": [
+    "shard-2304.json"
+  ],
+  "produse-impotriva-insectelor": [
+    "shard-2306.json"
+  ],
+  "gratare-de-masa": [
+    "shard-2308.json"
+  ],
+  "pentru-birou-birouri-birouri-pe-colt": [
+    "shard-2310.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-canapele": [
+    "shard-2312.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-fotolii-fotolii-leagan": [
+    "shard-2314.json"
+  ],
+  "mobila-si-decoratiuni-mobila-baie-cosuri-de-rufe": [
+    "shard-2316.json"
+  ],
+  "scule-dulgherie": [
+    "shard-2318.json"
+  ],
+  "parfumuri-si-seturi-cadou": [
+    "shard-2320.json"
+  ],
+  "baita-si-accesorii": [
+    "shard-2322.json"
+  ],
+  "mese-de-calcat": [
+    "shard-2324.json"
+  ],
+  "pentru-copii-jocuri-in-aer-liber-si-sport-fotbal-si-basket": [
+    "shard-2326.json"
+  ],
+  "femei-coliere": [
+    "shard-2328.json"
+  ],
+  "perne-pentru-bebe": [
+    "shard-2330.json"
+  ],
+  "hard-disk-uri": [
+    "shard-2332.json"
+  ],
+  "jocuri-pentru-console": [
+    "shard-2334.json"
+  ],
+  "articole-sanatate-ingrijire": [
+    "shard-2336.json"
+  ],
+  "pentru-animale-accesorii-de-interior-pentru-animale-scari-pentru-caini": [
+    "shard-2338.json"
+  ],
+  "fierastrau-sabie": [
+    "shard-2340.json"
+  ],
+  "digital-video-recorder-dvr": [
+    "shard-2342.json"
+  ],
+  "table-interactive": [
+    "shard-2344.json"
+  ],
+  "sampon-de-par": [
+    "shard-2346.json"
+  ],
+  "fetite-ghete": [
+    "shard-2348.json"
+  ],
+  "femei-bocanci": [
+    "shard-2350.json"
+  ],
+  "climatizare": [
+    "shard-2352.json"
+  ],
+  "pantaloni-ea7-barbat": [
+    "shard-2354.json"
+  ],
+  "pantaloni-ea7-barbat-cs": [
+    "shard-2355.json"
+  ],
+  "carucioare-4-in-1": [
+    "shard-2357.json"
+  ],
+  "mobilier-exterior-si-gradinarit-leagane-banci-si-sezlonguri-banci-de-gradina": [
+    "shard-2359.json"
+  ],
+  "sport-si-hobby-sporturi-interioare-si-in-aer-liber-saci-de-box": [
+    "shard-2361.json"
+  ],
+  "accesorii-ventilatoare": [
+    "shard-2363.json"
+  ],
+  "volane-pc-pentru-gaming-cu-pedale-si-fara": [
+    "shard-2365.json"
+  ],
+  "femei-sandale": [
+    "shard-2367.json"
+  ],
+  "protectie-solara-pentru-fata": [
+    "shard-2369.json"
+  ],
+  "skechers-dama": [
+    "shard-2371.json"
+  ],
+  "skechers-dama-cs": [
+    "shard-2372.json"
+  ],
+  "tricouri-nike-copii": [
+    "shard-2375.json"
+  ],
+  "tricouri-nike-copii-cs": [
+    "shard-2374.json"
+  ],
+  "tricouri-ea7-barbat": [
+    "shard-2377.json"
+  ],
+  "tricouri-ea7-barbat-cs": [
+    "shard-2378.json"
+  ],
+  "genti-plimbare": [
+    "shard-2380.json"
+  ],
+  "console": [
+    "shard-2382.json"
+  ],
+  "craciun": [
+    "shard-2384.json"
+  ],
+  "mobila-si-decoratiuni-climatizare-si-sisteme-de-incalzire-suport-lemne": [
+    "shard-2386.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-mese-mese-de-bar": [
+    "shard-2388.json"
+  ],
+  "pentru-animale-accesorii-de-interior-pentru-animale-boluri-pentru-animale": [
+    "shard-2390.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-mese-mese-de-pranz": [
+    "shard-2392.json"
+  ],
+  "diabet": [
+    "shard-2394.json"
+  ],
+  "pantaloni-nike-copii": [
+    "shard-2396.json"
+  ],
+  "pantaloni-nike-copii-cs": [
+    "shard-2397.json"
+  ],
+  "aspiratoare-suflante-si-tocatoare": [
+    "shard-2399.json"
+  ],
+  "panouri-fotovoltaice": [
+    "shard-2401.json"
+  ],
+  "jucarii-dentitie": [
+    "shard-2403.json"
+  ],
+  "placi-de-par": [
+    "shard-2405.json"
+  ],
+  "cuptoare-cu-microunde-incorporabile": [
+    "shard-2407.json"
+  ],
+  "slefuitoare": [
+    "shard-2409.json"
+  ],
+  "cantare-electrice": [
+    "shard-2410.json"
+  ],
+  "cantare-electrice-corporale": [
+    "shard-2411.json"
+  ],
+  "roboti-de-bucatarie": [
+    "shard-2413.json"
+  ],
+  "cani-filtre-si-sisteme-filtrante": [
+    "shard-2415.json"
+  ],
+  "bluze-puma-barbat": [
+    "shard-2417.json"
+  ],
+  "mobila-baie": [
+    "shard-2419.json"
+  ],
+  "pentru-copii-vehicule-pentru-copii-triciclete": [
+    "shard-2421.json"
+  ],
+  "mobila-si-decoratiuni-mobila-dormitor-noptiere": [
+    "shard-2423.json"
+  ],
+  "calculator-de-birou": [
+    "shard-2425.json"
+  ],
+  "unitati-optice": [
+    "shard-2427.json"
+  ],
+  "antene": [
+    "shard-2429.json"
+  ],
+  "statii-incarcare-electrice": [
+    "shard-2431.json"
+  ],
+  "accesorii-animale-de-companie": [
+    "shard-2433.json"
+  ],
+  "gustari": [
+    "shard-2435.json"
+  ],
+  "ochi": [
+    "shard-2437.json"
+  ],
+  "cosmetice-bio": [
+    "shard-2439.json"
+  ],
+  "bluze-nike-barbat": [
+    "shard-2441.json"
+  ],
+  "bluze-nike-barbat-cs": [
+    "shard-2442.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-scaune": [
+    "shard-2444.json"
+  ],
+  "mobila-si-decoratiuni-corpuri-de-iluminat-aplice-perete": [
+    "shard-2446.json"
+  ],
+  "microfoane": [
+    "shard-2448.json"
+  ],
+  "biciclete-electrice": [
+    "shard-2450.json"
+  ],
+  "piscine-exterioare": [
+    "shard-2452.json"
+  ],
+  "splitter-switch-multimedia": [
+    "shard-2454.json"
+  ],
+  "accesorii-masini-de-spalat-rufe-si-uscatoare": [
+    "shard-2456.json"
+  ],
+  "servere": [
+    "shard-2458.json"
+  ],
+  "scutece-adulti": [
+    "shard-2460.json"
+  ],
+  "ingrijire-picioare": [
+    "shard-2462.json"
+  ],
+  "cos-de-fum-din-inox-si-accesorii": [
+    "shard-2464.json"
+  ],
+  "mobila-si-decoratiuni-climatizare-si-sisteme-de-incalzire-bioseminee": [
+    "shard-2466.json"
+  ],
+  "mobilier-exterior-si-gradinarit-gradinarit-lazi-de-depozitare": [
+    "shard-2468.json"
+  ],
+  "pentru-copii-jucarii-bucatarii-pentru-copii": [
+    "shard-2470.json"
+  ],
+  "pentru-copii-vehicule-pentru-copii-atv-copii": [
+    "shard-2472.json"
+  ],
+  "mobilier-exterior-si-gradinarit-corturi-si-umbrele-carporturi-auto": [
+    "shard-2474.json"
+  ],
+  "mobila-si-decoratiuni-obiecte-decorative-ceasuri-de-perete": [
+    "shard-2476.json"
+  ],
+  "alte-accesorii-tablete": [
+    "shard-2478.json"
+  ],
+  "mobilier-terasa": [
+    "shard-2480.json"
+  ],
+  "accesorii-aparate-de-sudura": [
+    "shard-2482.json"
+  ],
+  "igiena-orala-la-copii": [
+    "shard-2484.json"
+  ],
+  "produse-de-curatare-copii": [
+    "shard-2486.json"
+  ],
+  "infectii-urinare": [
+    "shard-2488.json"
+  ],
+  "tricouri-tommy-hilfiger-dama": [
+    "shard-2491.json"
+  ],
+  "tricouri-tommy-hilfiger-dama-cs": [
+    "shard-2490.json"
+  ],
+  "femei-portofele": [
+    "shard-2493.json"
+  ],
+  "seturi-igiena": [
+    "shard-2495.json"
+  ],
+  "masinute-copii": [
+    "shard-2497.json"
+  ],
+  "standuri-coolere": [
+    "shard-2499.json"
+  ],
+  "coloane-si-seturi-de-dus": [
+    "shard-2501.json"
+  ],
+  "mobilier-exterior-si-gradinarit-gradinarit-gard-artificial": [
+    "shard-2503.json"
+  ],
+  "incarcatoare-foto": [
+    "shard-2505.json"
+  ],
+  "intrerupatoare-cu-touch": [
+    "shard-2507.json"
+  ],
+  "ebook-readere": [
+    "shard-2509.json"
+  ],
+  "all-in-one-refurbished": [
+    "shard-2511.json"
+  ],
+  "femei-ciocate": [
+    "shard-2513.json"
+  ],
+  "pescuit-la-copca": [
+    "shard-2515.json"
+  ],
+  "barci-accesorii-motoare-sisteme-prindere": [
+    "shard-2516.json"
+  ],
+  "barci-accesorii-motoare-sisteme-prindere-suporturi-ram-mounts": [
+    "shard-2517.json"
+  ],
+  "antiperspirante": [
+    "shard-2519.json"
+  ],
+  "ea7-dama": [
+    "shard-2521.json"
+  ],
+  "ea7-dama-cs": [
+    "shard-2522.json"
+  ],
+  "pantaloni-puma-dama": [
+    "shard-2524.json"
+  ],
+  "pantaloni-puma-dama-cs": [
+    "shard-2525.json"
+  ],
+  "tricouri-tommy-hilfiger-barbat": [
+    "shard-2528.json"
+  ],
+  "tricouri-tommy-hilfiger-barbat-cs": [
+    "shard-2527.json"
+  ],
+  "paturici-bebe": [
+    "shard-2530.json"
+  ],
+  "seturi-pentru-camera-copiilor": [
+    "shard-2532.json"
+  ],
+  "feed-google-ads": [
+    "shard-2534.json"
+  ],
+  "mobila-si-decoratiuni-articole-pentru-varstnici-si-recuperare-scaune-de-baie": [
+    "shard-2536.json"
+  ],
+  "pentru-birou-scaune-de-birou-scaune-gaming": [
+    "shard-2538.json"
+  ],
+  "mobilier-exterior-si-gradinarit-gradinarit-carucioare-de-transport": [
+    "shard-2540.json"
+  ],
+  "suflanta-aer-cald": [
+    "shard-2542.json"
+  ],
+  "lego-super-heroes": [
+    "shard-2544.json"
+  ],
+  "car-kit": [
+    "shard-2546.json"
+  ],
+  "laptopuri-2-in-1": [
+    "shard-2548.json"
+  ],
+  "curatare-ten-sensibil": [
+    "shard-2550.json"
+  ],
+  "machiaj": [
+    "shard-2552.json"
+  ],
+  "orteze-degete": [
+    "shard-2554.json"
+  ],
+  "trotinete-copii": [
+    "shard-2556.json"
+  ],
+  "carduri-de-memorie": [
+    "shard-2558.json"
+  ],
+  "coltare-standard": [
+    "shard-2560.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-bancute-hol-banchete": [
+    "shard-2562.json"
+  ],
+  "pentru-animale-jucarii-pentru-animale-set-antrenament-pentru-caini": [
+    "shard-2564.json"
+  ],
+  "sport-si-hobby-sporturi-interioare-si-in-aer-liber-basket": [
+    "shard-2566.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-mese-mese-rotunde": [
+    "shard-2568.json"
+  ],
+  "suport-proiectoare": [
+    "shard-2570.json"
+  ],
+  "sporturi-de-vara": [
+    "shard-2572.json"
+  ],
+  "genti-foto": [
+    "shard-2574.json"
+  ],
+  "lego-city": [
+    "shard-2576.json"
+  ],
+  "ata-dentara": [
+    "shard-2578.json"
+  ],
+  "pentru-el": [
+    "shard-2580.json"
+  ],
+  "saci-de-iarna": [
+    "shard-2582.json"
+  ],
+  "truse-de-unelte": [
+    "shard-2584.json"
+  ],
+  "sport-si-hobby-transport-si-biciclete-remorci-pentru-biciclete": [
+    "shard-2586.json"
+  ],
+  "mobila-si-decoratiuni-usi-interior-usi-glisante-si-accesorii": [
+    "shard-2588.json"
+  ],
+  "mobilier-exterior-si-gradinarit-mobilier-pentru-gradina-saltele-si-perne-pentru-": [
+    "shard-2590.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-oglinzi": [
+    "shard-2592.json"
+  ],
+  "mobila-si-decoratiuni-corpuri-de-iluminat-lustre": [
+    "shard-2594.json"
+  ],
+  "colectia-sportswear": [
+    "shard-2596.json"
+  ],
+  "baieti-ghete": [
+    "shard-2598.json"
+  ],
+  "regenerare-si-cicatrizare": [
+    "shard-2600.json"
+  ],
+  "protectie-solara-pentru-copii": [
+    "shard-2602.json"
+  ],
+  "geci-nike-barbat": [
+    "shard-2604.json"
+  ],
+  "geci-nike-barbat-cs": [
+    "shard-2605.json"
+  ],
+  "tricouri-calvin-klein-barbat": [
+    "shard-2607.json"
+  ],
+  "tricouri-calvin-klein-barbat-cs": [
+    "shard-2608.json"
+  ],
+  "tarcuri": [
+    "shard-2610.json"
+  ],
+  "mobila-si-decoratiuni-mobila-baie-carucioare-pentru-curatenie": [
+    "shard-2612.json"
+  ],
+  "mobilier-exterior-si-gradinarit-corturi-si-umbrele-suport-pentru-umbrela": [
+    "shard-2614.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-masute-de-cafea-masute-de-cafea-din-metal": [
+    "shard-2616.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-canapele-canapele-cu-3-locuri": [
+    "shard-2618.json"
+  ],
+  "pentru-copii-mobila-copii-paturi-pentru-copii": [
+    "shard-2620.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-scaune-scaune-din-tesatura": [
+    "shard-2622.json"
+  ],
+  "mobilier-exterior-si-gradinarit-leagane-banci-si-sezlonguri-hamace": [
+    "shard-2624.json"
+  ],
+  "trepiede-foto": [
+    "shard-2626.json"
+  ],
+  "memorii-server": [
+    "shard-2628.json"
+  ],
+  "geluri-de-dus": [
+    "shard-2630.json"
+  ],
+  "femei-inele": [
+    "shard-2632.json"
+  ],
+  "sorturi-ea7-barbat": [
+    "shard-2634.json"
+  ],
+  "sorturi-ea7-barbat-sorturi-de-baie-ea7-barbat": [
+    "shard-2635.json"
+  ],
+  "tricouri": [
+    "shard-2636.json"
+  ],
+  "tricouri-noutati-promo-mss": [
+    "shard-2637.json"
+  ],
+  "tricouri-noutati-mss": [
+    "shard-2638.json"
+  ],
+  "tricouri-noutati": [
+    "shard-2639.json"
+  ],
+  "vase-expansiune": [
+    "shard-2641.json"
+  ],
+  "perne-pentru-alaptat": [
+    "shard-2643.json"
+  ],
+  "camasa-de-noapte-gravide": [
+    "shard-2645.json"
+  ],
+  "patuturi-din-lemn-cu-laterala-culisanta": [
+    "shard-2647.json"
+  ],
+  "nas": [
+    "shard-2649.json"
+  ],
+  "aparate-de-curatat-scame": [
+    "shard-2651.json"
+  ],
+  "aparate-foto-compacte": [
+    "shard-2653.json"
+  ],
+  "jucarii-jocuri": [
+    "shard-2655.json"
+  ],
+  "lazi-frigorifice-auto": [
+    "shard-2657.json"
+  ],
+  "best-sellers-secret-sale-rochii": [
+    "shard-2659.json"
+  ],
+  "anemie-adulti": [
+    "shard-2661.json"
+  ],
+  "produse-ingrijire-barbati": [
+    "shard-2663.json"
+  ],
+  "protectie-solara-pentru-corp-adulti": [
+    "shard-2665.json"
+  ],
+  "hanorace-puma-barbat": [
+    "shard-2667.json"
+  ],
+  "hanorace-puma-barbat-cs": [
+    "shard-2668.json"
+  ],
+  "barbati-portofele": [
+    "shard-2670.json"
+  ],
+  "convectoare-electrice": [
+    "shard-2672.json"
+  ],
+  "lenjerie-pentru-gravide-si-proaspete-mamici": [
+    "shard-2674.json"
+  ],
+  "placi-de-retea": [
+    "shard-2676.json"
+  ],
+  "irigatoare-orale": [
+    "shard-2678.json"
+  ],
+  "articole-transport": [
+    "shard-2680.json"
+  ],
+  "unelte-si-articole-gradinarit": [
+    "shard-2682.json"
+  ],
+  "antivirus-pc": [
+    "shard-2684.json"
+  ],
+  "aparate-foto-mirorless": [
+    "shard-2686.json"
+  ],
+  "pentru-birou-mobilier-si-accesorii-de-birou-sevalete": [
+    "shard-2688.json"
+  ],
+  "sport-si-hobby-aparate-de-antrenament-stepper": [
+    "shard-2690.json"
+  ],
+  "obiective": [
+    "shard-2692.json"
+  ],
+  "generator-curent": [
+    "shard-2694.json"
+  ],
+  "unguente": [
+    "shard-2696.json"
+  ],
+  "toate-tipurile-de-par": [
+    "shard-2698.json"
+  ],
+  "prostata": [
+    "shard-2700.json"
+  ],
+  "hanorace-puma-dama": [
+    "shard-2702.json"
+  ],
+  "hanorace-puma-dama-cs": [
+    "shard-2703.json"
+  ],
+  "skechers-copii": [
+    "shard-2705.json"
+  ],
+  "skechers-copii-cs": [
+    "shard-2706.json"
+  ],
+  "accesorii-igiena": [
+    "shard-2708.json"
+  ],
+  "termosuri": [
+    "shard-2710.json"
+  ],
+  "diverse-it": [
+    "shard-2712.json"
+  ],
+  "boxe": [
+    "shard-2714.json"
+  ],
+  "solutii-suprafete-bucatarie": [
+    "shard-2716.json"
+  ],
+  "accesorii-epilatoare-aparate-barbierit": [
+    "shard-2718.json"
+  ],
+  "ssd-uri-externe": [
+    "shard-2720.json"
+  ],
+  "vitrine-pentru-vin-incorporabile": [
+    "shard-2722.json"
+  ],
+  "paturi-si-cuverturi": [
+    "shard-2724.json"
+  ],
+  "perne-electrice": [
+    "shard-2726.json"
+  ],
+  "pentru-birou-mobilier-si-accesorii-de-birou-accesorii-birou": [
+    "shard-2728.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-scaune-scaune-din-piele-ecologica": [
+    "shard-2730.json"
+  ],
+  "alte-accesorii-proiector": [
+    "shard-2732.json"
+  ],
+  "saltele-electrice": [
+    "shard-2734.json"
+  ],
+  "imprimante-laser-color": [
+    "shard-2736.json"
+  ],
+  "accesorii-dozatoare-apa": [
+    "shard-2738.json"
+  ],
+  "lego-star-wars": [
+    "shard-2740.json"
+  ],
+  "deodorante-si-antiperspirante": [
+    "shard-2742.json"
+  ],
+  "pescuit-la-somn-avertizoare": [
+    "shard-2743.json"
+  ],
+  "pescuit-la-somn-avertizoare-indicatori-trasatura-somn": [
+    "shard-2744.json"
+  ],
+  "produse-de-igiena": [
+    "shard-2746.json"
+  ],
+  "tricouri-puma-copii": [
+    "shard-2749.json"
+  ],
+  "tricouri-puma-copii-cs": [
+    "shard-2748.json"
+  ],
+  "pantofi-sport": [
+    "shard-2750.json"
+  ],
+  "pantofi-sport-noutati": [
+    "shard-2751.json"
+  ],
+  "pantofi-sport-noutati-promo-mss": [
+    "shard-2752.json"
+  ],
+  "pantaloni": [
+    "shard-2757.json"
+  ],
+  "pantaloni-noutati-promo-mss": [
+    "shard-2754.json"
+  ],
+  "pantaloni-noutati-mss": [
+    "shard-2755.json"
+  ],
+  "pantaloni-noutati": [
+    "shard-2756.json"
+  ],
+  "accesorii-gravide": [
+    "shard-2759.json"
+  ],
+  "reductoare-wc-si-olite": [
+    "shard-2761.json"
+  ],
+  "mobila-si-decoratiuni": [
+    "shard-2763.json"
+  ],
+  "boxe-pc": [
+    "shard-2765.json"
+  ],
+  "diverse-aparate": [
+    "shard-2767.json"
+  ],
+  "pompe-pentru-san": [
+    "shard-2769.json"
+  ],
+  "accesorii-sanitare": [
+    "shard-2771.json"
+  ],
+  "aparate-de-curatat-multifunctionale": [
+    "shard-2773.json"
+  ],
+  "sport-si-hobby-trambuline-accesorii-pentru-trambuline": [
+    "shard-2775.json"
+  ],
+  "pentru-copii-jocuri-in-aer-liber-si-sport-lazi-de-nisip": [
+    "shard-2777.json"
+  ],
+  "pistoale-de-vopsit-si-trafaleti": [
+    "shard-2779.json"
+  ],
+  "benzi-de-alergat": [
+    "shard-2781.json"
+  ],
+  "monitoare-video-bebelusi": [
+    "shard-2783.json"
+  ],
+  "monociclu-electric": [
+    "shard-2785.json"
+  ],
+  "maini": [
+    "shard-2787.json"
+  ],
+  "fertilitate": [
+    "shard-2789.json"
+  ],
+  "femei-ochelari-de-soare": [
+    "shard-2791.json"
+  ],
+  "incalzitoare-biberoane": [
+    "shard-2793.json"
+  ],
+  "cuptoare-electrice": [
+    "shard-2795.json"
+  ],
+  "scule-multifunctionale": [
+    "shard-2797.json"
+  ],
+  "perii-de-par": [
+    "shard-2799.json"
+  ],
+  "mobila-si-decoratiuni-climatizare-si-sisteme-de-incalzire-masti-calorifer": [
+    "shard-2801.json"
+  ],
+  "mobila-si-decoratiuni-articole-pentru-varstnici-si-recuperare-scaune-cu-rotile": [
+    "shard-2803.json"
+  ],
+  "placi-de-sunet": [
+    "shard-2805.json"
+  ],
+  "deshidratoare-de-alimente": [
+    "shard-2807.json"
+  ],
+  "huse-hard-disk-extern": [
+    "shard-2809.json"
+  ],
+  "accesorii-tablete-grafice": [
+    "shard-2811.json"
+  ],
+  "instalatii-de-craciun": [
+    "shard-2813.json"
+  ],
+  "accesorii-aspiratoare-gradinarit": [
+    "shard-2815.json"
+  ],
+  "uscatoare-de-rufe": [
+    "shard-2817.json"
+  ],
+  "accesorii-motosape-si-motocultoare": [
+    "shard-2819.json"
+  ],
+  "joystick": [
+    "shard-2821.json"
+  ],
+  "teste-de-sarcina-si-ovulatie": [
+    "shard-2823.json"
+  ],
+  "produse-de-hidratare-copii": [
+    "shard-2825.json"
+  ],
+  "nebulizatoare-si-aspiratoare-nazale": [
+    "shard-2827.json"
+  ],
+  "sorturi-nike-barbat": [
+    "shard-2829.json"
+  ],
+  "sorturi-nike-barbat-cs": [
+    "shard-2830.json"
+  ],
+  "ea7-barbat": [
+    "shard-2832.json"
+  ],
+  "ea7-barbat-cs": [
+    "shard-2833.json"
+  ],
+  "cazane-combustibil-solid-cu-gazeificare": [
+    "shard-2835.json"
+  ],
+  "accesorii-si-piese-de-schimb-aparate-aer-conditionat": [
+    "shard-2837.json"
+  ],
+  "baldachine": [
+    "shard-2839.json"
+  ],
+  "masini-de-tocat-carne": [
+    "shard-2841.json"
+  ],
+  "solutie-curatat-podele": [
+    "shard-2843.json"
+  ],
+  "masini-de-tuns-iarba": [
+    "shard-2845.json"
+  ],
+  "congelatoare-incorporabile": [
+    "shard-2847.json"
+  ],
+  "outlet-bucatarii": [
+    "shard-2849.json"
+  ],
+  "sport-si-hobby-aparate-de-antrenament-bara-de-tractiuni": [
+    "shard-2851.json"
+  ],
+  "curatare-faciala-demachiere": [
+    "shard-2853.json"
+  ],
+  "lego-duplo": [
+    "shard-2855.json"
+  ],
+  "tratamente-si-seruri-pentru-ten": [
+    "shard-2857.json"
+  ],
+  "proteze-dentare": [
+    "shard-2859.json"
+  ],
+  "remedii-naturale-pentru-tuse": [
+    "shard-2861.json"
+  ],
+  "bluze-ea7-barbat": [
+    "shard-2863.json"
+  ],
+  "bluze-ea7-barbat-cs": [
+    "shard-2864.json"
+  ],
+  "jucarii-zornaitoare-muzicale": [
+    "shard-2866.json"
+  ],
+  "lenjerie-patuturi": [
+    "shard-2868.json"
+  ],
+  "jucarii-de-baie": [
+    "shard-2870.json"
+  ],
+  "plottere": [
+    "shard-2872.json"
+  ],
+  "sisteme-de-filmare": [
+    "shard-2874.json"
+  ],
+  "mobilier-exterior-si-gradinarit-bricolaj-scari-si-banci-de-lucru": [
+    "shard-2876.json"
+  ],
+  "sport-si-hobby-hobby": [
+    "shard-2878.json"
+  ],
+  "mobilier-exterior-si-gradinarit-corturi-si-umbrele-copertine-policarbonat": [
+    "shard-2880.json"
+  ],
+  "sport-si-hobby-covorase-si-paturi-de-masaj-paturi-de-masaj": [
+    "shard-2882.json"
+  ],
+  "mobila-si-decoratiuni-climatizare-si-sisteme-de-incalzire-aeroterme-si-calorifer": [
+    "shard-2884.json"
+  ],
+  "sport-si-hobby-trambuline-trambuline-de-fitness": [
+    "shard-2886.json"
+  ],
+  "decoratiuni-sarbatori-brad-artificial-de-craciun-brazi-de-craciun-verzi": [
+    "shard-2888.json"
+  ],
+  "sport-si-hobby-sporturi-interioare-si-in-aer-liber-tenis-de-masa": [
+    "shard-2890.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-masute-de-cafea-masute-de-cafea-cu-depozitar": [
+    "shard-2892.json"
+  ],
+  "pick-up-audio": [
+    "shard-2894.json"
+  ],
+  "distrugatoare-de-documente": [
+    "shard-2896.json"
+  ],
+  "corturi-camping": [
+    "shard-2898.json"
+  ],
+  "lego-technic": [
+    "shard-2900.json"
+  ],
+  "sticle-si-bidoane-apa-shakere": [
+    "shard-2902.json"
+  ],
+  "produse-demachiere-si-curatare": [
+    "shard-2904.json"
+  ],
+  "femei-manusi": [
+    "shard-2906.json"
+  ],
+  "buze": [
+    "shard-2908.json"
+  ],
+  "crema-tartinabila-dulceata-si-miere": [
+    "shard-2910.json"
+  ],
+  "bluze-puma-dama": [
+    "shard-2912.json"
+  ],
+  "bluze-puma-dama-cs": [
+    "shard-2913.json"
+  ],
+  "tricouri-calvin-klein-dama": [
+    "shard-2915.json"
+  ],
+  "tricouri-calvin-klein-dama-cs": [
+    "shard-2916.json"
+  ],
+  "caciuli": [
+    "shard-2919.json"
+  ],
+  "caciuli-cs": [
+    "shard-2918.json"
+  ],
+  "jucarii-pentru-patut-si-carucior": [
+    "shard-2921.json"
+  ],
+  "carucioare-2-in-1": [
+    "shard-2923.json"
+  ],
+  "carusele-muzicale": [
+    "shard-2925.json"
+  ],
+  "perne-pentru-gravide-si-alaptat": [
+    "shard-2927.json"
+  ],
+  "hanorace-nike-barbat": [
+    "shard-2929.json"
+  ],
+  "geci-nike-dama": [
+    "shard-2931.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-fotolii-fotolii-din-tesatura": [
+    "shard-2933.json"
+  ],
+  "mobila-si-decoratiuni-climatizare-si-sisteme-de-incalzire-ventilatoare": [
+    "shard-2935.json"
+  ],
+  "placi-compactoare-ciocan-demolator": [
+    "shard-2937.json"
+  ],
+  "aparate-foto-mirrorless": [
+    "shard-2939.json"
+  ],
+  "walkie-talkie": [
+    "shard-2941.json"
+  ],
+  "rindea-electrica": [
+    "shard-2943.json"
+  ],
+  "dezinfectanti": [
+    "shard-2945.json"
+  ],
+  "ingrijire-buze": [
+    "shard-2947.json"
+  ],
+  "pulberi-si-pudre": [
+    "shard-2949.json"
+  ],
+  "saltele-patut-120x60-cm": [
+    "shard-2951.json"
+  ],
+  "vehicule-pentru-copii": [
+    "shard-2953.json"
+  ],
+  "sutiene-alaptat": [
+    "shard-2955.json"
+  ],
+  "trimmer": [
+    "shard-2957.json"
+  ],
+  "imprimante-inkjet": [
+    "shard-2959.json"
+  ],
+  "imprimante-3d": [
+    "shard-2961.json"
+  ],
+  "oferte-canapele-coltare-scaune-si-mese": [
+    "shard-2963.json"
+  ],
+  "pachete-mobila": [
+    "shard-2965.json"
+  ],
+  "mobila-dormitor": [
+    "shard-2967.json"
+  ],
+  "pentru-birou-mobilier-si-accesorii-de-birou-rafturi-depozitare": [
+    "shard-2969.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-oglinzi-oglinzi-cu-depozitare-bijuterii": [
+    "shard-2971.json"
+  ],
+  "mobilier-exterior-si-gradinarit-gradinarit-pardoseli-exterioare": [
+    "shard-2973.json"
+  ],
+  "powerline": [
+    "shard-2975.json"
+  ],
+  "carcase-server": [
+    "shard-2977.json"
+  ],
+  "biciclete-fitness-magnetice-eliptice": [
+    "shard-2979.json"
+  ],
+  "bare-fitness-bare-tractiuni": [
+    "shard-2981.json"
+  ],
+  "sisteme-operare-pc": [
+    "shard-2983.json"
+  ],
+  "tarc-copii": [
+    "shard-2985.json"
+  ],
+  "tablete-epaper": [
+    "shard-2987.json"
+  ],
+  "accesorii-tablete-epaper": [
+    "shard-2989.json"
+  ],
+  "litiere": [
+    "shard-2991.json"
+  ],
+  "smart-ring": [
+    "shard-2993.json"
+  ],
+  "tratamente-scalp": [
+    "shard-2995.json"
+  ],
+  "suplimente-alimentare": [
+    "shard-2997.json"
+  ],
+  "orteze-glezna": [
+    "shard-2999.json"
+  ],
+  "durere-in-gat": [
+    "shard-3001.json"
+  ],
+  "orteze-spate-lombostat-corset": [
+    "shard-3003.json"
+  ],
+  "hanorace-nike-dama": [
+    "shard-3005.json"
+  ],
+  "hanorace-nike-dama-cs": [
+    "shard-3006.json"
+  ],
+  "treninguri-ea7-dama": [
+    "shard-3008.json"
+  ],
+  "treninguri-ea7-dama-cs": [
+    "shard-3009.json"
+  ],
+  "borsete": [
+    "shard-3011.json"
+  ],
+  "borsete-cs": [
+    "shard-3012.json"
+  ],
+  "sobe-si-seminee-pe-lemn": [
+    "shard-3014.json"
+  ],
+  "cos-de-fum-din-otel-si-accesorii": [
+    "shard-3016.json"
+  ],
+  "bariere-protectie-pat": [
+    "shard-3018.json"
+  ],
+  "instrumente-muzicale": [
+    "shard-3020.json"
+  ],
+  "coase-electrice-si-motocoase": [
+    "shard-3022.json"
+  ],
+  "solutii-dezinfectante": [
+    "shard-3024.json"
+  ],
+  "hartie-igienica": [
+    "shard-3026.json"
+  ],
+  "accesorii-irigatoare-orale": [
+    "shard-3028.json"
+  ],
+  "jibbitz": [
+    "shard-3030.json"
+  ],
+  "furnizori": [
+    "shard-3032.json"
+  ],
+  "pentru-animale-transport-pentru-animale-remorci-pentru-bicicleta": [
+    "shard-3034.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-electrocasnice-frigidere-si-congelatoare": [
+    "shard-3036.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-scaune-scaune-din-lemn": [
+    "shard-3038.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-covoare": [
+    "shard-3040.json"
+  ],
+  "epilatoare-ipl": [
+    "shard-3042.json"
+  ],
+  "reportofon": [
+    "shard-3044.json"
+  ],
+  "switch-uri-kvm": [
+    "shard-3046.json"
+  ],
+  "redresoare-si-roboti-de-pornire-auto": [
+    "shard-3048.json"
+  ],
+  "motoburghiu-pamant-accesorii": [
+    "shard-3050.json"
+  ],
+  "creme-si-lotiuni-de-corp-copii": [
+    "shard-3052.json"
+  ],
+  "secret-sale-rochii": [
+    "shard-3054.json"
+  ],
+  "eritem-fesier": [
+    "shard-3056.json"
+  ],
+  "suplimente-pentru-sportivi": [
+    "shard-3058.json"
+  ],
+  "rezervoare-de-acumulare-puffere": [
+    "shard-3060.json"
+  ],
+  "inaltatoare-auto": [
+    "shard-3062.json"
+  ],
+  "obiective-foto-video": [
+    "shard-3064.json"
+  ],
+  "huse-mese-de-calcat": [
+    "shard-3066.json"
+  ],
+  "accesorii-climatizare": [
+    "shard-3068.json"
+  ],
+  "ventilatoare-pc": [
+    "shard-3070.json"
+  ],
+  "prosoape-de-hartie-si-servetele": [
+    "shard-3072.json"
+  ],
+  "adaptoare-power-lan": [
+    "shard-3074.json"
+  ],
+  "ecrane-de-proiectie": [
+    "shard-3076.json"
+  ],
+  "solutii-curatat-pete": [
+    "shard-3078.json"
+  ],
+  "pentru-animale-transport-pentru-animale-genti-de-transport": [
+    "shard-3080.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-masute-de-cafea-masute-de-cafea-standard": [
+    "shard-3082.json"
+  ],
+  "pentru-copii-mobila-copii-mese-de-machiaj-copii": [
+    "shard-3084.json"
+  ],
+  "mobilier-exterior-si-gradinarit-mobilier-pentru-gradina-canapele-de-gradina": [
+    "shard-3086.json"
+  ],
+  "pentru-copii-jocuri-in-aer-liber-si-sport-trambuline-pentru-copii": [
+    "shard-3088.json"
+  ],
+  "mobilier-exterior-si-gradinarit-camping-si-gratare-gratare": [
+    "shard-3090.json"
+  ],
+  "accesorii-hdd": [
+    "shard-3092.json"
+  ],
+  "suport-auto-tablete": [
+    "shard-3094.json"
+  ],
+  "binocluri": [
+    "shard-3096.json"
+  ],
+  "masini-de-facut-paine": [
+    "shard-3098.json"
+  ],
+  "servicii-montaj-folie-silicon": [
+    "shard-3100.json"
+  ],
+  "lego-friends": [
+    "shard-3102.json"
+  ],
+  "electrocasnice": [
+    "shard-3104.json"
+  ],
+  "n": [
+    "shard-3105.json"
+  ],
+  "n-a": [
+    "shard-3106.json"
+  ],
+  "ochelari-de-soare-dama": [
+    "shard-3108.json"
+  ],
+  "siropuri": [
+    "shard-3110.json"
+  ],
+  "varice": [
+    "shard-3112.json"
+  ],
+  "scutece-si-servetele-copii": [
+    "shard-3114.json"
+  ],
+  "probiotice": [
+    "shard-3116.json"
+  ],
+  "neuropatii": [
+    "shard-3118.json"
+  ],
+  "condimente": [
+    "shard-3120.json"
+  ],
+  "treninguri-puma-copii": [
+    "shard-3122.json"
+  ],
+  "treninguri-puma-copii-cs": [
+    "shard-3123.json"
+  ],
+  "skechers-barbat": [
+    "shard-3126.json"
+  ],
+  "skechers-barbat-cs": [
+    "shard-3125.json"
+  ],
+  "pompa-electrica-san": [
+    "shard-3128.json"
+  ],
+  "interfon": [
+    "shard-3129.json"
+  ],
+  "interfon-videofon-bebe": [
+    "shard-3130.json"
+  ],
+  "rasnita-de-cafea": [
+    "shard-3132.json"
+  ],
+  "tocatoare": [
+    "shard-3134.json"
+  ],
+  "echipament-inot": [
+    "shard-3136.json"
+  ],
+  "hanorace-ea7-barbat": [
+    "shard-3138.json"
+  ],
+  "papuci-crocs-copii": [
+    "shard-3140.json"
+  ],
+  "oferte-living": [
+    "shard-3141.json"
+  ],
+  "oferte-living-sufragerii": [
+    "shard-3142.json"
+  ],
+  "mobila-si-decoratiuni-mobila-baie-uscatoare-de-rufe-uscatoare-de-rufe-pliabile": [
+    "shard-3144.json"
+  ],
+  "mobila-si-decoratiuni-mobila-baie-accesorii-pentru-baie": [
+    "shard-3146.json"
+  ],
+  "mobila-si-decoratiuni-mobila-baie-uscatoare-de-rufe-suporturi-de-prosoape": [
+    "shard-3148.json"
+  ],
+  "servicii-mentenanta-pc": [
+    "shard-3150.json"
+  ],
+  "player-multimedia": [
+    "shard-3152.json"
+  ],
+  "prize-cu-rame-din-sticla": [
+    "shard-3154.json"
+  ],
+  "feliatoare-mezeluri": [
+    "shard-3156.json"
+  ],
+  "lego-disney": [
+    "shard-3158.json"
+  ],
+  "lego-icons": [
+    "shard-3160.json"
+  ],
+  "femei-barbati-produse-de-intretinere": [
+    "shard-3162.json"
+  ],
+  "antifoane": [
+    "shard-3164.json"
+  ],
+  "femei-curele": [
+    "shard-3166.json"
+  ],
+  "panouri-solare-cu-tuburi-vidate-nepresurizate": [
+    "shard-3168.json"
+  ],
+  "centrale-mixte-lemn-si-peleti": [
+    "shard-3170.json"
+  ],
+  "plaja-apa-si-nisip": [
+    "shard-3172.json"
+  ],
+  "cantare-bebelusi": [
+    "shard-3174.json"
+  ],
+  "ingrijirea-gradinii": [
+    "shard-3176.json"
+  ],
+  "accesorii-smart-home": [
+    "shard-3178.json"
+  ],
+  "baterii-acumulatori-si-incarcatoare": [
+    "shard-3180.json"
+  ],
+  "hanorace-nike-copii": [
+    "shard-3182.json"
+  ],
+  "mobila-si-decoratiuni-articole-pentru-varstnici-si-recuperare-organizatoare-medi": [
+    "shard-3184.json"
+  ],
+  "mobilier-exterior-si-gradinarit-leagane-banci-si-sezlonguri-huse-de-protectie-pe": [
+    "shard-3186.json"
+  ],
+  "surubelnita-electrica": [
+    "shard-3188.json"
+  ],
+  "accesorii-periute-de-dinti-electrice-si-irigatoare": [
+    "shard-3190.json"
+  ],
+  "rochii-sale": [
+    "shard-3192.json"
+  ],
+  "deodorante": [
+    "shard-3194.json"
+  ],
+  "corsete-si-alte-orteze": [
+    "shard-3196.json"
+  ],
+  "pantaloni-ea7-dama": [
+    "shard-3198.json"
+  ],
+  "pantaloni-ea7-dama-cs": [
+    "shard-3199.json"
+  ],
+  "treninguri-ea7-barbat": [
+    "shard-3202.json"
+  ],
+  "treninguri-ea7-barbat-cs": [
+    "shard-3201.json"
+  ],
+  "pompe-recirculare-instalatii-incalzire-si-apa-calda": [
+    "shard-3204.json"
+  ],
+  "pompe-de-caldura-aer-apa": [
+    "shard-3206.json"
+  ],
+  "pompe-submersibile-puturi-forate": [
+    "shard-3208.json"
+  ],
+  "masinute-si-vehicule-utilitare": [
+    "shard-3210.json"
+  ],
+  "biciclete-cu-pedale": [
+    "shard-3212.json"
+  ],
+  "costume-copii": [
+    "shard-3214.json"
+  ],
+  "aerosoli-aspiratoare-nazale": [
+    "shard-3216.json"
+  ],
+  "papuci-puma-dama": [
+    "shard-3218.json"
+  ],
+  "bluze-nike-copii": [
+    "shard-3220.json"
+  ],
+  "treninguri-puma-barbat": [
+    "shard-3222.json"
+  ],
+  "sandale-skechers-copii": [
+    "shard-3224.json"
+  ],
+  "pentru-animale-transport-pentru-animale-accesorii-pentru-masina": [
+    "shard-3226.json"
+  ],
+  "pentru-copii-mobila-copii-turnuri-de-invatare": [
+    "shard-3228.json"
+  ],
+  "pentru-copii-mobila-copii-fotolii-pentru-copii": [
+    "shard-3230.json"
+  ],
+  "decoratiuni-sarbatori-decoratiuni-de-craciun-decoratiuni-gonflabile": [
+    "shard-3232.json"
+  ],
+  "dezumidificatoare-camera": [
+    "shard-3234.json"
+  ],
+  "oglinzi-machiaj-pensete": [
+    "shard-3236.json"
+  ],
+  "imprimante-jet-cerneala": [
+    "shard-3238.json"
+  ],
+  "termometre-de-bucatarie": [
+    "shard-3240.json"
+  ],
+  "banci-fitness-pentru-exercitii": [
+    "shard-3242.json"
+  ],
+  "acumulatori-panouri-fotovoltaice-solare": [
+    "shard-3244.json"
+  ],
+  "invertoare-panouri-fotovoltaice-solare": [
+    "shard-3246.json"
+  ],
+  "accesorii-panouri-fotovoltaice": [
+    "shard-3248.json"
+  ],
+  "lego-harry-potter": [
+    "shard-3250.json"
+  ],
+  "lego-minecraft": [
+    "shard-3252.json"
+  ],
+  "femei-barbati": [
+    "shard-3254.json"
+  ],
+  "prezervative": [
+    "shard-3256.json"
+  ],
+  "suporturi-si-accesorii-de-baie": [
+    "shard-3258.json"
+  ],
+  "suporturi-ortopedice-si-orteze": [
+    "shard-3260.json"
+  ],
+  "corp": [
+    "shard-3262.json"
+  ],
+  "seminte-si-fructe-uscate": [
+    "shard-3264.json"
+  ],
+  "par-cret": [
+    "shard-3266.json"
+  ],
+  "produse-de-curatare": [
+    "shard-3268.json"
+  ],
+  "colanti-nike-dama": [
+    "shard-3270.json"
+  ],
+  "colanti-nike-dama-cs": [
+    "shard-3271.json"
+  ],
+  "aparate-de-masura": [
+    "shard-3273.json"
+  ],
+  "bratari-fitness": [
+    "shard-3275.json"
+  ],
+  "sterilizatoare-incalzitoare": [
+    "shard-3277.json"
+  ],
+  "bluze-ea7-dama": [
+    "shard-3279.json"
+  ],
+  "sorturi-puma-dama": [
+    "shard-3281.json"
+  ],
+  "oferte-seturi-living": [
+    "shard-3283.json"
+  ],
+  "gadgeturi": [
+    "shard-3285.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-electrocasnice-aparate-de-bucatarie-mici": [
+    "shard-3287.json"
+  ],
+  "mobila-si-decoratiuni-mobila-dormitor-noptiere-seturi-de-noptiere": [
+    "shard-3289.json"
+  ],
+  "sport-si-hobby-sporturi-interioare-si-in-aer-liber-darts": [
+    "shard-3291.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-mese-mese-extensibile": [
+    "shard-3293.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-electrocasnice": [
+    "shard-3295.json"
+  ],
+  "accesorii-smart-tv": [
+    "shard-3297.json"
+  ],
+  "licente-digitale": [
+    "shard-3299.json"
+  ],
+  "barbati-femei-fetite-baieti-produse-de-intretinere": [
+    "shard-3301.json"
+  ],
+  "femei-caciuli": [
+    "shard-3303.json"
+  ],
+  "luciu-si-balsam-de-buze": [
+    "shard-3305.json"
+  ],
+  "vergeturi-si-celulita": [
+    "shard-3307.json"
+  ],
+  "nutritie-speciala": [
+    "shard-3309.json"
+  ],
+  "orteze-cot": [
+    "shard-3311.json"
+  ],
+  "pasta-de-dinti": [
+    "shard-3313.json"
+  ],
+  "tricouri-adidas-barbat": [
+    "shard-3316.json"
+  ],
+  "tricouri-adidas-barbat-cs": [
+    "shard-3315.json"
+  ],
+  "adidas-barbat": [
+    "shard-3319.json"
+  ],
+  "adidas-barbat-cs": [
+    "shard-3318.json"
+  ],
+  "bluze": [
+    "shard-3320.json"
+  ],
+  "bluze-noutati-promo-mss": [
+    "shard-3321.json"
+  ],
+  "bluze-noutati": [
+    "shard-3322.json"
+  ],
+  "bluze-noutati-mss": [
+    "shard-3323.json"
+  ],
+  "prepararea-hranei": [
+    "shard-3325.json"
+  ],
+  "aparate-de-vidat-alimente": [
+    "shard-3327.json"
+  ],
+  "sisteme-iluminare-smart-home": [
+    "shard-3329.json"
+  ],
+  "coltar-santorini": [
+    "shard-3331.json"
+  ],
+  "canapea-santorini": [
+    "shard-3333.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-oglinzi-oglinzi-de-masa": [
+    "shard-3335.json"
+  ],
+  "mobilier-exterior-si-gradinarit-mobilier-pentru-gradina-semineu-exterior": [
+    "shard-3337.json"
+  ],
+  "decoratiuni-sarbatori-brad-artificial-de-craciun-brad-de-craciun-cu-zapada": [
+    "shard-3339.json"
+  ],
+  "mobilier-exterior-si-gradinarit-mobilier-pentru-gradina-covoare-de-exterior": [
+    "shard-3341.json"
+  ],
+  "difuzoare-aroma": [
+    "shard-3343.json"
+  ],
+  "alte-servicii": [
+    "shard-3345.json"
+  ],
+  "servicii-mentenanta-laptop": [
+    "shard-3347.json"
+  ],
+  "ochelari-vr-si-accesorii": [
+    "shard-3349.json"
+  ],
+  "masini-de-facut-paste-accesorii": [
+    "shard-3351.json"
+  ],
+  "service-biciclete": [
+    "shard-3353.json"
+  ],
+  "servere-refurbished": [
+    "shard-3355.json"
+  ],
+  "navigatii-universale": [
+    "shard-3357.json"
+  ],
+  "femei-barbati-fetite-baieti-produse-de-intretinere": [
+    "shard-3359.json"
+  ],
+  "irigatoare-bucale": [
+    "shard-3361.json"
+  ],
+  "articole-igiena-dentara-copii": [
+    "shard-3363.json"
+  ],
+  "teste-rapide": [
+    "shard-3365.json"
+  ],
+  "aminoacizi": [
+    "shard-3367.json"
+  ],
+  "femei-rucsacuri": [
+    "shard-3369.json"
+  ],
+  "panouri-solare-cu-tuburi-vidate-presurizate-si-rezervor-din-inox": [
+    "shard-3371.json"
+  ],
+  "saltele-patuturi": [
+    "shard-3373.json"
+  ],
+  "servetele-bebelusi": [
+    "shard-3375.json"
+  ],
+  "combinezoane-si-costumase": [
+    "shard-3377.json"
+  ],
+  "papusi-si-accesorii": [
+    "shard-3379.json"
+  ],
+  "pompe-hidrofoare": [
+    "shard-3381.json"
+  ],
+  "accesorii-routere": [
+    "shard-3383.json"
+  ],
+  "compresoare": [
+    "shard-3385.json"
+  ],
+  "masini-de-spalat-rufe-incorporabile": [
+    "shard-3387.json"
+  ],
+  "hdd-servere": [
+    "shard-3389.json"
+  ],
+  "amplificatoare": [
+    "shard-3391.json"
+  ],
+  "navigatie-gps": [
+    "shard-3393.json"
+  ],
+  "sorturi-nike-dama": [
+    "shard-3395.json"
+  ],
+  "colmar-barbat": [
+    "shard-3397.json"
+  ],
+  "papuci-nike-dama": [
+    "shard-3399.json"
+  ],
+  "coltare-pentru-bucatarie": [
+    "shard-3401.json"
+  ],
+  "coltar-bali": [
+    "shard-3403.json"
+  ],
+  "canapea-leto": [
+    "shard-3405.json"
+  ],
+  "dormitor": [
+    "shard-3407.json"
+  ],
+  "stoc": [
+    "shard-3409.json"
+  ],
+  "beauty": [
+    "shard-3411.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-seturi-pentru-hol": [
+    "shard-3413.json"
+  ],
+  "sport-si-hobby-aparate-de-antrenament-aparat-de-vaslit": [
+    "shard-3415.json"
+  ],
+  "mobila-si-decoratiuni-mobila-hol-oglinzi-oglinzi-de-podea": [
+    "shard-3417.json"
+  ],
+  "sport-si-hobby-covorase-si-paturi-de-masaj-covorase-fitness": [
+    "shard-3419.json"
+  ],
+  "mobila-si-decoratiuni-climatizare-si-sisteme-de-incalzire-dezumidificatoare-si-d": [
+    "shard-3421.json"
+  ],
+  "dvd-blu-ray-player": [
+    "shard-3423.json"
+  ],
+  "intrerupator-si-priza": [
+    "shard-3425.json"
+  ],
+  "discuri-greutati-si-balans": [
+    "shard-3427.json"
+  ],
+  "statii-incarcare-vehicule-electrice": [
+    "shard-3429.json"
+  ],
+  "femei-esarfe": [
+    "shard-3431.json"
+  ],
+  "uniforme-medicale-de-unica-folosinta": [
+    "shard-3433.json"
+  ],
+  "tatuaje-temporare": [
+    "shard-3435.json"
+  ],
+  "fetite-baieti-pantofi-sport": [
+    "shard-3437.json"
+  ],
+  "pescuit-la-copca-fire-copca": [
+    "shard-3439.json"
+  ],
+  "par-uscat-si-degradat": [
+    "shard-3441.json"
+  ],
+  "picioare": [
+    "shard-3443.json"
+  ],
+  "teste-automonitorizare-glicemie": [
+    "shard-3445.json"
+  ],
+  "dusuri-bucale-si-accesorii": [
+    "shard-3447.json"
+  ],
+  "new-balance-barbat": [
+    "shard-3449.json"
+  ],
+  "new-balance-barbat-cs": [
+    "shard-3450.json"
+  ],
+  "geci-ea7-barbat": [
+    "shard-3452.json"
+  ],
+  "geci-ea7-barbat-cs": [
+    "shard-3453.json"
+  ],
+  "centrale-termice-electrice": [
+    "shard-3455.json"
+  ],
+  "sobe-pe-peleti": [
+    "shard-3457.json"
+  ],
+  "accesorii-panouri-solare": [
+    "shard-3459.json"
+  ],
+  "burtiere-postnatale": [
+    "shard-3461.json"
+  ],
+  "ghiozdane-si-trolere": [
+    "shard-3463.json"
+  ],
+  "bucatarii-copii": [
+    "shard-3465.json"
+  ],
+  "cutii-depozitare-jucarii": [
+    "shard-3467.json"
+  ],
+  "detartrant-toaleta": [
+    "shard-3469.json"
+  ],
+  "diverse-accesorii-auto": [
+    "shard-3471.json"
+  ],
+  "masti-sanitare": [
+    "shard-3473.json"
+  ],
+  "adaptoare-notebook": [
+    "shard-3475.json"
+  ],
+  "imprimante-foto": [
+    "shard-3477.json"
+  ],
+  "online-10": [
+    "shard-3479.json"
+  ],
+  "fotolii-amp-tabureti": [
+    "shard-3481.json"
+  ],
+  "decoratiuni-sarbatori-decoratiuni-de-craciun-calendar-advent": [
+    "shard-3483.json"
+  ],
+  "pentru-birou-birouri-birouri-de-gaming": [
+    "shard-3485.json"
+  ],
+  "mobilier-exterior-si-gradinarit-piscine-si-gonflabile-tobogane-gonflabile": [
+    "shard-3487.json"
+  ],
+  "sport-si-hobby-aparate-de-antrenament-cutii-pliometrice": [
+    "shard-3489.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-fotolii-fotolii-din-piele-ecologica": [
+    "shard-3491.json"
+  ],
+  "masini-de-frezat": [
+    "shard-3493.json"
+  ],
+  "lego-ninjago": [
+    "shard-3495.json"
+  ],
+  "cabinete-ups": [
+    "shard-3497.json"
+  ],
+  "seifuri": [
+    "shard-3499.json"
+  ],
+  "bratari-fitness-ceasuri-sportive": [
+    "shard-3501.json"
+  ],
+  "lego-ideas": [
+    "shard-3503.json"
+  ],
+  "lego-speed": [
+    "shard-3505.json"
+  ],
+  "accesorii-aere-conditionate": [
+    "shard-3507.json"
+  ],
+  "barbati-borsete": [
+    "shard-3509.json"
+  ],
+  "suplimente-alimentare-copii": [
+    "shard-3511.json"
+  ],
+  "par-gras": [
+    "shard-3513.json"
+  ],
+  "colici": [
+    "shard-3515.json"
+  ],
+  "alimentatie-copii": [
+    "shard-3517.json"
+  ],
+  "dupa-plaja": [
+    "shard-3519.json"
+  ],
+  "batoane-proteice": [
+    "shard-3521.json"
+  ],
+  "seruri-pentru-fata": [
+    "shard-3523.json"
+  ],
+  "protectie-solara-ten-acneic": [
+    "shard-3525.json"
+  ],
+  "treninguri-nike-copii": [
+    "shard-3527.json"
+  ],
+  "treninguri-nike-copii-cs": [
+    "shard-3528.json"
+  ],
+  "treninguri": [
+    "shard-3529.json"
+  ],
+  "treninguri-noutati": [
+    "shard-3530.json"
+  ],
+  "treninguri-noutati-promo-mss": [
+    "shard-3531.json"
+  ],
+  "smart-home": [
+    "shard-3533.json"
+  ],
+  "role-si-skateboard-uri-copii": [
+    "shard-3535.json"
+  ],
+  "porti-protectie-copii": [
+    "shard-3537.json"
+  ],
+  "scaune-auto-isofix": [
+    "shard-3539.json"
+  ],
+  "igiena-dentara": [
+    "shard-3541.json"
+  ],
+  "sisteme-de-protectie": [
+    "shard-3543.json"
+  ],
+  "aparate-de-preparat-paine": [
+    "shard-3545.json"
+  ],
+  "routere": [
+    "shard-3547.json"
+  ],
+  "centrale-termice": [
+    "shard-3549.json"
+  ],
+  "instalare-electrocasnice": [
+    "shard-3551.json"
+  ],
+  "camere-video-sport": [
+    "shard-3553.json"
+  ],
+  "colanti-ea7-dama": [
+    "shard-3555.json"
+  ],
+  "treninguri-puma-dama": [
+    "shard-3557.json"
+  ],
+  "colmar-dama": [
+    "shard-3559.json"
+  ],
+  "geci-nike-copii": [
+    "shard-3561.json"
+  ],
+  "tricouri-new-era-barbat": [
+    "shard-3563.json"
+  ],
+  "pantaloni-adidas-barbat": [
+    "shard-3565.json"
+  ],
+  "scaune": [
+    "shard-3567.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-scaune-scaune-din-metal": [
+    "shard-3569.json"
+  ],
+  "pentru-copii-mobila-copii-olite-si-reductoare-bebe": [
+    "shard-3571.json"
+  ],
+  "pentru-copii-jucarii-mese-foosball": [
+    "shard-3573.json"
+  ],
+  "mobila-si-decoratiuni-mobila-dormitor-noptiere-noptiere-cu-picioare": [
+    "shard-3575.json"
+  ],
+  "pentru-copii-jocuri-in-aer-liber-si-sport-casute-pentru-copii": [
+    "shard-3577.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-scaune-scaune-pliabile": [
+    "shard-3579.json"
+  ],
+  "pentru-animale-ingrijire-si-curatare-ingrijirea-animalelor": [
+    "shard-3581.json"
+  ],
+  "aparate-preparare-hrana": [
+    "shard-3583.json"
+  ],
+  "servicii-montaj-electrocasnice": [
+    "shard-3585.json"
+  ],
+  "sisteme-supraveghere-video": [
+    "shard-3587.json"
+  ],
+  "cabluri-si-interfete-panouri-fotovoltaice-solare": [
+    "shard-3589.json"
+  ],
+  "vouchere-cadou": [
+    "shard-3591.json"
+  ],
+  "accesorii-echipamente-tatuat": [
+    "shard-3593.json"
+  ],
+  "vitamine-si-suplimente-nutritive-bebelusi": [
+    "shard-3595.json"
+  ],
+  "produse-igiena-dentara-animale": [
+    "shard-3597.json"
+  ],
+  "manusi-sport": [
+    "shard-3599.json"
+  ],
+  "sticle": [
+    "shard-3601.json"
+  ],
+  "sapun-amp-gel-de-dus-copii": [
+    "shard-3603.json"
+  ],
+  "benzi-albirea-dintilor": [
+    "shard-3605.json"
+  ],
+  "barbati-bocanci": [
+    "shard-3607.json"
+  ],
+  "zahar-si-indulcitori": [
+    "shard-3609.json"
+  ],
+  "cereale-fulgi-si-tarate": [
+    "shard-3611.json"
+  ],
+  "orteze-umar": [
+    "shard-3613.json"
+  ],
+  "curatenie-bio": [
+    "shard-3615.json"
+  ],
+  "colesterol-si-trigliceride": [
+    "shard-3617.json"
+  ],
+  "rutine-complete-pentru-ten-acneic": [
+    "shard-3619.json"
+  ],
+  "lenjerie-intima": [
+    "shard-3622.json"
+  ],
+  "lenjerie-intima-cs": [
+    "shard-3621.json"
+  ],
+  "accesorii-piese-boilere": [
+    "shard-3624.json"
+  ],
+  "sterilizatoare": [
+    "shard-3626.json"
+  ],
+  "recipiente-hrana-bebelusi": [
+    "shard-3628.json"
+  ],
+  "puzzle-copii": [
+    "shard-3630.json"
+  ],
+  "marsupii-ergonomice": [
+    "shard-3632.json"
+  ],
+  "scanner": [
+    "shard-3634.json"
+  ],
+  "radio-cu-ceas": [
+    "shard-3636.json"
+  ],
+  "stergatoare-geam": [
+    "shard-3638.json"
+  ],
+  "seturi-curatenie": [
+    "shard-3640.json"
+  ],
+  "accesorii-pentru-ingrijirea-sanilor": [
+    "shard-3642.json"
+  ],
+  "accesorii-xbox": [
+    "shard-3644.json"
+  ],
+  "bigudiuri-electrice": [
+    "shard-3646.json"
+  ],
+  "aparate-cosmetice": [
+    "shard-3648.json"
+  ],
+  "accesorii-foto": [
+    "shard-3650.json"
+  ],
+  "papuci-puma-barbat": [
+    "shard-3652.json"
+  ],
+  "geci-ea7-dama": [
+    "shard-3654.json"
+  ],
+  "produse-intretinere": [
+    "shard-3656.json"
+  ],
+  "maiouri-puma-dama": [
+    "shard-3658.json"
+  ],
+  "noptiere": [
+    "shard-3660.json"
+  ],
+  "pentru-copii-jucarii-jucarii-muzicale": [
+    "shard-3662.json"
+  ],
+  "pentru-copii-mobila-copii-cadite-bebe": [
+    "shard-3664.json"
+  ],
+  "mobilier-exterior-si-gradinarit-mobilier-pentru-gradina-cutii-postale": [
+    "shard-3666.json"
+  ],
+  "mobila-si-decoratiuni-mobila-baie-uscatoare-de-rufe-uscatoare-de-rufe-electrice": [
+    "shard-3668.json"
+  ],
+  "seturi-pentru-manichiura-pedichiura": [
+    "shard-3670.json"
+  ],
+  "tv-tuner-placi-captura": [
+    "shard-3672.json"
+  ],
+  "masti-de-protectie-faciala": [
+    "shard-3674.json"
+  ],
+  "telefoane-seniori": [
+    "shard-3676.json"
+  ],
+  "scutere-electrice": [
+    "shard-3678.json"
+  ],
+  "betoniere": [
+    "shard-3680.json"
+  ],
+  "steppere-pentru-fitness": [
+    "shard-3682.json"
+  ],
+  "imprimante-laser-alb-negru-refurbished": [
+    "shard-3684.json"
+  ],
+  "lego-super-mario": [
+    "shard-3686.json"
+  ],
+  "servicii-insert-flyer": [
+    "shard-3688.json"
+  ],
+  "promotionale": [
+    "shard-3690.json"
+  ],
+  "barbati-genti": [
+    "shard-3692.json"
+  ],
+  "pasta-dinti-copii": [
+    "shard-3694.json"
+  ],
+  "fetite-sandale": [
+    "shard-3696.json"
+  ],
+  "pentru-femei": [
+    "shard-3698.json"
+  ],
+  "balonare-si-gaze": [
+    "shard-3700.json"
+  ],
+  "imunitate-si-protectie": [
+    "shard-3702.json"
+  ],
+  "ulei-si-otet": [
+    "shard-3704.json"
+  ],
+  "ceaiuri-de-iarna": [
+    "shard-3706.json"
+  ],
+  "paste": [
+    "shard-3708.json"
+  ],
+  "dermato-cosmetice": [
+    "shard-3710.json"
+  ],
+  "orteze-brat-si-antebrat": [
+    "shard-3712.json"
+  ],
+  "sustinatori-plantari": [
+    "shard-3714.json"
+  ],
+  "hanorace-puma-copii": [
+    "shard-3716.json"
+  ],
+  "hanorace-puma-copii-cs": [
+    "shard-3717.json"
+  ],
+  "converse-dama": [
+    "shard-3719.json"
+  ],
+  "converse-dama-cs": [
+    "shard-3720.json"
+  ],
+  "geci": [
+    "shard-3721.json"
+  ],
+  "geci-noutati-promo-mss": [
+    "shard-3722.json"
+  ],
+  "geci-noutati": [
+    "shard-3723.json"
+  ],
+  "adidas-dama": [
+    "shard-3725.json"
+  ],
+  "adidas-dama-cs": [
+    "shard-3726.json"
+  ],
+  "automatizari": [
+    "shard-3728.json"
+  ],
+  "aspiratoare-nazale-manuale": [
+    "shard-3730.json"
+  ],
+  "masa-infasat": [
+    "shard-3732.json"
+  ],
+  "seturi-constructii-si-cuburi": [
+    "shard-3734.json"
+  ],
+  "leagan": [
+    "shard-3736.json"
+  ],
+  "perne-pentru-bebe-pentru-colici": [
+    "shard-3738.json"
+  ],
+  "carucior-pentru-papusi": [
+    "shard-3740.json"
+  ],
+  "accesorii-fetite": [
+    "shard-3742.json"
+  ],
+  "perne-multifunctionale-gravide": [
+    "shard-3744.json"
+  ],
+  "articole-parinti": [
+    "shard-3746.json"
+  ],
+  "calculatoare-de-birou": [
+    "shard-3748.json"
+  ],
+  "accesorii-securitate": [
+    "shard-3750.json"
+  ],
+  "accesorii-playstation": [
+    "shard-3752.json"
+  ],
+  "accesorii-gopro": [
+    "shard-3754.json"
+  ],
+  "extensii-garantie": [
+    "shard-3756.json"
+  ],
+  "corpuri-de-iluminat": [
+    "shard-3758.json"
+  ],
+  "maiouri-nike-dama": [
+    "shard-3760.json"
+  ],
+  "hanorace-ea7-dama": [
+    "shard-3762.json"
+  ],
+  "geci-puma-dama": [
+    "shard-3764.json"
+  ],
+  "genti-sport": [
+    "shard-3766.json"
+  ],
+  "colanti-puma-dama": [
+    "shard-3768.json"
+  ],
+  "asics-barbat": [
+    "shard-3770.json"
+  ],
+  "ugg-dama": [
+    "shard-3772.json"
+  ],
+  "hanorace-calvin-klein-barbat": [
+    "shard-3774.json"
+  ],
+  "corpuri-mobila-living": [
+    "shard-3776.json"
+  ],
+  "sport-si-hobby-aparate-de-antrenament-benzi-de-alergat": [
+    "shard-3778.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-electrocasnice-cuptoare-electrice": [
+    "shard-3780.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-electrocasnice-aparate-de-facut-gheata": [
+    "shard-3782.json"
+  ],
+  "surse-server": [
+    "shard-3784.json"
+  ],
+  "accesorii-gadgeturi-pentru-monitorizare-activitate": [
+    "shard-3786.json"
+  ],
+  "lampi-uv-pentru-unghii": [
+    "shard-3788.json"
+  ],
+  "accesorii-ingrijirea-tesaturilor": [
+    "shard-3790.json"
+  ],
+  "echipamente-de-protectie": [
+    "shard-3792.json"
+  ],
+  "adaptor-wireless": [
+    "shard-3794.json"
+  ],
+  "boiler": [
+    "shard-3796.json"
+  ],
+  "calculatoare-evomag": [
+    "shard-3798.json"
+  ],
+  "aspiratoare-nazale-si-accesorii": [
+    "shard-3800.json"
+  ],
+  "manusi-unica-folosinta": [
+    "shard-3802.json"
+  ],
+  "sepci-si-caciuli-barbati": [
+    "shard-3804.json"
+  ],
+  "borsete-sport": [
+    "shard-3806.json"
+  ],
+  "bijuterii-barbati": [
+    "shard-3808.json"
+  ],
+  "plasturi": [
+    "shard-3810.json"
+  ],
+  "fetite-baieti-ghete": [
+    "shard-3812.json"
+  ],
+  "femei-barbati-pantofi-sport": [
+    "shard-3814.json"
+  ],
+  "pentru-barbati": [
+    "shard-3816.json"
+  ],
+  "zona-intima": [
+    "shard-3818.json"
+  ],
+  "gura-uscata": [
+    "shard-3820.json"
+  ],
+  "ingrijire-unghii": [
+    "shard-3822.json"
+  ],
+  "magneziu-si-minerale-esentiale": [
+    "shard-3824.json"
+  ],
+  "converse-barbat": [
+    "shard-3826.json"
+  ],
+  "converse-barbat-cs": [
+    "shard-3827.json"
+  ],
+  "hidrofoare-easypump-pedrollo": [
+    "shard-3829.json"
+  ],
+  "gentute-termoizolante": [
+    "shard-3831.json"
+  ],
+  "karturi-cu-pedale": [
+    "shard-3833.json"
+  ],
+  "bebe-la-masa": [
+    "shard-3835.json"
+  ],
+  "media-convertoare": [
+    "shard-3837.json"
+  ],
+  "accesorii-compresoare": [
+    "shard-3839.json"
+  ],
+  "receivere": [
+    "shard-3841.json"
+  ],
+  "instalare-aer-conditionat": [
+    "shard-3843.json"
+  ],
+  "docking-station-notebook": [
+    "shard-3845.json"
+  ],
+  "espressoare-incorporabile": [
+    "shard-3847.json"
+  ],
+  "dezumidificatoare": [
+    "shard-3849.json"
+  ],
+  "baby-monitor": [
+    "shard-3851.json"
+  ],
+  "aparate-pentru-deshidratarea-alimentelor": [
+    "shard-3853.json"
+  ],
+  "geci-puma-barbat": [
+    "shard-3855.json"
+  ],
+  "papuci-calvin-klein-dama": [
+    "shard-3857.json"
+  ],
+  "new-balance-dama": [
+    "shard-3859.json"
+  ],
+  "papuci-nike-barbat": [
+    "shard-3861.json"
+  ],
+  "sorturi-puma-copii": [
+    "shard-3863.json"
+  ],
+  "sandale-nike-copii": [
+    "shard-3865.json"
+  ],
+  "papuci-ea7-barbat": [
+    "shard-3867.json"
+  ],
+  "pantaloni-calvin-klein-dama": [
+    "shard-3869.json"
+  ],
+  "bluze-adidas-barbat": [
+    "shard-3871.json"
+  ],
+  "seturi-living": [
+    "shard-3873.json"
+  ],
+  "diverse-tapiterii": [
+    "shard-3875.json"
+  ],
+  "mobilier-exterior-si-gradinarit-mobilier-pentru-gradina-stalpi-de-delimitare": [
+    "shard-3877.json"
+  ],
+  "sport-si-hobby-sporturi-interioare-si-in-aer-liber-sporturi-acvatice": [
+    "shard-3879.json"
+  ],
+  "mobilier-exterior-si-gradinarit-piscine-si-gonflabile-piscine": [
+    "shard-3881.json"
+  ],
+  "mobila-si-decoratiuni-mobila-living-canapele-canapele-extensibile": [
+    "shard-3883.json"
+  ],
+  "decoratiuni-sarbatori-brad-artificial-de-craciun-brad-cu-leduri": [
+    "shard-3885.json"
+  ],
+  "mobila-si-decoratiuni-mobila-bucatarie-seturi-de-masa-si-scaune": [
+    "shard-3887.json"
+  ],
+  "cabluri-componente": [
+    "shard-3889.json"
+  ],
+  "incalzitoare-pentru-maini-picioare": [
+    "shard-3891.json"
+  ],
+  "aparate-foto-d-slr": [
+    "shard-3893.json"
+  ],
+  "servicii-instalare-aer-conditionat": [
+    "shard-3895.json"
+  ],
+  "skateboard": [
+    "shard-3897.json"
+  ],
+  "extindere-garantie": [
+    "shard-3899.json"
+  ],
+  "alte-produse-lego": [
+    "shard-3901.json"
+  ],
+  "palete-tenis-de-masa-ping-pong-accesorii": [
+    "shard-3903.json"
+  ],
+  "masti-chirurgicale-medicale": [
+    "shard-3905.json"
+  ],
+  "dulciuri": [
+    "shard-3907.json"
+  ],
+  "ser-fiziologic-si-comprese-sterile": [
+    "shard-3909.json"
+  ],
+  "sampon-si-balsam-animale": [
+    "shard-3911.json"
+  ],
+  "alte-accesorii-telefoane": [
+    "shard-3913.json"
+  ],
+  "balsam-de-par": [
+    "shard-3915.json"
+  ],
+  "barbati-accesorii-barbati": [
+    "shard-3917.json"
+  ],
+  "barbati-manusi": [
+    "shard-3919.json"
+  ],
+  "antidiareice-usoare": [
+    "shard-3921.json"
+  ],
+  "rau-de-miscare": [
+    "shard-3923.json"
+  ],
+  "alimente": [
+    "shard-3925.json"
+  ],
+  "frumusete-si-ingrijire": [
+    "shard-3927.json"
+  ],
+  "remedii-naturiste": [
+    "shard-3929.json"
+  ],
+  "altele": [
+    "shard-3930.json",
+    "shard-3931.json",
+    "shard-3932.json",
+    "shard-3933.json",
+    "shard-3934.json",
+    "shard-3935.json"
+  ]
+}

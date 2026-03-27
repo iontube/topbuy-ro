@@ -1,0 +1,352 @@
+---
+import Base from '../../layouts/Base.astro';
+import { readFileSync, existsSync } from 'fs';
+import { join } from 'path';
+
+export function getStaticPaths() {
+  const dataDir = join(process.cwd(), 'public', 'data');
+  const structure = JSON.parse(readFileSync(join(dataDir, 'site-structure.json'), 'utf-8'));
+
+  // Load search intents (from google-suggestions or legacy)
+  let intentsByMega: Record<string, any[]> = {};
+  const suggestPath = join(dataDir, 'google-suggestions.json');
+  const intentsPath = join(dataDir, 'search-intents.json');
+  if (existsSync(suggestPath)) {
+    const { suggestions } = JSON.parse(readFileSync(suggestPath, 'utf-8'));
+    for (const s of suggestions) {
+      if (!intentsByMega[s.megaCategory]) intentsByMega[s.megaCategory] = [];
+      intentsByMega[s.megaCategory].push(s);
+    }
+  } else if (existsSync(intentsPath)) {
+    const { intents } = JSON.parse(readFileSync(intentsPath, 'utf-8'));
+    for (const i of intents) {
+      if (!intentsByMega[i.megaCategory]) intentsByMega[i.megaCategory] = [];
+      intentsByMega[i.megaCategory].push(i);
+    }
+  }
+
+  return Object.entries(structure.megaCategories).map(([slug, cat]: [string, any]) => ({
+    params: { category: slug },
+    props: {
+      cat, slug,
+      intents: (intentsByMega[slug] || []).sort((a: any, b: any) => b.productCount - a.productCount),
+    },
+  }));
+}
+
+const { cat, slug, intents } = Astro.props;
+const dataDir = join(process.cwd(), 'public', 'data');
+
+// SEO content
+let seo: any = {};
+const cp = join(dataDir, 'content', 'seo-content.json');
+if (existsSync(cp)) { seo = JSON.parse(readFileSync(cp, 'utf-8'))[slug] || {}; }
+
+const title = seo.metaTitle || `${cat.name} - Recomandari ${new Date().getFullYear()} | TopBuy.ro`;
+const desc = seo.metaDescription || `${cat.totalProducts.toLocaleString('ro')}+ produse ${cat.name} de la magazine verificate din Romania.`;
+const canonical = `https://topbuy.ro/${slug}/`;
+
+// Group intents by type for structured display
+const intentsByType: Record<string, any[]> = {};
+for (const i of intents) {
+  if (!intentsByType[i.type]) intentsByType[i.type] = [];
+  intentsByType[i.type].push(i);
+}
+
+// Type labels in Romanian - ORDER matters (first ones show on pillar)
+const TYPE_ORDER = ['best-of', 'top', 'cheap', 'product', 'review', 'budget', 'guide'];
+const TYPE_LABELS: Record<string, string> = {
+  'best-of': 'Cele mai bune',
+  'top': 'Top produse',
+  'cheap': 'Produse ieftine',
+  'product': 'Cautari populare',
+  'review': 'Pareri si recenzii',
+  'budget': 'Pe buget',
+  'guide': 'Ce sa cumperi',
+  'comparison': 'Comparatii',
+};
+
+// Only show first N subcategories, deduplicated by slug
+const seenSubSlugs = new Set();
+const subcats = cat.subcategories
+  .filter((s: any) => {
+    if (s.count < 10 || s.name.length < 4) return false;
+    if (seenSubSlugs.has(s.slug)) return false;
+    seenSubSlugs.add(s.slug);
+    return true;
+  })
+  .slice(0, 40);
+
+// Top brands for this category
+const topBrands = cat.topBrands?.slice(0, 20) || [];
+
+// Load featured products - sample from multiple shards, filter for quality
+const featured: any[] = [];
+if (cat.shards?.length) {
+  const junk = /stabilizator|208l|1000l|industrial|engros|paleti|bax|sudura|granulator|ulei motor|batoza|laborator|invertor|compresor|generator|motosapa|motocoasa|fierastrau|drujba|betoniera/i;
+  const candidates: any[] = [];
+  // Sample from first 5 shards for diversity
+  for (const s of cat.shards.slice(0, 5)) {
+    try {
+      const shard = JSON.parse(readFileSync(join(dataDir, 'products', s.file), 'utf-8'));
+      for (const p of shard) {
+        if (!p.i || !p.t || !p.l) continue;
+        if (junk.test(p.t)) continue;
+        if (p.t.length > 100) continue; // skip very long titles
+        if (p.t.length < 10) continue;
+        candidates.push(p);
+        if (candidates.length >= 100) break;
+      }
+    } catch {}
+  }
+  // Pick 8 evenly spaced for diversity
+  const step = Math.max(1, Math.floor(candidates.length / 8));
+  for (let i = 0; i < candidates.length && featured.length < 8; i += step) {
+    featured.push(candidates[i]);
+  }
+}
+
+const SVG_ICONS: Record<string, string> = {
+  'electronice-it': '<rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/>',
+  'casa-gradina': '<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/>',
+  'fashion': '<path d="M20.38 3.46 16 2 12 5 8 2 3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/>',
+  'copii-jucarii': '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
+  'auto-moto': '<path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-2-2.7-3.1A4 4 0 0 0 11 6H5a2 2 0 0 0-2 2v7c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/>',
+  'sport': '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
+  'pescuit': '<path d="M2 20c.5-1.5 1.1-2 2.5-2C6 18 6 20 7.5 20S9 18 10.5 18c1.5 0 1.5 2 3 2s1.5-2 3-2 1.5 2 3 2 1.5-2 3-2"/><path d="M16 12 10 2"/><path d="m8 8 2 4"/>',
+  'sanatate-frumusete': '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>',
+  'carti-birou': '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
+  'alimentare-bauturi': '<path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/>',
+  'animale': '<circle cx="12" cy="10" r="3"/><circle cx="6.5" cy="5.5" r="1.5"/><circle cx="17.5" cy="5.5" r="1.5"/><circle cx="4" cy="11.5" r="1.5"/><circle cx="20" cy="11.5" r="1.5"/>',
+  'altele': '<path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/>',
+};
+---
+
+<Base title={title} description={desc} canonical={canonical}>
+
+  <div class="wrap">
+    <nav class="bc">
+      <a href="/">Acasa</a> <span class="bc__sep">›</span> <span>{cat.name}</span>
+    </nav>
+
+    {/* ══ PILLAR HEADER ══ */}
+    <header class="pillar-header">
+      <div class="pillar-header__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={SVG_ICONS[slug] || SVG_ICONS['altele']} />
+      </div>
+      <div>
+        <h1>{seo.h1 || cat.name}</h1>
+        <p class="pillar-header__meta">{subcats.length} categorii &middot; {intents.length} recomandari &middot; Actualizat {new Date().toLocaleDateString('ro-RO', { month: 'long', year: 'numeric' })}</p>
+      </div>
+    </header>
+
+    {/* ══ INTRO CONTENT ══ */}
+    {seo.intro && (
+      <div class="cblock" style="margin-bottom:28px;">
+        <div class="txt">
+          {seo.intro.split('\n').filter((p: string) => p.trim()).map((p: string) => <p>{p}</p>)}
+        </div>
+      </div>
+    )}
+
+    {/* ══ TABLE OF CONTENTS ══ */}
+    <nav class="toc" id="cuprins">
+      <div class="toc__h">Cuprins</div>
+      <ul class="toc__list">
+        <li><a href="#categorii">Categorii {cat.name}</a></li>
+        {TYPE_ORDER.filter(t => intentsByType[t]?.length).map(t => [t, intentsByType[t]] as [string, any[]]).slice(0, 5).map(([type, items]: [string, any[]]) => (
+          <li><a href={`#${type}`}>{TYPE_LABELS[type] || type} ({items.length})</a></li>
+        ))}
+        {topBrands.length > 0 && <li><a href="#branduri">Branduri populare</a></li>}
+        {seo.faq?.length > 0 && <li><a href="#intrebari">Intrebari frecvente</a></li>}
+      </ul>
+    </nav>
+
+    {/* ══ SUBCATEGORIES (cluster links) ══ */}
+    <section id="categorii" class="pillar-sec">
+      <h2 class="pillar-sec__h">Categorii {cat.name}</h2>
+      <div class="subcat-grid">
+        {subcats.map((sub: any) => (
+          <a href={`/${slug}/${sub.slug}/`} class="subcat-card">
+            <span class="subcat-card__name">{sub.name}</span>
+            <span class="subcat-card__cnt">{sub.count.toLocaleString('ro')} produse</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    {/* ══ SEARCH INTENTS BY TYPE (silo internal links) ══ */}
+    {TYPE_ORDER.filter(t => intentsByType[t]?.length).map(t => [t, intentsByType[t]] as [string, any[]]).slice(0, 5).map(([type, items]: [string, any[]]) => (
+      <section id={type} class="pillar-sec">
+        <h2 class="pillar-sec__h">{TYPE_LABELS[type] || type}</h2>
+        <div class="intent-grid">
+          {items.slice(0, 10).map((i: any) => (
+            <a href={`/${slug}/${i.slug}/`} class="intent-card">
+              <span class="intent-card__title">{i.title}</span>
+              <span class="intent-card__cnt">{i.productCount.toLocaleString('ro')} produse</span>
+            </a>
+          ))}
+        </div>
+        {items.length > 10 && (
+          <details class="pillar-more">
+            <summary>Vezi toate ({items.length})</summary>
+            <div class="intent-grid" style="margin-top:10px;">
+              {items.slice(10).map((i: any) => (
+                <a href={`/${slug}/${i.slug}/`} class="intent-card">
+                  <span class="intent-card__title">{i.title}</span>
+                  <span class="intent-card__cnt">{i.productCount.toLocaleString('ro')} produse</span>
+                </a>
+              ))}
+            </div>
+          </details>
+        )}
+      </section>
+    ))}
+
+    {/* Produse recomandate removed - category data has too many misclassified products */}
+
+    {/* ══ TOP BRANDS ══ */}
+    {topBrands.length > 0 && (
+      <section id="branduri" class="pillar-sec">
+        <h2 class="pillar-sec__h">Branduri populare in {cat.name}</h2>
+        <div class="brand-grid">
+          {topBrands.map((b: any) => {
+            const bSlug = b.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+            return (
+              <a href={`/brand/${bSlug}/`} class="brand-pill">{b.name} <small>({b.count.toLocaleString('ro')})</small></a>
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    {/* ══ TIPS ══ */}
+    {seo.tips?.length > 0 && (
+      <div class="tips-box">
+        <h2 class="tips-box__h">Sfaturi pentru {cat.name}</h2>
+        <ul>
+          {seo.tips.map((t: string) => <li>{t}</li>)}
+        </ul>
+      </div>
+    )}
+
+    {/* ══ FAQ ══ */}
+    {seo.faq?.length > 0 && (
+      <section id="intrebari" class="faq">
+        <h2 class="faq__h">Intrebari frecvente despre {cat.name}</h2>
+        {seo.faq.map((f: any) => (
+          <div class="faq__i" itemscope itemtype="https://schema.org/Question">
+            <button class="faq__q" itemprop="name" onclick="this.classList.toggle('open');this.nextElementSibling?.classList.toggle('open');">
+              <span>{f.q}</span>
+              <span class="faq__q-ic">+</span>
+            </button>
+            <div class="faq__a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <span itemprop="text">{f.a}</span>
+            </div>
+          </div>
+        ))}
+      </section>
+    )}
+
+    {/* ══ VERDICT/CONCLUSION ══ */}
+    {seo.conclusion && (
+      <div class="cblock" style="margin-top:24px;">
+        <div class="txt">
+          {seo.conclusion.split('\n').filter((p: string) => p.trim()).map((p: string) => <p>{p}</p>)}
+        </div>
+      </div>
+    )}
+  </div>
+
+  {/* ══ STRUCTURED DATA ══ */}
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": seo.h1 || cat.name,
+    "description": desc,
+    "url": canonical,
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": subcats.length + intents.length,
+      "itemListElement": [
+        ...subcats.slice(0, 10).map((sub: any, i: number) => ({
+          "@type": "ListItem",
+          "position": i + 1,
+          "name": sub.name,
+          "url": `https://topbuy.ro/${slug}/${sub.slug}/`
+        })),
+        ...intents.slice(0, 10).map((intent: any, i: number) => ({
+          "@type": "ListItem",
+          "position": subcats.slice(0, 10).length + i + 1,
+          "name": intent.title,
+          "url": `https://topbuy.ro/${slug}/${intent.slug}/`
+        })),
+      ]
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Acasa", "item": "https://topbuy.ro/" },
+        { "@type": "ListItem", "position": 2, "name": cat.name, "item": canonical }
+      ]
+    }
+  })} />
+
+  {seo.faq?.length > 0 && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": seo.faq.map((f: any) => ({
+        "@type": "Question",
+        "name": f.q,
+        "acceptedAnswer": { "@type": "Answer", "text": f.a }
+      }))
+    })} />
+  )}
+</Base>
+
+<style>
+  .pillar-header{display:flex;align-items:center;gap:16px;padding:24px 0 20px}
+  .pillar-header__icon{width:56px;height:56px;border-radius:var(--r);background:var(--blue-light);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .pillar-header__icon svg{width:28px;height:28px;color:var(--blue)}
+  .pillar-header h1{font-size:clamp(1.4rem,3vw,1.8rem);font-weight:800;letter-spacing:-.3px;line-height:1.2;color:var(--gray-900);margin:0}
+  .pillar-header__meta{font-size:.85rem;color:var(--gray-400);margin-top:4px}
+
+  .toc{background:var(--surface);border:1px solid var(--gray-200);border-radius:var(--r);padding:20px 24px;margin-bottom:28px}
+  .toc__h{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--gray-400);margin-bottom:10px}
+  .toc__list{list-style:none;display:flex;flex-wrap:wrap;gap:6px 16px}
+  .toc__list li{font-size:.88rem}
+  .toc__list a{color:var(--blue);text-decoration:none;font-weight:500}
+  .toc__list a:hover{text-decoration:underline}
+
+  .pillar-sec{padding:28px 0;border-top:1px solid var(--gray-200)}
+  .pillar-sec__h{font-size:1.2rem;font-weight:700;color:var(--gray-900);margin-bottom:16px}
+
+  .subcat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
+  .subcat-card{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:var(--surface);border:1px solid var(--gray-200);border-radius:var(--r-sm);text-decoration:none;transition:border-color var(--ease)}
+  .subcat-card:hover{border-color:var(--blue);text-decoration:none}
+  .subcat-card__name{font-size:.88rem;font-weight:500;color:var(--gray-800)}
+  .subcat-card__cnt{font-size:.75rem;color:var(--gray-400);white-space:nowrap}
+
+  .intent-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px}
+  .intent-card{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:var(--surface);border:1px solid var(--gray-200);border-radius:var(--r-sm);text-decoration:none;transition:border-color var(--ease)}
+  .intent-card:hover{border-color:var(--blue);text-decoration:none}
+  .intent-card__title{font-size:.85rem;font-weight:500;color:var(--gray-800)}
+  .intent-card__cnt{font-size:.72rem;color:var(--gray-400);white-space:nowrap}
+
+  .brand-grid{display:flex;flex-wrap:wrap;gap:8px}
+  .brand-pill{display:inline-flex;align-items:center;gap:4px;padding:8px 14px;background:var(--gray-100);border-radius:var(--r-sm);font-size:.82rem;font-weight:500;color:var(--gray-600)}
+  .brand-pill small{font-size:.72rem;color:var(--gray-400);font-weight:400}
+
+  .pillar-more{margin-top:8px}
+  .pillar-more summary{font-size:.85rem;font-weight:600;color:var(--blue);cursor:pointer;padding:8px 0}
+  .pillar-more summary:hover{text-decoration:underline}
+
+  @media(max-width:768px){
+    .pillar-header__icon{width:44px;height:44px}
+    .pillar-header__icon svg{width:22px;height:22px}
+    .toc__list{flex-direction:column;gap:6px}
+    .subcat-grid{grid-template-columns:1fr}
+    .intent-grid{grid-template-columns:1fr}
+  }
+</style>

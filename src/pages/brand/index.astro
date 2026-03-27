@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+const dataDir = join(process.cwd(), 'public', 'data');
+const brands = JSON.parse(readFileSync(join(dataDir, 'brand-index.json'), 'utf-8'));
+
+const title = `Branduri - ${brands.length} branduri de produse | TopBuy.ro`;
+const desc = `Vezi produse de la ${brands.length} branduri pe TopBuy.ro. De la Apple si Samsung la Nike si Adidas.`;
+
+// Group by first letter
+const byLetter: Record<string, any[]> = {};
+for (const b of brands) {
+  const letter = b.name.charAt(0).toUpperCase();
+  if (!byLetter[letter]) byLetter[letter] = [];
+  byLetter[letter].push(b);
+}
+const letters = Object.keys(byLetter).sort();
+---
+
+<Base title={title} description={desc} canonical="https://topbuy.ro/brand/">
+  <div class="wrap">
+    <nav class="bc">
+      <a href="/">Acasa</a> <span class="bc__sep">›</span> <span>Branduri</span>
+    </nav>
+
+    <h1 class="page-h1">Branduri</h1>
+    <p class="updated-date">{brands.length} branduri disponibile</p>
+
+    <div class="cblock" style="margin-bottom:24px;">
+      <div class="txt">
+        <p>Pe TopBuy.ro gasesti produse de la peste {brands.length} de branduri, de la producatori internationali la branduri romanesti. Fiecare pagina de brand iti arata produsele disponibile in magazinele listate pe site.</p>
+        <p>Preturile se actualizeaza zilnic. Acelasi produs poate avea preturi diferite in functie de magazin. Alege brandul care te intereseaza si vezi ce optiuni ai.</p>
+      </div>
+    </div>
+
+    <div class="brand-letters">
+      {letters.map(l => <a href={`#${l}`} class="brand-letter">{l}</a>)}
+    </div>
+
+    {letters.map(letter => (
+      <section id={letter} class="brand-sec">
+        <h2 class="brand-sec__h">{letter}</h2>
+        <div class="brand-list">
+          {byLetter[letter].map((b: any) => (
+            <a href={`/brand/${b.slug}/`} class="brand-link">
+              {b.name} <small>({b.productCount})</small>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .brand-letters{display:flex;flex-wrap:wrap;gap:4px;margin:16px 0 24px;position:sticky;top:60px;background:var(--bg);padding:8px 0;z-index:10}
+  .brand-letter{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:var(--r-sm);background:var(--surface);border:1px solid var(--gray-200);font-size:.82rem;font-weight:600;color:var(--gray-600);text-decoration:none}
+  .brand-letter:hover{background:var(--blue);color:#fff;border-color:var(--blue);text-decoration:none}
+  .brand-sec{padding:16px 0;border-bottom:1px solid var(--gray-100)}
+  .brand-sec__h{font-size:1.1rem;font-weight:700;color:var(--blue);margin-bottom:10px}
+  .brand-list{display:flex;flex-wrap:wrap;gap:6px}
+  .brand-link{display:inline-block;padding:6px 12px;font-size:.82rem;color:var(--gray-700);text-decoration:none;background:var(--surface);border:1px solid var(--gray-200);border-radius:var(--r-sm)}
+  .brand-link:hover{border-color:var(--blue);color:var(--blue);text-decoration:none}
+  .brand-link small{color:var(--gray-400);font-weight:400}
+</style>

@@ -1,0 +1,6 @@
+node_modules/
+dist/
+raw-feeds/
+.DS_Store
+*.log
+public/data/scrape-progress.json

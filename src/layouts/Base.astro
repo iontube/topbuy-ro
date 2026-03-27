@@ -1,0 +1,205 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+}
+
+const { title, description = 'Produse recomandate de la magazine verificate din Romania.', canonical } = Astro.props;
+
+// Auto-generate canonical from current URL if not provided
+const autoCanonical = canonical || `https://topbuy.ro${Astro.url.pathname}`;
+
+import structureData from '../../public/data/site-structure.json';
+const megaCats = Object.entries(structureData.megaCategories)
+  .filter(([slug]) => slug !== 'altele')
+  .map(([slug, cat]) => ({ slug, name: (cat as any).name, count: (cat as any).totalProducts }));
+---
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={autoCanonical} />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={autoCanonical} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TopBuy.ro" />
+  <meta property="og:locale" content="ro_RO" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://gomagcdn.ro" crossorigin />
+  <link rel="dns-prefetch" href="https://gomagcdn.ro" />
+  <link rel="dns-prefetch" href="https://www.ookee.ro" />
+  <link rel="dns-prefetch" href="https://www.vonmag.ro" />
+  <link rel="sitemap" href="/sitemap.xml" />
+  <slot name="head" />
+</head>
+<body>
+  <header class="hdr">
+    <div class="wrap hdr__in">
+      <a href="/" class="hdr__logo">
+        <svg viewBox="0 0 122 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="hdr__logo-svg">
+          <rect y="2" width="32" height="32" rx="8" fill="#3b82f6"/>
+          <path d="M16 9l5.5 6.5h-3.5v7h-4v-7h-3.5z" fill="#fff"/>
+          <path d="M419 0H181V507H7V708H593V507H419Z" fill="#fff" transform="translate(41.0,27.1) scale(0.020000,-0.020000)"/>
+          <path d="M632 265Q632 197 607.5 144Q583 91 541.5 54.5Q500 18 445.5 -1Q391 -20 331 -20Q272 -20 217.5 -1Q163 18 122 54.5Q81 91 56.5 144Q32 197 32 265Q32 332 56.5 384.5Q81 437 122 473Q163 509 217.5 527.5Q272 546 331 546Q391 546 445.5 527.5Q500 509 541.5 473Q583 437 607.5 384.5Q632 332 632 265ZM331 352Q293 352 269.5 326Q246 300 246 265Q246 228 270 202Q294 176 332 176Q370 176 394 202Q418 228 418 265Q418 300 393.5 326Q369 352 331 352Z" fill="#fff" transform="translate(53.0,27.1) scale(0.020000,-0.020000)"/>
+          <path d="M423 -14Q384 -14 346 0.5Q308 15 284 41H282V-240H53V526H270V473H272Q301 506 342 523Q383 540 422 540Q481 540 526 516Q571 492 601 453Q631 414 646.5 365Q662 316 662 265Q662 213 646.5 163Q631 113 601 73.5Q571 34 526.5 10Q482 -14 423 -14ZM448 265Q448 300 426 326Q404 352 362 352Q321 352 296.5 326Q272 300 272 265Q272 228 296.5 202Q321 176 362 176Q404 176 426 201.5Q448 227 448 265Z" fill="#fff" transform="translate(66.3,27.1) scale(0.020000,-0.020000)"/>
+          <path d="M288 523V436H352Q377 436 393 447.5Q409 459 409 483Q409 503 392 513Q375 523 347 523ZM288 283V187H359Q387 187 404.5 199.5Q422 212 422 236Q422 250 414.5 259Q407 268 396 273.5Q385 279 372.5 281Q360 283 349 283ZM529 368Q554 362 578 348.5Q602 335 621 314.5Q640 294 651 267Q662 240 662 207Q662 149 638.5 109.5Q615 70 576.5 45.5Q538 21 488.5 10.5Q439 0 387 0H66V708H357Q400 708 448.5 701.5Q497 695 538 675.5Q579 656 606 618.5Q633 581 633 520Q633 463 604.5 426Q576 389 529 371Z" fill="#60a5fa" transform="translate(80.2,27.1) scale(0.020000,-0.020000)"/>
+          <path d="M610 0H385V58H383Q363 29 323.5 7.5Q284 -14 233 -14Q177 -14 141 5.5Q105 25 83.5 56.5Q62 88 53.5 127.5Q45 167 45 206V526H277V248Q277 208 289.5 192Q302 176 327 176Q350 176 364.5 194.5Q379 213 379 248V526H610Z" fill="#60a5fa" transform="translate(94.0,27.1) scale(0.020000,-0.020000)"/>
+          <path d="M205 20 -8 526H248L326 249H330L399 526H646L430 -32Q411 -81 387 -119.5Q363 -158 331 -185Q299 -212 255.5 -226Q212 -240 154 -240Q136 -240 117 -238.5Q98 -237 80.5 -234.5Q63 -232 48 -229.5Q33 -227 23 -224L52 -34Q65 -39 83.5 -42.5Q102 -46 117 -46Q155 -46 173.5 -30.5Q192 -15 201 9Z" fill="#60a5fa" transform="translate(107.3,27.1) scale(0.020000,-0.020000)"/>
+        </svg>
+      </a>
+
+      <div class="hdr__search" id="searchWrap">
+        <input type="text" id="searchInput" placeholder="Cauta produse..." autocomplete="off" />
+        <div class="hdr__results" id="searchResults"></div>
+      </div>
+
+      <nav class="hdr__nav">
+        {megaCats.slice(0, 7).map(cat => (
+          <a href={`/${cat.slug}/`}>{cat.name}</a>
+        ))}
+      </nav>
+
+      <div class="hdr__mobile-btns">
+        <button class="hdr__search-btn" id="searchBtn" aria-label="Cauta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="hdr__burger" id="menuBtn" aria-label="Meniu">
+          <span class="hdr__burger-dot"></span>
+          <span class="hdr__burger-dot"></span>
+          <span class="hdr__burger-dot"></span>
+          <span class="hdr__burger-dot"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mob-nav" id="mobileNav">
+    {megaCats.map(cat => (
+      <a href={`/${cat.slug}/`}>{cat.name}</a>
+    ))}
+  </div>
+  <div class="mob-overlay" id="mobileOverlay"></div>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="ftr__grid">
+        <div>
+          <div class="ftr__h">TopBuy.ro</div>
+          <p class="ftr__txt">TopBuy.ro aduna produse de la magazine verificate din Romania si iti arata ce merita cumparat. Actualizat zilnic.</p>
+        </div>
+        <div class="ftr__links">
+          <div class="ftr__h">Categorii</div>
+          {megaCats.slice(0, 5).map(cat => (
+            <a href={`/${cat.slug}/`}>{cat.name}</a>
+          ))}
+        </div>
+        <div class="ftr__links">
+          <div class="ftr__h">Categorii</div>
+          {megaCats.slice(5).map(cat => (
+            <a href={`/${cat.slug}/`}>{cat.name}</a>
+          ))}
+        </div>
+        <div class="ftr__links">
+          <div class="ftr__h">Informatii</div>
+          <a href="/magazine/">Magazine</a>
+          <a href="/brand/">Branduri</a>
+          <a href="/despre/">Despre noi</a>
+          <a href="/contact/">Contact</a>
+          <a href="/termeni/">Termeni si conditii</a>
+          <a href="/politica-confidentialitate/">Confidentialitate</a>
+          <a href="/politica-cookies/">Politica cookies</a>
+        </div>
+      </div>
+      <div class="ftr__bot">
+        <span>&copy; {new Date().getFullYear()} TopBuy.ro &mdash; Produse actualizate zilnic</span>
+        <span>Preturi actualizate zilnic</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookieBanner" class="cookie-banner" style="display:none;">
+    <div class="cookie-banner__inner">
+      <p>Folosim cookies pentru functionarea site-ului si statistici anonime. Continuand, esti de acord cu <a href="/politica-cookies/">politica de cookies</a>.</p>
+      <button id="cookieAccept" class="cookie-banner__btn">Accept</button>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const overlay = document.getElementById('mobileOverlay');
+    function toggleMenu() {
+      mobileNav?.classList.toggle('open');
+      overlay?.classList.toggle('open');
+      document.body.style.overflow = mobileNav?.classList.contains('open') ? 'hidden' : '';
+    }
+    menuBtn?.addEventListener('click', toggleMenu);
+    overlay?.addEventListener('click', toggleMenu);
+
+    const cb = document.getElementById('cookieBanner');
+    const ca = document.getElementById('cookieAccept');
+    if (!localStorage.getItem('cookies_ok')) { cb!.style.display = 'block'; }
+    ca?.addEventListener('click', () => { localStorage.setItem('cookies_ok', '1'); cb!.style.display = 'none'; });
+
+    // Search
+    var searchIndex = null;
+    var sInput = document.getElementById('searchInput');
+    var sResults = document.getElementById('searchResults');
+    var sBtn = document.getElementById('searchBtn');
+    var sWrap = document.getElementById('searchWrap');
+
+    function strip(t) {
+      return t.replace(/[ăâ]/g,'a').replace(/[îÎ]/g,'i').replace(/[șş]/g,'s').replace(/[țţ]/g,'t').replace(/[ĂÂ]/g,'A').replace(/[ȘŞ]/g,'S').replace(/[ȚŢ]/g,'T').toLowerCase();
+    }
+
+    function loadIndex() {
+      if (!searchIndex) fetch('/data/search-index.json').then(r => r.json()).then(d => { searchIndex = d; });
+    }
+
+    if (sInput) {
+      sInput.addEventListener('focus', loadIndex);
+      sInput.addEventListener('input', function() {
+        var q = strip(this.value.trim());
+        if (q.length < 2 || !searchIndex) { sResults?.classList.remove('open'); return; }
+        var words = q.split(/\s+/);
+        var matches = [];
+        for (var i = 0; i < searchIndex.length; i++) {
+          var title = strip(searchIndex[i][0]);
+          if (words.every(w => title.indexOf(w) > -1)) { matches.push(searchIndex[i]); if (matches.length >= 8) break; }
+        }
+        if (!matches.length) { sResults?.classList.remove('open'); return; }
+        sResults!.innerHTML = matches.map(m => '<a href="' + m[1] + '">' + m[0] + '</a>').join('');
+        sResults?.classList.add('open');
+      });
+    }
+
+    // Mobile: search icon opens search overlay
+    if (sBtn && sWrap) {
+      sBtn.addEventListener('click', function() {
+        sWrap.classList.toggle('mobile-open');
+        if (sWrap.classList.contains('mobile-open')) { sInput?.focus(); loadIndex(); }
+      });
+    }
+
+    // Close search on click outside
+    document.addEventListener('click', function(e) {
+      if (sResults && !e.target.closest('#searchWrap') && !e.target.closest('#searchBtn')) {
+        sResults.classList.remove('open');
+        sWrap?.classList.remove('mobile-open');
+      }
+    });
+  </script>
+</body>
+</html>

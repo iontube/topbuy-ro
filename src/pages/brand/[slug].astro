@@ -1,0 +1,99 @@
+---
+import Base from '../../layouts/Base.astro';
+import { readFileSync, existsSync } from 'fs';
+import { join } from 'path';
+
+export function getStaticPaths() {
+  const dataDir = join(process.cwd(), 'public', 'data');
+  const brands = JSON.parse(readFileSync(join(dataDir, 'brand-index.json'), 'utf-8'));
+  return brands.map((b: any) => ({
+    params: { slug: b.slug },
+    props: { brand: b },
+  }));
+}
+
+const { brand } = Astro.props;
+const dataDir = join(process.cwd(), 'public', 'data');
+const year = new Date().getFullYear();
+
+// Load SEO content
+let seo: any = {};
+const contentPath = join(dataDir, 'content', 'seo-content.json');
+if (existsSync(contentPath)) {
+  seo = JSON.parse(readFileSync(contentPath, 'utf-8'))[`brand:${brand.slug}`] || {};
+}
+
+// Load static products (first 40)
+let products: any[] = [];
+const prodPath = join(dataDir, 'brand-pages', `${brand.slug}.json`);
+if (existsSync(prodPath)) {
+  products = JSON.parse(readFileSync(prodPath, 'utf-8')).slice(0, 40);
+}
+
+const title = `${brand.name} - Produse si recomandari ${year} | TopBuy.ro`;
+const desc = seo.metaDescription || `${brand.productCount} produse ${brand.name} de la magazine verificate din Romania.`;
+const canonical = `https://topbuy.ro/brand/${brand.slug}/`;
+const updated = new Date().toLocaleDateString('ro-RO', { month: 'long', year: 'numeric' });
+---
+
+<Base title={title} description={desc} canonical={canonical}>
+  <div class="wrap">
+    <nav class="bc">
+      <a href="/">Acasa</a> <span class="bc__sep">›</span>
+      <a href="/brand/">Branduri</a> <span class="bc__sep">›</span>
+      <span>{brand.name}</span>
+    </nav>
+
+    <h1 class="page-h1">{brand.name}</h1>
+    <p class="updated-date">Actualizat: {updated} &middot; {brand.productCount} produse</p>
+
+    {seo.intro && (
+      <div class="cblock" style="margin-bottom:24px;">
+        <div class="txt">
+          {seo.intro.split('\n').filter((p: string) => p.trim()).map((p: string) => <p>{p}</p>)}
+        </div>
+      </div>
+    )}
+
+    <div class="toolbar">
+      <span class="toolbar__cnt">{products.length} produse afisate</span>
+    </div>
+
+    {products.length > 0 && (
+      <div class="pgrid">
+        {products.map((p: any) => (
+          <a href={p.l} target="_blank" rel="nofollow noopener" class="prod">
+            <div class="prod__img">
+              <img src={p.i} alt={p.t} loading="lazy" onerror="this.onerror=null;this.parentElement.classList.add('prod__img--err')" />
+            </div>
+            <div class="prod__body">
+              <span class="prod__title">{p.t}</span>
+              {p.m && <span class="prod__shop">{p.m}</span>}
+            </div>
+            <span class="prod__cta">Verifica pret</span>
+          </a>
+        ))}
+      </div>
+    )}
+
+    <div style="padding:24px 0;">
+      <a href="/brand/" class="back-link">← Toate brandurile</a>
+    </div>
+  </div>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": brand.name,
+    "description": desc,
+    "url": canonical,
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Acasa", "item": "https://topbuy.ro/" },
+        { "@type": "ListItem", "position": 2, "name": "Branduri", "item": "https://topbuy.ro/brand/" },
+        { "@type": "ListItem", "position": 3, "name": brand.name, "item": canonical }
+      ]
+    }
+  })} />
+</Base>

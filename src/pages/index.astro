@@ -1,0 +1,488 @@
+---
+import Base from '../layouts/Base.astro';
+import { readFileSync, existsSync } from 'fs';
+import { join } from 'path';
+
+const dataDir = join(process.cwd(), 'public', 'data');
+const structure = JSON.parse(readFileSync(join(dataDir, 'site-structure.json'), 'utf-8'));
+const stats = JSON.parse(readFileSync(join(dataDir, 'stats.json'), 'utf-8'));
+
+let seo: any = {};
+const cp = join(dataDir, 'content', 'seo-content.json');
+const allContent = existsSync(cp) ? JSON.parse(readFileSync(cp, 'utf-8')) : {};
+seo = allContent['homepage'] || {};
+
+const title = seo.metaTitle || `TopBuy.ro - Produse recomandate din ${stats.totalStores} magazine romanesti`;
+const desc = seo.metaDescription || `Recomandari pentru peste ${Math.floor(stats.totalProducts / 1000) * 1000} produse din ${stats.totalStores} magazine verificate din Romania. Preturi actualizate zilnic.`;
+const year = new Date().getFullYear();
+
+const SVG_ICONS: Record<string, string> = {
+  'electronice-it': '<rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/>',
+  'casa-gradina': '<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/>',
+  'fashion': '<path d="M20.38 3.46 16 2 12 5 8 2 3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/>',
+  'copii-jucarii': '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
+  'auto-moto': '<path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-2-2.7-3.1A4 4 0 0 0 11 6H5a2 2 0 0 0-2 2v7c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/>',
+  'sport': '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
+  'pescuit': '<path d="M2 20c.5-1.5 1.1-2 2.5-2C6 18 6 20 7.5 20S9 18 10.5 18c1.5 0 1.5 2 3 2s1.5-2 3-2 1.5 2 3 2 1.5-2 3-2"/><path d="M16 12 10 2"/><path d="m8 8 2 4"/>',
+  'sanatate-frumusete': '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>',
+  'carti-birou': '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
+  'alimentare-bauturi': '<path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/>',
+  'animale': '<circle cx="12" cy="10" r="3"/><circle cx="6.5" cy="5.5" r="1.5"/><circle cx="17.5" cy="5.5" r="1.5"/><circle cx="4" cy="11.5" r="1.5"/><circle cx="20" cy="11.5" r="1.5"/>',
+  'altele': '<path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/>',
+};
+
+// Load search intents grouped by mega category
+let allIntents: any[] = [];
+const suggestPath = join(dataDir, 'google-suggestions.json');
+const intentsPath = join(dataDir, 'search-intents.json');
+if (existsSync(suggestPath)) {
+  allIntents = JSON.parse(readFileSync(suggestPath, 'utf-8')).suggestions || [];
+} else if (existsSync(intentsPath)) {
+  allIntents = JSON.parse(readFileSync(intentsPath, 'utf-8')).intents || [];
+}
+
+// Build per-category intent selections (top 6 per mega, diverse types)
+const intentsByMega: Record<string, any[]> = {};
+for (const i of allIntents) {
+  if (!intentsByMega[i.megaCategory]) intentsByMega[i.megaCategory] = [];
+  intentsByMega[i.megaCategory].push(i);
+}
+
+// Mega categories enriched with content and intents
+const megaCats = Object.entries(structure.megaCategories)
+  .filter(([slug]) => slug !== 'altele')
+  .map(([slug, cat]: [string, any]) => {
+    const catContent = allContent[slug] || {};
+    const catIntents = (intentsByMega[slug] || [])
+      .sort((a: any, b: any) => b.productCount - a.productCount)
+      .slice(0, 6);
+    const topSubcats = cat.subcategories
+      .filter((s: any) => s.count >= 50 && s.name.length > 3)
+      .slice(0, 6);
+    return {
+      slug, name: cat.name, count: cat.totalProducts,
+      subcatCount: cat.subcategories.length,
+      intro: catContent.intro || '',
+      topSubcats,
+      intents: catIntents,
+    };
+  });
+
+// Top stores (with logo, sorted by product count)
+const storesData = JSON.parse(readFileSync(join(dataDir, 'stores.json'), 'utf-8'));
+
+// Top brands - prioritize well-known brands
+const brandIndex = JSON.parse(readFileSync(join(dataDir, 'brand-index.json'), 'utf-8'));
+const knownBrands = [
+  'apple','samsung','nike','adidas','puma','lenovo','asus','hp','dell','acer',
+  'xiaomi','huawei','motorola','sony','lg','philips','bosch','makita','dewalt',
+  'continental','michelin','pirelli','bridgestone','goodyear','hankook',
+  'lego','playmobil','barbie',
+  'nivea','dove','gillette','braun','dyson','rowenta','tefal','delonghi',
+  'royal-canin','purina',
+  'new-balance','converse','fila','reebok',
+  'shimano','daiwa','oral-b',
+];
+const brandMap = new Map(brandIndex.map((b: any) => [b.slug, b]));
+const topBrands: any[] = [];
+for (const slug of knownBrands) {
+  const b = brandMap.get(slug);
+  if (b) topBrands.push(b);
+}
+const topStores = storesData
+  .filter((s: any) => s.logo && s.productCount > 1000)
+  .slice(0, 12);
+
+// Featured products (2 per category, max 12)
+const featured: any[] = [];
+for (const [slug, cat] of Object.entries(structure.megaCategories) as [string, any][]) {
+  if (!cat.shards?.length || featured.length >= 12) continue;
+  try {
+    const shard = JSON.parse(readFileSync(join(dataDir, 'products', cat.shards[0].file), 'utf-8'));
+    const good = shard.filter((p: any) => p.i && p.t && p.l).slice(0, 2);
+    featured.push(...good);
+  } catch {}
+}
+
+// Global popular searches (diverse)
+const globalSearches: any[] = [];
+if (allIntents.length) {
+  const candidates = allIntents
+    .filter((i: any) => ['best-of', 'top', 'budget', 'guide'].includes(i.type))
+    .sort((a: any, b: any) => b.productCount - a.productCount);
+  const usedTitles = new Set();
+  const perMega: Record<string, number> = {};
+  for (const i of candidates) {
+    const base = i.title.toLowerCase().trim().split(' ').sort().join(' ');
+    if (usedTitles.has(base)) continue;
+    usedTitles.add(base);
+    perMega[i.megaCategory] = (perMega[i.megaCategory] || 0) + 1;
+    if (perMega[i.megaCategory] > 2) continue;
+    globalSearches.push(i);
+    if (globalSearches.length >= 16) break;
+  }
+}
+---
+
+<Base title={title} description={desc} canonical="https://topbuy.ro/">
+
+  {/* ══ HERO ══ */}
+  <section class="hero">
+    <div class="wrap">
+      <h1>{seo.h1 || `Produse recomandate din ${stats.totalStores} magazine romanesti`}</h1>
+      <p class="hero__sub">{seo.tagline || `${stats.totalProducts.toLocaleString('ro')} produse cu preturi actualizate zilnic din magazine verificate.`}</p>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <strong>{stats.totalProducts.toLocaleString('ro')}</strong>
+          <span>produse</span>
+        </div>
+        <div class="hero__stat">
+          <strong>{stats.totalStores}</strong>
+          <span>magazine</span>
+        </div>
+        <div class="hero__stat">
+          <strong>{stats.megaCategories}</strong>
+          <span>categorii</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ══ INTRO CONTENT ══ */}
+  {seo.intro && (
+    <section class="sec">
+      <div class="wrap">
+        <div class="cblock">
+          <div class="txt">
+            {seo.intro.split('\n').filter((p: string) => p.trim()).map((p: string) => <p>{p}</p>)}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {/* ══ CATEGORIES WITH SILO LINKS ══ */}
+  <section class="sec">
+    <div class="wrap">
+      <h2 class="sec__h">Categorii</h2>
+      <div class="hp-cats">
+        {megaCats.map((cat) => (
+          <div class="hp-cat">
+            <div class="hp-cat__header">
+              <div class="hp-cat__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={SVG_ICONS[cat.slug] || SVG_ICONS['altele']} />
+              </div>
+              <div>
+                <h3 class="hp-cat__name"><a href={`/${cat.slug}/`}>{cat.name}</a></h3>
+                <span class="hp-cat__meta">{cat.subcatCount} subcategorii</span>
+              </div>
+            </div>
+
+            {cat.intro && (
+              <p class="hp-cat__intro">{cat.intro.split('\n')[0].substring(0, 200)}{cat.intro.split('\n')[0].length > 200 ? '...' : ''}</p>
+            )}
+
+            {cat.topSubcats.length > 0 && (
+              <div class="hp-cat__links">
+                {cat.topSubcats.map((sub: any) => (
+                  <a href={`/${cat.slug}/${sub.slug}/`} class="pill">{sub.name}</a>
+                ))}
+              </div>
+            )}
+
+            {cat.intents.length > 0 && (
+              <div class="hp-cat__intents">
+                {cat.intents.map((i: any) => (
+                  <a href={`/${cat.slug}/${i.slug}/`} class="hp-cat__intent">{i.title}</a>
+                ))}
+              </div>
+            )}
+
+            <a href={`/${cat.slug}/`} class="hp-cat__more">Vezi toate produsele &rarr;</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ══ FEATURED PRODUCTS ══ */}
+  {featured.length > 0 && (
+    <section class="sec sec--alt">
+      <div class="wrap">
+        <h2 class="sec__h">Produse recomandate</h2>
+        <div class="pgrid">
+          {featured.map((p: any) => (
+            <a href={p.l} target="_blank" rel="nofollow noopener" class="prod">
+              <div class="prod__img">
+                <img src={p.i} alt={p.t} loading="lazy" onerror="this.onerror=null;this.parentElement.classList.add('prod__img--err')" />
+              </div>
+              <div class="prod__body">
+                {p.b && <span class="prod__brand">{p.b}</span>}
+                <span class="prod__title">{p.t}</span>
+                {p.m && <span class="prod__shop">{p.m}</span>}
+              </div>
+              <span class="prod__cta">Verifica pret</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {/* ══ POPULAR SEARCHES (grouped by silo) ══ */}
+  {globalSearches.length > 0 && (
+    <section class="sec">
+      <div class="wrap">
+        <h2 class="sec__h">Cele mai cautate produse</h2>
+        <div class="searches__grid" style="margin-top:16px;">
+          {globalSearches.map((s: any) => (
+            <a href={`/${s.megaCategory}/${s.slug}/`} class="searches__link">
+              {s.title}
+              <small>{s.productCount.toLocaleString('ro')}</small>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {/* ══ HOW IT WORKS ══ */}
+  <section class="sec sec--alt">
+    <div class="wrap">
+      <h2 class="sec__h">Cum functioneaza</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <div class="step__body">
+            <strong>Alege categoria</strong>
+            <p>{stats.megaCategories} categorii cu peste {Math.floor(stats.totalProducts / 1000)}k produse din {stats.totalStores} magazine verificate.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <div class="step__body">
+            <strong>Vezi recomandari</strong>
+            <p>Produsele sunt organizate pe categorii si tipuri. Preturile se actualizeaza zilnic din magazine.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <div class="step__body">
+            <strong>Cumpara de la magazin</strong>
+            <p>Cand gasesti ce vrei, esti redirectionat direct pe site-ul magazinului. Comanda si plata se fac acolo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ══ STORES ══ */}
+  {topStores.length > 0 && (
+    <section class="sec">
+      <div class="wrap">
+        <div class="sec__top">
+          <h2 class="sec__h">Magazine</h2>
+          <a href="/magazine/" class="sec__link">Toate magazinele &rarr;</a>
+        </div>
+        <div class="store-row">
+          {topStores.map((s: any) => (
+            <a href={`/magazine/${s.slug}/`} class="store-item">
+              {s.logo ? (
+                <img src={s.logo} alt={s.name} loading="lazy" />
+              ) : (
+                <span class="store-item__ph">{s.name.charAt(0)}</span>
+              )}
+              <span class="store-item__name">{s.name.replace(/\s+$/,'').replace(/\/$/,'')}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {/* ══ BRANDS ══ */}
+  {topBrands.length > 0 && (
+    <section class="sec sec--alt">
+      <div class="wrap">
+        <div class="sec__top">
+          <h2 class="sec__h">Branduri populare</h2>
+          <a href="/brand/" class="sec__link">Toate brandurile &rarr;</a>
+        </div>
+        <div class="brand-row">
+          {topBrands.map((b: any) => (
+            <a href={`/brand/${b.slug}/`} class="brand-chip">
+              {b.name}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {/* ══ FAQ ══ */}
+  {seo.faq?.length > 0 && (
+    <section class="sec">
+      <div class="wrap">
+        <section class="faq">
+          <h2 class="faq__h">Intrebari frecvente</h2>
+          {seo.faq.map((f: any) => (
+            <div class="faq__i" itemscope itemtype="https://schema.org/Question">
+              <button class="faq__q" itemprop="name" onclick="this.classList.toggle('open');this.nextElementSibling?.classList.toggle('open');">
+                <span>{f.q}</span>
+                <span class="faq__q-ic">+</span>
+              </button>
+              <div class="faq__a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <span itemprop="text">{f.a}</span>
+              </div>
+            </div>
+          ))}
+        </section>
+      </div>
+    </section>
+  )}
+
+  {/* ══ STRUCTURED DATA ══ */}
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TopBuy.ro",
+    "url": "https://topbuy.ro/",
+    "description": desc,
+    "publisher": {
+      "@type": "Organization",
+      "name": "TopBuy.ro"
+    }
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Categorii TopBuy.ro",
+    "numberOfItems": megaCats.length,
+    "itemListElement": megaCats.map((cat, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": cat.name,
+      "url": `https://topbuy.ro/${cat.slug}/`
+    }))
+  })} />
+</Base>
+
+<style>
+  .hero__stats{display:flex;gap:12px;justify-content:center;margin-top:24px;position:relative}
+  .hero__stat{display:flex;flex-direction:column;align-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:10px 18px;min-width:0}
+  .hero__stat strong{font-size:1.1rem;font-weight:800;color:#60a5fa}
+  .hero__stat span{font-size:.68rem;color:rgba(255,255,255,.6);margin-top:2px;text-transform:uppercase;letter-spacing:.3px}
+
+  .sec__sub{font-size:.9rem;color:var(--gray-500);margin-top:-16px;margin-bottom:8px}
+
+  .hp-cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:16px;margin-top:20px}
+  .hp-cat{background:var(--surface);border:1px solid var(--gray-200);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:10px;transition:border-color var(--ease)}
+  .hp-cat:hover{border-color:var(--blue-border)}
+  .hp-cat__header{display:flex;align-items:center;gap:12px}
+  .hp-cat__icon{width:40px;height:40px;border-radius:var(--r);background:var(--blue-light);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .hp-cat__icon svg{width:20px;height:20px;color:var(--blue)}
+  .hp-cat__name{font-size:1rem;font-weight:700;margin:0}
+  .hp-cat__name a{color:var(--gray-900);text-decoration:none}
+  .hp-cat__name a:hover{color:var(--blue)}
+  .hp-cat__meta{font-size:.75rem;color:var(--gray-400);margin-top:2px;display:block}
+  .hp-cat__intro{font-size:.84rem;color:var(--gray-500);line-height:1.6;margin:0}
+  .hp-cat__links{display:flex;flex-wrap:wrap;gap:5px}
+  .hp-cat__intents{display:flex;flex-direction:column;gap:2px}
+  .hp-cat__intent{font-size:.82rem;color:var(--blue);text-decoration:none;padding:2px 0}
+  .hp-cat__intent:hover{text-decoration:underline}
+  .hp-cat__intent::before{content:'› ';color:var(--gray-300);font-size:.75rem}
+  .hp-cat__more{font-size:.82rem;font-weight:600;color:var(--blue);text-decoration:none;margin-top:auto;padding-top:4px}
+  .hp-cat__more:hover{text-decoration:underline}
+
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px;margin-top:20px}
+  .step{display:flex;gap:12px;align-items:flex-start}
+  .step__num{width:32px;height:32px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;font-size:.88rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .step__body strong{font-size:.9rem;color:var(--gray-900);display:block;margin-bottom:4px}
+  .step__body p{font-size:.84rem;color:var(--gray-500);line-height:1.6;margin:0}
+
+  @media(max-width:768px){
+    .hero__stats{gap:8px}
+    .hero__stat{padding:8px 14px}
+    .hero__stat strong{font-size:1rem}
+    .hp-cats{grid-template-columns:1fr;gap:12px}
+    .hp-cat{padding:16px}
+    .hp-cat__intro{font-size:.82rem}
+    .steps{grid-template-columns:1fr;gap:12px}
+  }
+  @media(max-width:480px){
+    .hero__stats{gap:6px}
+    .hero__stat{padding:7px 10px;border-radius:6px}
+    .hero__stat strong{font-size:.9rem}
+    .hero__stat span{font-size:.62rem}
+    .hp-cat__icon{width:36px;height:36px}
+    .hp-cat__icon svg{width:18px;height:18px}
+    .hp-cat__name{font-size:.92rem}
+    .hp-cat__intents{display:none}
+  }
+
+  .brand-row{display:flex;flex-wrap:wrap;gap:8px}
+  .brand-chip{display:inline-block;padding:8px 16px;border:1px solid transparent;border-radius:20px;font-size:.84rem;font-weight:500;color:var(--gray-700);text-decoration:none;transition:all .15s}
+  .brand-chip:nth-child(1){background:#fef7f7;color:#7f1d1d}
+  .brand-chip:nth-child(2){background:#f5f8ff;color:#1e3a8a}
+  .brand-chip:nth-child(3){background:#f5fdf8;color:#14532d}
+  .brand-chip:nth-child(4){background:#fefcf3;color:#78350f}
+  .brand-chip:nth-child(5){background:#fdf8ff;color:#701a75}
+  .brand-chip:nth-child(6){background:#f5fdfb;color:#134e4a}
+  .brand-chip:nth-child(7){background:#fffaf5;color:#7c2d12}
+  .brand-chip:nth-child(8){background:#fbf8ff;color:#4c1d95}
+  .brand-chip:nth-child(9){background:#f3fdf7;color:#064e3b}
+  .brand-chip:nth-child(10){background:#fefcf0;color:#713f12}
+  .brand-chip:nth-child(11){background:#f9f7ff;color:#3b0764}
+  .brand-chip:nth-child(12){background:#fff5f5;color:#991b1b}
+  .brand-chip:nth-child(13){background:#f3f6ff;color:#312e81}
+  .brand-chip:nth-child(14){background:#f3fef6;color:#166534}
+  .brand-chip:nth-child(15){background:#fffdf5;color:#854d0e}
+  .brand-chip:nth-child(16){background:#fef6fa;color:#831843}
+  .brand-chip:nth-child(17){background:#f3fefc;color:#115e59}
+  .brand-chip:nth-child(18){background:#fff6f7;color:#9f1239}
+  .brand-chip:nth-child(19){background:#f5f8ff;color:#1e40af}
+  .brand-chip:nth-child(20){background:#f8fee5;color:#365314}
+  .brand-chip:nth-child(21){background:#fefaf0;color:#92400e}
+  .brand-chip:nth-child(22){background:#fef5f9;color:#9d174d}
+  .brand-chip:nth-child(23){background:#edfdfb;color:#0f766e}
+  .brand-chip:nth-child(24){background:#fef5f5;color:#b91c1c}
+  .brand-chip:nth-child(25){background:#eff5ff;color:#1d4ed8}
+  .brand-chip:nth-child(26){background:#eefdf4;color:#047857}
+  .brand-chip:nth-child(27){background:#fefbeb;color:#a16207}
+  .brand-chip:nth-child(28){background:#f7f3ff;color:#6d28d9}
+  .brand-chip:nth-child(29){background:#f0feff;color:#0e7490}
+  .brand-chip:nth-child(30){background:#fff5f6;color:#be123c}
+  .brand-chip:nth-child(31){background:#f0f3ff;color:#3730a3}
+  .brand-chip:nth-child(32){background:#f0fdf4;color:#15803d}
+  .brand-chip:nth-child(33){background:#fff9f0;color:#c2410c}
+  .brand-chip:nth-child(34){background:#f8f5ff;color:#7e22ce}
+  .brand-chip:nth-child(35){background:#eefdf4;color:#065f46}
+  .brand-chip:nth-child(36){background:#fef5f5;color:#dc2626}
+  .brand-chip:nth-child(37){background:#f0f5ff;color:#1e40af}
+  .brand-chip:nth-child(38){background:#f0fdf2;color:#166534}
+  .brand-chip:nth-child(39){background:#fff8f0;color:#ea580c}
+  .brand-chip:nth-child(40){background:#f5f3ff;color:#5b21b6}
+  .brand-chip:nth-child(41){background:#edfdf6;color:#047857}
+  .brand-chip:nth-child(42){background:#fff5f6;color:#e11d48}
+  .brand-chip:nth-child(43){background:#f0f2ff;color:#4338ca}
+  .brand-chip:nth-child(44){background:#f7fee7;color:#4d7c0f}
+  .brand-chip:nth-child(45){background:#fef5fa;color:#be185d}
+  .brand-chip:hover{border-color:var(--gray-300);transform:translateY(-1px);text-decoration:none}
+
+  .sec__link{font-size:.84rem;font-weight:600;color:var(--blue);text-decoration:none}
+  .sec__link:hover{text-decoration:underline}
+
+  .store-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,140px),1fr));gap:12px}
+  .store-item{display:flex;flex-direction:column;align-items:center;gap:8px;padding:16px 10px;background:var(--surface);border:1px solid var(--gray-200);border-radius:var(--r);text-decoration:none;transition:border-color var(--ease)}
+  .store-item:hover{border-color:var(--blue);text-decoration:none}
+  .store-item img{width:48px;height:48px;object-fit:contain;border-radius:var(--r-sm)}
+  .store-item__ph{width:48px;height:48px;border-radius:var(--r-sm);background:#2563eb;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:800}
+  .store-item__name{font-size:.75rem;color:var(--gray-600);text-align:center;font-weight:500;line-height:1.3}
+  @media(max-width:480px){
+    .store-row{grid-template-columns:repeat(3,1fr);gap:8px}
+    .store-item{padding:12px 6px}
+    .store-item img{width:36px;height:36px}
+    .store-item__name{font-size:.68rem}
+  }
+</style>

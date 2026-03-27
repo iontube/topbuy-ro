@@ -1,0 +1,26 @@
+{
+  "name": "topbuy.ro",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "download-feeds": "node scripts/download-feeds.js",
+    "process-feeds": "node scripts/process-feeds.js",
+    "generate-content": "node scripts/generate-content.js",
+    "generate-intents": "node scripts/generate-search-intents.js",
+    "build-data": "npm run download-feeds && npm run process-feeds && npm run generate-intents && npm run generate-content",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "full-build": "npm run build-data && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "TopBuy.ro - Site afiliere cu produse din feeduri 2Performant",
+  "dependencies": {
+    "astro": "^5.17.1",
+    "csv-parse": "^6.1.0",
+    "node-fetch": "^3.3.2",
+    "slugify": "^1.6.6"
+  }
+}

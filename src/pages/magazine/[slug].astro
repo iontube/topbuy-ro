@@ -1,0 +1,225 @@
+---
+import Base from '../../layouts/Base.astro';
+import { readFileSync, readdirSync } from 'fs';
+import { join } from 'path';
+
+export function getStaticPaths() {
+  const dataDir = join(process.cwd(), 'public', 'data');
+  const stores = JSON.parse(readFileSync(join(dataDir, 'stores.json'), 'utf-8'));
+  return stores.map((store: any) => ({
+    params: { slug: store.slug },
+    props: { store },
+  }));
+}
+
+const { store } = Astro.props;
+const dataDir = join(process.cwd(), 'public', 'data');
+const year = new Date().getFullYear();
+
+const title = `${store.name} - Produse si recomandari | TopBuy.ro`;
+const desc = `Vezi produse de la ${store.name} pe TopBuy.ro. ${store.productCount.toLocaleString('ro')} produse cu preturi actualizate zilnic.`;
+const canonical = `https://topbuy.ro/magazine/${store.slug}/`;
+
+// Find products from this store across all shards
+// Store name in products is stored in field 'm' (merchant)
+const storeName = store.name.replace(/\s+/g, '').replace(/[\/\.]/g, '').toLowerCase();
+const storeProducts: any[] = [];
+const productsDir = join(dataDir, 'products');
+const shardFiles = readdirSync(productsDir).filter((f: string) => f.endsWith('.json')).sort();
+
+for (const f of shardFiles) {
+  if (storeProducts.length >= 200) break;
+  try {
+    const shard = JSON.parse(readFileSync(join(productsDir, f), 'utf-8'));
+    for (const p of shard) {
+      if (storeProducts.length >= 200) break;
+      // Match store by merchant name field
+      const merchant = (p.m || '').replace(/\s+/g, '').replace(/[\/\.]/g, '').toLowerCase();
+      if (merchant && (merchant.includes(storeName) || storeName.includes(merchant))) {
+        if (p.i && p.t && p.l) {
+          storeProducts.push(p);
+        }
+      }
+    }
+  } catch {}
+}
+
+// Get other stores for "more stores" section
+const allStores = JSON.parse(readFileSync(join(dataDir, 'stores.json'), 'utf-8'));
+const otherStores = allStores
+  .filter((s: any) => s.slug !== store.slug)
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 8);
+---
+
+<Base title={title} description={desc} canonical={canonical}>
+
+  <div class="wrap">
+    <nav class="bc">
+      <a href="/">Acasa</a> <span class="bc__sep">›</span>
+      <a href="/magazine/">Magazine</a> <span class="bc__sep">›</span>
+      <span>{store.name}</span>
+    </nav>
+
+    {/* ══ STORE HEADER ══ */}
+    <div class="sh">
+      <div class="sh__top">
+        {store.logo ? (
+          <img src={store.logo} alt={store.name} class="sh__logo" />
+        ) : (
+          <div class="sh__logo-ph">{store.name.charAt(0).toUpperCase()}</div>
+        )}
+        <div>
+          <h1 class="sh__name">{store.name}</h1>
+          <div class="sh__meta">
+            {store.category && <span class="sh__cat">{store.category}</span>}
+            <span>{store.productCount.toLocaleString('ro')} produse</span>
+          </div>
+        </div>
+      </div>
+
+      {store.description && (
+        <p class="sh__desc">{store.description}</p>
+      )}
+
+      <a href={store.affLink} target="_blank" rel="nofollow noopener" class="sh__btn">
+        Viziteaza {store.name} &rarr;
+      </a>
+    </div>
+
+    {/* ══ PRODUCTS ══ */}
+    {storeProducts.length > 0 && (
+      <section style="margin-top:28px;">
+        <h2 class="section-title">Produse de la {store.name}</h2>
+        <div class="toolbar">
+          <span class="toolbar__cnt">{storeProducts.length >= 200 ? '200+' : storeProducts.length} produse afisate</span>
+        </div>
+        <div class="pgrid" id="productGrid">
+          {storeProducts.slice(0, 40).map((p: any) => (
+            <a href={p.l} target="_blank" rel="nofollow noopener" class="prod">
+              <div class="prod__img">
+                <img src={p.i} alt={p.t} loading="lazy" onerror="this.onerror=null;this.parentElement.classList.add('prod__img--err')" />
+              </div>
+              <div class="prod__body">
+                {p.b && <span class="prod__brand">{p.b}</span>}
+                <span class="prod__title">{p.t}</span>
+              </div>
+              <span class="prod__cta">Verifica pret</span>
+            </a>
+          ))}
+        </div>
+        {storeProducts.length > 40 && (
+          <div class="pag" id="pagination"></div>
+        )}
+      </section>
+    )}
+
+    {storeProducts.length === 0 && (
+      <div class="cblock" style="margin-top:24px;text-align:center;">
+        <p style="color:var(--gray-500);margin-bottom:16px;">Produsele de la {store.name} sunt disponibile direct pe site-ul magazinului.</p>
+        <a href={store.affLink} target="_blank" rel="nofollow noopener" class="sh__btn">
+          Vezi produse pe {store.name} &rarr;
+        </a>
+      </div>
+    )}
+
+    {/* ══ CTA BANNER ══ */}
+    <div class="sh__banner">
+      <div>
+        <strong>Cauti ceva specific pe {store.name}?</strong>
+        <p>Acceseaza direct magazinul pentru toate produsele si ofertele curente.</p>
+      </div>
+      <a href={store.affLink} target="_blank" rel="nofollow noopener" class="sh__btn">
+        Mergi la {store.name} &rarr;
+      </a>
+    </div>
+
+    {/* ══ OTHER STORES ══ */}
+    <section class="related" style="margin-top:28px;">
+      <h2 class="related__h">Alte magazine</h2>
+      <div class="related__grid">
+        {otherStores.map((s: any) => (
+          <a href={`/magazine/${s.slug}/`} class="related__link">
+            <span class="related__title">{s.name}</span>
+            <span class="related__cnt">{s.productCount.toLocaleString('ro')} produse</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <div style="padding:24px 0;">
+      <a href="/magazine/" class="back-link">← Toate magazinele</a>
+    </div>
+  </div>
+
+  {/* ══ PAGINATION SCRIPT ══ */}
+  {storeProducts.length > 40 && (
+    <script define:vars={{ allProducts: storeProducts }}>
+      var PPG = 40, page = 1;
+      function render() {
+        var g = document.getElementById('productGrid');
+        var s = (page-1)*PPG;
+        var items = allProducts.slice(s, s+PPG);
+        if (!items.length) return;
+        g.innerHTML = items.map(function(p) {
+          return '<a href="' + p.l + '" target="_blank" rel="nofollow noopener" class="prod">' +
+            '<div class="prod__img"><img src="' + p.i + '" alt="' + (p.t||'').replace(/"/g,'&quot;') + '" loading="lazy" onerror="this.onerror=null;this.parentElement.classList.add(\'prod__img--err\')"/></div>' +
+            '<div class="prod__body">' + (p.b ? '<span class="prod__brand">' + p.b + '</span>' : '') +
+            '<span class="prod__title">' + p.t + '</span></div>' +
+            '<span class="prod__cta">Verifica pret</span></a>';
+        }).join('');
+        renderPag();
+      }
+      function renderPag() {
+        var el = document.getElementById('pagination');
+        var tp = Math.ceil(allProducts.length/PPG);
+        if (tp <= 1) { el.innerHTML=''; return; }
+        var h = '';
+        if (page > 1) h += '<button class="pg" data-p="' + (page-1) + '">‹</button>';
+        var s = Math.max(1,page-3), e = Math.min(tp,page+3);
+        if (s > 1) h += '<button class="pg" data-p="1">1</button>';
+        if (s > 2) h += '<span class="pg-d">…</span>';
+        for (var i=s;i<=e;i++) h += '<button class="pg' + (i===page?' on':'') + '" data-p="' + i + '">' + i + '</button>';
+        if (e < tp-1) h += '<span class="pg-d">…</span>';
+        if (e < tp) h += '<button class="pg" data-p="' + tp + '">' + tp + '</button>';
+        if (page < tp) h += '<button class="pg" data-p="' + (page+1) + '">›</button>';
+        el.innerHTML = h;
+        el.querySelectorAll('.pg').forEach(function(b) { b.addEventListener('click', function() {
+          page = +b.dataset.p; render(); window.scrollTo({top:300,behavior:'smooth'});
+        })});
+      }
+      renderPag();
+    </script>
+  )}
+
+  {/* ══ STRUCTURED DATA ══ */}
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": store.name,
+    "url": store.url,
+    "description": store.description || `Magazin online din Romania - ${store.name}`,
+  })} />
+</Base>
+
+<style>
+  .sh{background:linear-gradient(135deg,#f0f5ff 0%,#f8faff 100%);border:1px solid #dce5f5;border-radius:var(--r);padding:28px 24px;display:flex;flex-direction:column;gap:16px}
+  .sh__top{display:flex;align-items:center;gap:16px}
+  .sh__logo{width:56px;height:56px;border-radius:var(--r);object-fit:contain;background:#fff;border:1px solid var(--gray-200);flex-shrink:0}
+  .sh__logo-ph{width:56px;height:56px;border-radius:var(--r);background:#2563eb;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:800;flex-shrink:0}
+  .sh__name{font-size:1.4rem;font-weight:800;color:var(--gray-900);margin:0}
+  .sh__meta{display:flex;gap:10px;align-items:center;margin-top:4px;font-size:.82rem;color:var(--gray-400)}
+  .sh__cat{background:var(--blue);color:#fff;padding:2px 8px;border-radius:4px;font-size:.72rem;font-weight:600}
+  .sh__desc{font-size:.88rem;color:var(--gray-600);line-height:1.65;margin:0}
+  .sh__btn{display:inline-block;padding:12px 24px;background:#2563eb;color:#fff;font-size:.88rem;font-weight:600;border-radius:var(--r-sm);text-decoration:none;transition:background var(--ease);align-self:flex-start}
+  .sh__btn:hover{background:#1d4ed8;text-decoration:none;color:#fff}
+  .sh__banner{background:linear-gradient(135deg,#f0f5ff,#f8faff);border:1px solid #dce5f5;border-radius:var(--r);padding:24px;margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .sh__banner strong{font-size:.95rem;color:var(--gray-900);display:block;margin-bottom:4px}
+  .sh__banner p{font-size:.84rem;color:var(--gray-500);margin:0}
+  @media(max-width:768px){
+    .sh{padding:20px 16px}
+    .sh__logo,.sh__logo-ph{width:44px;height:44px}
+    .sh__name{font-size:1.15rem}
+    .sh__banner{flex-direction:column;align-items:flex-start}
+  }
+</style>
