@@ -1,6 +1,8 @@
 node_modules/
 dist/
 raw-feeds/
+.astro/
+.claude/
 .DS_Store
 *.log
 public/data/scrape-progress.json
