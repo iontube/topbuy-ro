@@ -73,18 +73,37 @@ for (let i = 0; i < allUrls.length; i += URLS_PER_SITEMAP) {
 }
 console.log(`Sitemaps: ${chunks.length} (${URLS_PER_SITEMAP} URLs each)`);
 
-// Generate drip dates - one sitemap "published" per day starting from today going back
-const today = new Date();
-const sitemapFiles = [];
+// Drip state: tracks which sitemaps have been published and their lastmod dates
+const today = new Date().toISOString().split('T')[0];
+const DRIP_STATE_FILE = join(DATA_DIR, 'sitemap-drip-state.json');
 
+let dripState = { count: 0, dates: {} };
+try {
+  dripState = JSON.parse(readFileSync(DRIP_STATE_FILE, 'utf-8'));
+  if (!dripState.dates) dripState.dates = {};
+} catch {
+  // First run
+}
+
+// Increment drip count by 1
+const dripCount = Math.min(dripState.count + 1, chunks.length);
+
+// Assign today's date to the newly dripped sitemap, keep existing dates
+for (let i = 1; i <= dripCount; i++) {
+  if (!dripState.dates[i]) {
+    dripState.dates[i] = today;
+  }
+}
+
+writeFileSync(DRIP_STATE_FILE, JSON.stringify({ count: dripCount, dates: dripState.dates, lastRun: new Date().toISOString() }, null, 2));
+
+// Generate all sitemap XML files
+const sitemapFiles = [];
 for (let i = 0; i < chunks.length; i++) {
   const chunk = chunks[i];
-  const filename = `sitemap-${i + 1}.xml`;
-
-  // Drip: sitemap 1 = today, sitemap 2 = tomorrow, sitemap 3 = day after, etc.
-  const dripDate = new Date(today);
-  dripDate.setDate(dripDate.getDate() + i);
-  const lastmod = dripDate.toISOString().split('T')[0];
+  const idx = i + 1;
+  const filename = `sitemap-${idx}.xml`;
+  const lastmod = dripState.dates[idx] || today;
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -95,18 +114,7 @@ ${chunk.map(u => `<url><loc>${u.loc}</loc><lastmod>${lastmod}</lastmod><changefr
   sitemapFiles.push({ filename, lastmod, urls: chunk.length });
 }
 
-// Generate sitemap index with drip - add 1 sitemap per day
-// Read existing index to see how many are already published
-const DRIP_STATE_FILE = join(DATA_DIR, 'sitemap-drip-state.json');
-let dripCount = 1;
-try {
-  const state = JSON.parse(readFileSync(DRIP_STATE_FILE, 'utf-8'));
-  dripCount = Math.min(state.count + 1, sitemapFiles.length);
-} catch {
-  dripCount = 1; // First run
-}
-writeFileSync(DRIP_STATE_FILE, JSON.stringify({ count: dripCount, lastRun: new Date().toISOString() }));
-
+// Generate sitemap index - only include dripped sitemaps
 const visibleSitemaps = sitemapFiles.slice(0, dripCount);
 const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -116,8 +124,8 @@ ${visibleSitemaps.map(s => `<sitemap><loc>https://topbuy.ro/${s.filename}</loc><
 writeFileSync(join(OUT_DIR, 'sitemap.xml'), indexXml);
 
 console.log(`\nGenerated:`);
-console.log(`  sitemap.xml (index with ${sitemapFiles.length} sitemaps)`);
-console.log(`  sitemap-001.xml through sitemap-${String(chunks.length).padStart(3, '0')}.xml`);
-console.log(`  Drip: newest sitemap = today, oldest = ${sitemapFiles[sitemapFiles.length - 1].lastmod}`);
-
-// This was already run - brands are added in next run
+console.log(`  ${chunks.length} sitemap files, ${dripCount} visible in index`);
+console.log(`  Dripped today: sitemap-${dripCount}.xml (${today})`);
+for (let i = 1; i <= dripCount; i++) {
+  console.log(`    sitemap-${i}.xml → ${dripState.dates[i]}`);
+}
